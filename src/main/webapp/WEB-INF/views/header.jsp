@@ -7,21 +7,37 @@
 <title>Insert title here</title>
 <style>
 	body{
-		font-family:'나눔스퀘어';
+		font-family:'나눔스퀘어라운드';
 		margin:0;
+		width:100%;
 	}
-	li {
+	
+	/** inline-block **/
+	li,h1.logo,.list_gmenu,#logo_img,
+	.my_gmenu {
 		display:inline-block;
 	}
 	
 	li>a{
 		text-decoration:none;
-		color:black;
-		
+		color:black;	
+	}
+	.gnb_wrap{
+	    box-shadow: 5px 5px 10px #f1f1f1;
+		text-align:center;
+		margin:auto;
 	}
 	
-	.util_wrap ul{
+	.gnb_util{
+		width:100%;
 		background-color:#f3cd9e;
+	}
+	.util_wrap{
+		width:1180px;
+		text-align:center;
+		margin:auto;
+	}
+	.util_wrap ul{
 		color:black;
 	}
 	
@@ -32,85 +48,95 @@
 		color:white;
 	}
 	
-	h1.logo {
-		/* font-family:'UhBee Rice'; */
-		display:inline-block;
-	}
-	
 	h1.logo a{
 		text-decoration:none;
 		color:black;
 	}
+
+	
+	.util_wrap{
+		text-align:right;
+	}
+	
+	.util_wrap>ul {
+		display:block;  
+		height:25px; 
+		margin:0;
+	}
+	
+	.gnb_menu {
+		margin:auto;
+		height:86px;  
+		width:1180px; 
+		text-align:left;
+	}
+	
+	#logo_img{
+		width:150px; 
+		float: left;
+	}
 	
 	.list_gmenu{
-		display:inline-block;
+		padding-top: 12px; 
+		font-size: 20px;
+	}
+	
+	.list_gmenu>li{
+		margin-right:50px;
+	}
+	
+	.my_gmenu{
+		margin-left: 247px;
 	}
 </style>
 </head>
 <body>
 
 <header id="head">
-       <div class="gnb_wrap" style="width:1180px; text-align:center; margin:auto;">
+<div>
+       <div class="gnb_wrap" >
            <div class="gnb_util">
-               <div class="util_wrap" style="text-align:right; ">
-                   <ul style="display:block;  height:25px; margin:0;">
+               <div class="util_wrap" >
+                   <ul >
                    		<li><a href="#">로그인</a></li>
-                   		<li><a href="#" target="_blank">회원가입</a></li>
+                   		<li><a href="#">회원가입</a></li>
                    		<li><a href="#">고객행복센터</a></li>
                    		<li><a href="#">게시판</a></li>
                    </ul>
                </div>
            </div>
-           <div class="gnb_menu" style="float:left; height:86px;  width:1180px; text-align:left;">
-               <!-- <h1 class="logo"><a href="#"><span class="hide">먹킷</span></a></h1> -->
-               <img src="http://localhost:9090/murkit/images/logo.png" style="width:150px; display:inline-block; float: left;"/>
-               <ul class="list_gmenu" style="padding-top: 12px; font-size: 20px;">
+           <div class="gnb_menu">
+               <img  id="logo_img" src="http://localhost:9090/murkit/images/logo.png" />
+               <ul class="list_gmenu" >
 
-						<li style="margin-right:50px;">
-		             		<a href="#" target="_self">COOKIT소개</a>
-	             		</li>
+						<li><a href="#" target="_self">먹킷소개</a></li>
 
-						<li style="margin-right:50px;">
-		             		<a href="#" target="_self"><span class="red_dot">COOKIT 메뉴</span></a>
-	             		</li>
+						<li><a href="#" target="_self"><span class="red_dot">먹킷 메뉴</span></a></li>
 	             		
-						<li style="margin-right:50px;">
-		             		<a href="#" target="_self">리뷰</a>
-	             		</li>
+						<li><a href="#" target="_self">리뷰</a></li>
 					
-						<li style="margin-right:50px;">
-		             		<a href="#" target="_self">이벤트</a>
-	             		</li>
+						<li><a href="#" target="_self">이벤트</a></li>
 	
-						<li style="margin-right:50px;">
-		             		<a href="#" target="_self">MY먹킷</a>
-	             		</li>
+						<li><a href="#" target="_self">MY먹킷</a></li>
 					
                </ul>
                
-               <div class="my_gmenu" style="display:inline-block; margin-left: 176px;">
+               <div class="my_gmenu" >
                    <ul >
-<!--                        <li class="g_my"><a href="/pc/my/myMain"><span class="hide">마이 쿡킷 페이지로 이동</span></a></li> 0701 숨김처리 -->
                        <li class="g_od">
                            <a href="#">
-                               <span class="txt">장바구니</span>
-                               <span class="num" id="headerCartCount">
+                               <span>장바구니</span>
+                               <span>
                            </a>
                        </li>
-                       <li class="g_mu"><a href="#"><span class="txt">메뉴찾기</span></a></li>
+                       <li class="g_mu"><a href="#"><span>메뉴찾기</span></a></li>
                    </ul>
                </div>
            </div>
        <hr>
        </div>
        
-   </header>
-<!-- //header -->
-
-	
-
-
-
-
+</div>
+</header>
 </body>
 </html>
