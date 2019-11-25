@@ -36,6 +36,7 @@
 		width:1180px;
 		text-align:center;
 		margin:auto;
+		line-height: 25px;
 	}
 	.util_wrap ul{
 		color:black;
@@ -92,12 +93,12 @@
 </head>
 <body>
 
-<header id="head">
+<header>
 <div>
        <div class="gnb_wrap" >
            <div class="gnb_util">
                <div class="util_wrap" >
-                   <ul >
+                   <ul>
                    		<li><a href="#">로그인</a></li>
                    		<li><a href="#">회원가입</a></li>
                    		<li><a href="#">고객행복센터</a></li>
@@ -126,7 +127,6 @@
                        <li class="g_od">
                            <a href="#">
                                <span>장바구니</span>
-                               <span>
                            </a>
                        </li>
                        <li class="g_mu"><a href="#"><span>메뉴찾기</span></a></li>

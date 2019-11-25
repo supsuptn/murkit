@@ -25,8 +25,12 @@ li {
 	display: inline-block;
 }
 
+hr{
+	opacity:0.3;
+}
 /** 아이콘 **/
-div#subImg>button, #background-stars, .ship_info, .arrow {
+div#subImg>button, #background_stars, .ship_info, .arrow,
+#stars {
 	background-image: url(images/ico_set.png);
 	background-size: 800px 800px;
 }
@@ -38,7 +42,11 @@ div#subImg>button, #background-stars, .ship_info, .arrow {
 
 /** bold **/
 
-.bold{font-weigth:bold;}
+.bold{font-weight:bold;}
+
+/** cursor **/
+.cursor:hover,div#subImg>img,
+div#subImg>button{cursor:pointer;}
 
 /** 상품 이미지 **/ 
 div#food_img{
@@ -73,6 +81,11 @@ div#subImg>button:last-child {
 	margin-left: 30px;
 }
 
+div#subImg>img {
+	width:90px;
+	height:90px;
+}
+
 div#rating{
 	width: 600px; 
 	height: 30px; 
@@ -86,7 +99,7 @@ div#rating li#review {
 	padding-right:10px;
 }
 
-#background-stars {
+#background_stars {
 	display: inline-block;
 	width: 88px;
 	height: 16px;
@@ -97,15 +110,60 @@ div#rating li#review {
 }
 
 span#stars {
+	display:block;
 	width: 88px;
 	height: 16px;
-	background-size: 88px 16px;
+	background-size: 500px 500px;
 	border: none;
+	background-position:-500px -239px;
 }
 
 li#review {
 	float: left;
 }
+
+/********************************************
+	지불 상세 정보 
+********************************************/
+div#pay_detail{
+	width: 500px; 
+	height: 800px; 
+	float: right;
+	text-align:left;
+}
+
+div#pay_detail span#new{
+	display:inline-block;
+	padding:5px;
+}
+
+#tit_info>span{
+	display:block;
+}
+
+div#tit_info>#new {
+	background-color:#BDD61A;
+}
+
+div#tit_info #sub_tit {
+	margin-top:12px;
+}
+div#tit_info #sub_tit,#tit{
+	font-size:25px;
+	font-family:'Noto Sans';
+}
+
+div#tit_info div#cook_detail{
+	margin-top:15px;
+	font-size:15px;
+}
+
+div#tit_info div#cook_detail span{
+	border-right:1px solid #00000070;
+	padding-right:7px;
+}
+
+div#tit_info div#cook_detail span:last-child{ border:none;}
 
 #order_step {
 	margin: 0;
@@ -180,34 +238,70 @@ li#review {
 }
 
 .cookImg {
-	margin-top: 100px;
+/* 	margin-top: 100px; */
 	width: 780px;
 }
 </style>
+<script src="http://localhost:9090/murkit/js/jquery-3.4.1.min.js"></script>
+<script>
+	$(document).ready(function(){
+	/** 맨 처음에 이미지로 border 설정 **/
+	$("#subImg>img:nth-child(2)").css("border","1px solid red").attr("id","selected");
+	/** 이미지 클릭시 클릭한 이미지를 메인으로 바꾸기 **/
+		$("div#subImg>img").click(function(){
+			//이전에 선택했던 사진의 border none
+			$("img#selected").css("border","none").attr("id","none");
+			
+			//border와 id값을 주고 id로 border를 해제 
+			$(this).css("border","1px solid red").attr("id","selected");
+			$("div#food_img>img").attr("src",$(this).attr("src"));
+		});
+	
+		/** 화살표 누르면 화살표 방향대로 사진이 바뀜**/
+		$("div#subImg>button").click(function(){
+				var child = $("div#subImg>img#selected").attr("class");
+				$("div#subImg>img#selected").attr("id","none").css("border","none");
+			if($(this).attr("id") == "menu_detail_img_arrow_left"){
+				$("div#subImg>img:nth-child("+child+")").attr("id","selected").css("border","1px solid red");
+				$("#food_img>img").attr("src",$("div#subImg>img:nth-child("+child+")").attr("src"));
+			}else {
+				$("div#subImg>img:nth-child("+(Number(child)+2)+")").attr("id","selected").css("border","1px solid red");
+				$("#food_img>img").attr("src",$("div#subImg>img:nth-child("+(Number(child)+2)+")").attr("src"));
+			}
+		});
+		
+		/** 별점 **/
+		var starWidth = $("span#star_number").text()*20-5;
+		$("span#stars").css("width",starWidth+"%");
+	});
+</script>
 </head>
 <body>
 	<div>
 		<jsp:include page="header.jsp"></jsp:include>
 		<div id="contents">
 			<div id="food_img">
-				<img src="http://localhost:9090/murkit/images/menu_detail/20191115092759821.jpg" />
+				<img src="http://localhost:9090/murkit/images/menu_detail/20191115092743402.jpg" />
 
 				<div>
 					<div id="subImg">
-						<button></button>
-						<img src="http://localhost:9090/murkit/images/menu_detail/20191115092743402(1).jpg" />
-						<img src="http://localhost:9090/murkit/images/menu_detail/20191115092759821(1).jpg" />
-						<img src="http://localhost:9090/murkit/images/menu_detail/20191115092810101(1).jpg" />
-						<img src="http://localhost:9090/murkit/images/menu_detail/20191115092815002(1).jpg" />
-						<img src="http://localhost:9090/murkit/images/menu_detail/20191115092819566(1).jpg" />
-						<button></button>
+						<button id="menu_detail_img_arrow_left"></button>
+						<img class="1" src="http://localhost:9090/murkit/images/menu_detail/20191115092743402.jpg" />
+						<img class="2" src="http://localhost:9090/murkit/images/menu_detail/20191115092759821.jpg" />
+						<img class="3" src="http://localhost:9090/murkit/images/menu_detail/20191115092810101.jpg" />
+						<img class="4" src="http://localhost:9090/murkit/images/menu_detail/20191115092815002.jpg" />
+						<img class="5" src="http://localhost:9090/murkit/images/menu_detail/20191115092819566.jpg" />
+						<button id="menu_detail_img_arrow_right"></button>
 					</div>
 					<div id="rating">
 						<ul>
 							<li id="review">
-								<div id="background-stars">
-									<span id="stars"></span>
-								</div> <span class="bold">4.7</span>
+								<div id="div_stars">
+									<span id="background_stars"> 
+										<span id="stars"></span>
+									</span>
+							<span class="bold" id="star_number">4.7</span>
+								</div> 
 							</li>
 
 							<li><span>리뷰수 <span class="bold">729</span> </span></li>
@@ -217,16 +311,19 @@ li#review {
 				</div>
 			</div>
 
-			<div id="pay_detail"
-				style="width: 500px; height: 800px; float: right;">
+			<div id="pay_detail">
 				<div>
-					<div>
-						<span>new</span> <span>구운김에 콩나물과 함께 올려먹는</span> <span>속초식
-							코다리찜</span> <span>원산지 : 상품정보 참조</span>
+					<div id="tit_info">
+						<span id="new">new</span> 
+						<span id="sub_tit" class="bold">구운김에 콩나물과 함께 올려먹는</span> 
+						<span id="tit" class="bold">속초식 코다리찜</span> 
+						<span>원산지 : 상품정보 참조</span>
 
-						<div>
-							<span>3인분</span> <span>조리 40분</span> <span>준비 30분</span> <span>적당히
-								매운맛</span>
+						<div id="cook_detail">
+							<span>3인분</span> 
+							<span>조리 40분</span> 
+							<span>준비 30분</span> 
+							<span>적당히 매운맛</span>
 						</div>
 
 						<hr>
@@ -307,7 +404,7 @@ li#review {
 							</div>
 
 							<div>
-								<span>속초시기 코다리찜</span>
+								<span>속초식 코다리찜</span>
 								<div id="number">
 									<a><span>-</span></a> <span>1</span> <a><span>+</span></a>
 								</div>

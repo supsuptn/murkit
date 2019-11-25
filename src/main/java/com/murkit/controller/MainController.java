@@ -40,4 +40,9 @@ public class MainController {
 		
 		return "/HappyCenter";
 	}
+	
+	@RequestMapping(value="/test.do", method=RequestMethod.GET)
+	public String test() {
+		return "test";
+	}
 }
