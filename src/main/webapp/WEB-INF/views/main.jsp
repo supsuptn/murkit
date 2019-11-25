@@ -264,8 +264,8 @@ div.clear {
 
 </head>
 <body>
-	<div class="main_1">
 	<jsp:include page="header.jsp"></jsp:include>
+	<div class="main_1">
 	
 		<!-- Swiper -->
 		<div class="swiper-container">
@@ -363,7 +363,7 @@ div.clear {
 			
 		</div>
 		
-	<jsp:include page="footer.jsp"></jsp:include>
 	</div>
+	<jsp:include page="footer.jsp"></jsp:include>
 </body>
 </html>
