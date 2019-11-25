@@ -7,6 +7,11 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @Controller
 public class MainController {
 	
+	@RequestMapping(value="/main.do", method=RequestMethod.GET)
+	public String main() {
+		return "main";
+	}
+	
 	@RequestMapping(value="/menu_detail.do", method=RequestMethod.GET)
 	public String menu_detail() {
 		return "menu_detail";
