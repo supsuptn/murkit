@@ -13,11 +13,14 @@
 	}
 	
 	/** inline-block **/
-	li,h1.logo,.list_gmenu,#logo_img,
+	h1.logo,.list_gmenu,#logo_img,
 	.my_gmenu {
 		display:inline-block;
 	}
 	
+	.util_wrap>ul>li,.list_gmenu>li,.my_gmenu>ul>li{
+		display:inline-block;
+	}
 	li>a{
 		text-decoration:none;
 		color:black;	
@@ -110,15 +113,15 @@
                <img  id="logo_img" src="http://localhost:9090/murkit/images/logo.png" />
                <ul class="list_gmenu" >
 
-						<li><a href="#" target="_self">∏‘≈∂º“∞≥</a></li>
+						<li><a href="#" >∏‘≈∂º“∞≥</a></li>
 
-						<li><a href="#" target="_self"><span class="red_dot">∏‘≈∂ ∏ﬁ¥∫</span></a></li>
+						<li><a href="#" ><span class="red_dot">∏‘≈∂ ∏ﬁ¥∫</span></a></li>
 	             		
-						<li><a href="#" target="_self">∏Æ∫‰</a></li>
+						<li><a href="#">∏Æ∫‰</a></li>
 					
-						<li><a href="#" target="_self">¿Ã∫•∆Æ</a></li>
+						<li><a href="#">¿Ã∫•∆Æ</a></li>
 	
-						<li><a href="#" target="_self">MY∏‘≈∂</a></li>
+						<li><a href="#">MY∏‘≈∂</a></li>
 					
                </ul>
                

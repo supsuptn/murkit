@@ -22,33 +22,58 @@ div#contents{
 }
 li {
 	list-style: none;
-	display: inline-block;
 }
 
 hr{
-	opacity:0.3;
+/* 	opacity:0.3; */
 }
 /** 아이콘 **/
 div#subImg>button, #background_stars, .ship_info, .arrow,
-#stars {
+#stars,#sell_select>div>span:last-child,div#choice div>span.xBtn,
+div#cart_add>div:first-child>span {
 	background-image: url(images/ico_set.png);
 	background-size: 800px 800px;
 }
-
 .ship_info, #icon_person {
 	background-image: url(images/ico_set2.png);
 	background-size: 800px 800px;
 }
 
 /** bold **/
-
-.bold{font-weight:bold;}
+.bold,div#number_price,div#detail_menu>ul>a>li,
+div#view_detail>div>span:first-child{font-weight:bold;}
 
 /** cursor **/
 .cursor:hover,div#subImg>img,
 div#subImg>button{cursor:pointer;}
 
-/** 상품 이미지 **/ 
+/** text-align right **/ 
+.text-align-right{ text-align:right;}
+
+/** font-size **/
+div#tit_info #sub_tit,#tit{
+	font-size:25px;
+	font-family:'Noto Sans';
+}
+
+div#tit_info div#cook_detail{font-size:15px;}
+div#price_div dt, #discount dt,
+#send_info dt,dd,#deadline,div#view_detail>div>span:nth-child(2),
+.order_step_span{font-size:13px;}
+div#price_div dt,div#choice>div>span,div#choice>div>div>span{ font-size:15px;}
+#sell_select>#sell_btn button{font-size:16px;}
+div#price_div dd,div#number_price,div#detail_menu>ul>a>li,
+div#view_detail>div>span:first-child{font-size:20px;}
+div#number_price>div{font-size:23px;}
+
+/** display:inline-block;**/
+div#number_price>div,
+div#cart_add>div,div#cart_add>div:first-child>span,
+div#cart_add>div:last-child>span,div#detail_menu>ul>a>li,
+div#view_detail{display:inline-block;}
+/****************************************
+ 	상품 이미지 
+ ***************************************/ 
 div#food_img{
  	width: 600px; 
  	height: 800px; 
@@ -148,14 +173,10 @@ div#tit_info>#new {
 div#tit_info #sub_tit {
 	margin-top:12px;
 }
-div#tit_info #sub_tit,#tit{
-	font-size:25px;
-	font-family:'Noto Sans';
-}
+
 
 div#tit_info div#cook_detail{
 	margin-top:15px;
-	font-size:15px;
 }
 
 div#tit_info div#cook_detail span{
@@ -164,6 +185,261 @@ div#tit_info div#cook_detail span{
 }
 
 div#tit_info div#cook_detail span:last-child{ border:none;}
+
+div#price_div dt, #discount dt,
+#send_info dt {
+	display:inline-block;
+	width:80px;
+}
+dd{display:inline-block;}
+
+#send_info hr:last-child{
+	border:1px solid black;
+	opacity:1;
+}
+
+/* 결제 선택 */
+#cart_info {
+	margin-top:32px;
+}
+
+#cart_info>div:first-child>div{
+	display:inline-block;
+}
+
+#deadline{margin-left:299px;}
+
+
+#sell_select ul li button {
+	float:left;
+	display:block;
+}
+#sell_select{
+	width:500px;
+	margin-top:20px;
+	border:1px solid #ccc;
+}
+#sell_select>div.sell_btn span {
+	float:left;
+	height:45px;
+	padding-left:18px;
+	line-height:46px;
+}
+#sell_select>div:first-child{
+	display:block;
+	width:500px;
+	height:46px;
+}
+
+#sell_select>div>span:last-child{
+	width: 2px;
+    height: 28px;
+    background-position: -743px 2px;
+    transform: rotate(-90deg);
+    margin-left: 241px;
+    margin-top: 13px;
+}
+#sell_select>#sell_btn button{
+	display:block;
+	background-color:white;
+	border:none;
+	width:500px;
+	text-align:left;
+	padding:0;
+	margin:0;
+	height:48px;
+	padding-left:20px;
+}
+
+#sell_select>#sell_btn button:hover{
+	background-color:#ccc;
+}
+#sell_btn{
+	width:500px;
+	display:none;
+}
+
+#sell_btn ul {
+	padding:0;
+	margin:0;
+}
+#sell_btn li {
+	overflow:hidden;
+}
+
+#select_date{
+	border-bottom:1px solid #ccc;
+}
+
+div#choice {
+	border:1px solid #ccc;
+	margin-top:24px;
+	width:500px;
+	height:135px;
+	overflow:hidden;
+}
+
+div#choice>div{
+	margin:15px 24px 8px 21px;
+}
+
+div#choice>div>span{
+    height: 20px;
+    display: inline-block;
+    float: left;
+}
+
+div#choice>div#choice_top, div#choice>div#choice_bottom>span {
+	margin-top:25px;
+}
+
+div#choice>div>div{
+	display:inline-block;
+}
+
+div#choice>div>div>span{ float:left; }
+div#choice div>span.xBtn{
+	display:inline-block;
+	width:20px;
+	height:20px;
+	background-position:-321px 0px;
+	margin-left:322px;
+}
+
+div#choice div>span.xBtn:hover{
+	cursor:pointer;
+}
+div#choice>div#choice_bottom{
+	margin-bottom:15px;
+	width:500px;
+	height:48px;
+}
+div#choice>div>div#number{
+	border:1px solid #ccc;
+	float:left;
+	padding:10px;	
+	margin-left: 85px;
+    margin-right: 125px;
+}
+
+div#choice>div>div#number>span{
+	padding:5px;
+	height:20px;
+	display:inline-block;
+	line-height: 25px;
+}
+
+div#pay_detail>div#cart_info>div:last-child{
+	margin-top:24px;
+}
+
+div#number_price>div{
+	margin-left: 310px;
+	color:red;
+}
+div#cart_add{
+	margin-top:12px;
+}
+div#cart_add>div:first-child{
+	width:64px;
+	height:64px;
+	border:1px solid black;
+	float:left;
+}
+div#cart_add>div:first-child>span{
+	width:30px;
+	height:30px;
+	background-position:-710px -324px;
+	margin:17px 17px;
+}
+
+div#cart_add>div:last-child{
+	height:64px;
+	width:420px;
+	border:1px solid red;
+	float:left;
+	margin-left:10px;
+	background-color:red;
+}
+
+div#cart_add>div:last-child>span{
+	width: 92px;
+    height: 20px;
+    padding: 15px;
+    margin: 7px 149px;
+}
+/***********************************************************
+	#detail_menu
+***********************************************************/
+
+div#detail {
+	width: 100%; 
+	text-align: center; 
+	margin: auto; 
+	display: inline-block;
+}
+
+div#detail>div#detail_menu{
+	width: 1180px; 
+	text-align: center; 
+	margin: auto;
+	display:block;
+}
+
+div#detail_menu>ul{
+	text-align: left;
+	display:block;
+	margin:0;
+	padding:0;
+}
+
+div#detail_menu>ul>a>li{
+	color:black;
+	padding-bottom: 20px;
+    padding: 20px 50px;
+}
+
+div#detail_menu>ul>a:first-child>li{
+	border-bottom: 3px solid black;
+}
+
+
+div#detail>hr{
+ width: 100%; 
+ margin: 0; 
+ opacity: 0.3;
+}
+
+/***********************************************************
+  상세 설명 
+***********************************************************/
+
+div#view_detail{
+	width: 1180px; 
+	overflow:hidden; 
+	display:table; 
+	border-collapse:collapse;
+	text-align: center;
+	margin: auto;
+}
+
+div#view_detail>div{
+	width: 780px; 
+	margin-top: 100px; 
+	display: inline-block; 
+	float: left;
+	border-right:2px solid tomato;
+}
+
+div#view_detail img {
+	width:780px;
+}
+
+div#view_detail>div>span{
+	display: block;
+	text-align: left;
+	margin:4px 0px;
+}
 
 #order_step {
 	margin: 0;
@@ -177,6 +453,7 @@ div#tit_info div#cook_detail span:last-child{ border:none;}
 	margin: 0;
 	padding: 0;
 	margin-top: 50px;
+	text-align: left;
 }
 
 #order_step li {
@@ -188,6 +465,15 @@ div#tit_info div#cook_detail span:last-child{ border:none;}
 	display: inline-block;
 	float: left;
 }
+
+.order_step_span {
+	margin-top: 34px;
+}
+
+/***********************************************************
+ 
+***********************************************************/
+
 
 .ship_info {
 	width: 104px;
@@ -209,9 +495,6 @@ div#tit_info div#cook_detail span:last-child{ border:none;}
 	background-position: -228px -130px;
 }
 
-.order_step_span {
-	margin-top: 34px;
-}
 
 .arrow {
 	width: 33px;
@@ -241,10 +524,19 @@ div#tit_info div#cook_detail span:last-child{ border:none;}
 /* 	margin-top: 100px; */
 	width: 780px;
 }
+
+div#inner{
+display:table;
+	border-collapse:collapse;
+}
 </style>
 <script src="http://localhost:9090/murkit/js/jquery-3.4.1.min.js"></script>
 <script>
 	$(document).ready(function(){
+	/** 별점 **/
+	var starWidth = $("span#star_number").text()*20-5;
+	$("span#stars").css("width",starWidth+"%");
+		
 	/** 맨 처음에 이미지로 border 설정 **/
 	$("#subImg>img:nth-child(2)").css("border","1px solid red").attr("id","selected");
 	/** 이미지 클릭시 클릭한 이미지를 메인으로 바꾸기 **/
@@ -270,9 +562,52 @@ div#tit_info div#cook_detail span:last-child{ border:none;}
 			}
 		});
 		
-		/** 별점 **/
-		var starWidth = $("span#star_number").text()*20-5;
-		$("span#stars").css("width",starWidth+"%");
+		/** 버튼 펴기 **/
+		$("div#sell_select>div>span").click(function(){
+			if($("#sell_btn").attr("class") =="close"){
+				$("#sell_select>div>span:last-child").css("transform","rotate(90deg)").css("margin-top","8px");
+	 			$("#sell_btn").attr("class","open").css("display","block");
+			}else {
+				$("#sell_select>div>span:last-child").css("transform","rotate(-90deg)").css("margin-top","13px");
+ 	 			$("#sell_btn").attr("class","close").css("display","none");
+			}
+		});
+
+		/** 날짜 선택 button, div 생성 **/
+		$("div#sell_btn button").click(function(){
+			var id = $(this).attr("id");
+			var date = $(this).text();
+			var cookName = $("span#tit").text();
+			var price = $("dd#price").text();
+			var str = "<div id='choice' class=" +id
+						+"><div id='choice_top'><span>"
+						+date
+						+"</span><div>"
+						+"<span class='xBtn' id=" +id
+						+"></span></div></div>"
+						+"<hr><div id='choice_bottom'><span>"
+						+cookName
+						+"</span>"
+						+"<div id='number'><span class='cursor'>-</span><span>1</span><span class='cursor'>+</span></div>"
+						+"<span>"
+						+price
+						+"</span></div></div>";
+			/** 이미 있는 경우 생성하지 않음. **/
+			if($("div."+id).attr("class")!=id){
+				$("div#cart_info>div:last-child").before(str);
+			}
+			
+			//x버튼 클릭시 remove 
+			$("div#choice>div#choice_top>div>span").click(function(){
+				$("div."+$(this).attr("id")).remove();
+			});
+			
+			//개수 추가&삭제
+			$("div#number>span:first-child").click(function(){
+				alert("dd");
+			});
+		});
+
 	});
 </script>
 </head>
@@ -329,10 +664,10 @@ div#tit_info div#cook_detail span:last-child{ border:none;}
 						<hr>
 					</div>
 
-					<div id="price">
+					<div id="price_div">
 						<dl>
 							<dt>판매가</dt>
-							<dd>24,800원</dd>
+							<dd class="bold" id="price">24,800원</dd>
 						</dl>
 
 						<hr>
@@ -340,132 +675,111 @@ div#tit_info div#cook_detail span:last-child{ border:none;}
 
 					<div id="discount">
 						<dl>
-							<dd>포인트적립</dd>
-							<dt>
+							<dt>포인트적립</dt>
+							<dd>
 								murkit 포인트 <span>0.2% 적립</span>
-							</dt>
+							</dd>
 						</dl>
 
 					</div>
 
 					<div id="send_info">
 						<dl>
-							<dd>배송방법</dd>
-							<dt>새벽배송</dt>
+							<dt>배송방법</dt>
+							<dd>새벽배송</dd>
 						</dl>
 
 						<dl>
-							<dd>배송비</dd>
-							<dt>
+							<dt>배송비</dt>
+							<dd>
 								3,000원 <span>4만원 이상 구매시 무료배송 </span>
-							</dt>
+							</dd>
 						</dl>
+					<hr>
 					</div>
 
-					<hr>
 				</div>
 
 				<div id="cart_info">
 					<div>
 						<div>
-							<input type="radio"><label>장바구니</label>
+							<input type="radio" checked><label>장바구니</label>
 						</div>
 
-						<div>
+						<div class="text-align-right" id="deadline">
 							<span>주문마감시간 오전7시</span>
 						</div>
 					</div>
 
-					<div>
-						<a><span>배송받을 날짜를 선택하세요.</span></a>
-						<div>
+					<div id="sell_select">
+						<div class="sell_btn" id="select_date">
+							<span>배송받을 날짜를 선택하세요.</span>
+							<span class="cursor"></span>
+						</div>
+						<div id="sell_btn" class="close">
 							<ul>
-								<li><button type="button" class="btn_date">11월
-										22일 (금)</button></li>
-
-								<li><button type="button" class="btn_date">11월
-										23일 (토)</button></li>
-
-								<li><button type="button" class="btn_date">11월
-										26일 (화)</button></li>
-
-								<li><button type="button" class="btn_date">11월
-										27일 (수)</button></li>
-
-								<li><button type="button" class="btn_date">11월
-										28일 (목)</button></li>
-
+								<li><button type="button" class="btn_date" id="1122">2019-11-22(금)</button></li>
+								<li><button type="button" class="btn_date" id="1123">2019-11-23(토)</button></li>
+								<li><button type="button" class="btn_date" id="1126">2019-11-26(화)</button></li>
+								<li><button type="button" class="btn_date" id="1127">2019-11-27(수)</button></li>
+								<li><button type="button" class="btn_date" id="1128">2019-11-28(목)</button></li>
 							</ul>
 						</div>
+					</div>
 
-						<div>
+					<div>
+						<div id="number_price">
+							<span>수량 1개</span>
 							<div>
-								<span>2019-11-23(토)</span> <img />
-							</div>
-
-							<div>
-								<span>속초식 코다리찜</span>
-								<div id="number">
-									<a><span>-</span></a> <span>1</span> <a><span>+</span></a>
-								</div>
 								<span>24,800원</span>
 							</div>
 						</div>
 
-						<div>
-							<div>
-								<span>수량 1개</span>
-								<div>
-									<span>24,800원</span>
-								</div>
-							</div>
-
-							<div>
-								<a href="#"><img src="" />하트</a> <a href="#"><div>
-										<span>장바구니 담기</span>
-									</div></a>
-							</div>
+						<div id="cart_add">
+							<div><span></span></div>
+							<div><span>장바구니 담기</span></div>
 						</div>
 					</div>
+					
 				</div>
 			</div>
 
 		</div>
 
-		<div id="detail"
-			style="width: 100%; text-align: center; margin: auto; display: inline-block;">
-			<div id="detail_menu"
-				style="width: 1180px; height: 64px; text-align: center; margin: auto;">
-				<ul style="text-align: left;">
-					<a href="#"><li style="line-height: 89px;">상세설명</li></a>
-					<a href="#"><li style="line-height: 89px;">상품정보</li></a>
-					<a href="#"><li style="line-height: 89px;">리뷰 (0개)</li></a>
-					<a href="#"><li style="line-height: 89px;">배송/반품/문의</li></a>
-
+		<div id="detail">
+			<div id="detail_menu">
+				<ul>
+					<a href="#"><li>상세설명</li></a>
+					<a href="#"><li>상품정보</li></a>
+					<a href="#"><li>리뷰 (0개)</li></a>
+					<a href="#"><li>배송/반품/문의</li></a>
 				</ul>
 			</div>
-			<hr style="width: 100%; margin: 0; opacity: 0.3;">
+			<hr>
 
-			<div style="width: 1180px; display: inline-block;">
-				<div
-					style="width: 780px; margin-top: 100px; display: inline-block; float: left;">
-					<span style="display: block; text-align: left;">주문 정보 안내</span> <span
-						style="display: block; text-align: left;">오전7시 이전에 구매하시면
-						다음날 새벽에 받아보실 수 있습니다.</span>
+			<div id="view_detail">
+				<div>
+					<span>주문 정보 안내</span> 
+					<span>오전7시 이전에 구매하시면 다음날 새벽에 받아보실 수 있습니다.</span>
 
 					<div id="order_step">
-						<ul style="text-align: left;">
-							<li><span class="ship_info" id="ship_icon_1"></span> <span
-								class="order_step_span">오전 7시 이전<br>주문/결제 완료
-							</span> <span class="arrow"></span></li>
+						<ul>
+							<li>
+							<span class="ship_info" id="ship_icon_1"></span> 
+							<span class="order_step_span">오전 7시 이전<br>주문/결제 완료</span>
+							<span class="arrow"></span>
+							</li>
 
-							<li><span class="ship_info" id="ship_icon_2"></span> <span
-								class="order_step_span">당일 재료 <br>준비/발송
-							</span> <span class="arrow"></span></li>
+							<li>
+							<span class="ship_info" id="ship_icon_2"></span> 
+							<span class="order_step_span">당일 재료 <br>준비/발송</span> 
+							<span class="arrow"></span>
+							</li>
 
-							<li><span class="ship_info" id="ship_icon_3"></span> <span
-								class="order_step_span">다음날<br>새벽수령
-							</span></li>
+							<li>
+							<span class="ship_info" id="ship_icon_3"></span> 
+							<span class="order_step_span">다음날<br>새벽수령</span>
+							</li>
 
 						</ul>
 					</div>
@@ -538,7 +852,7 @@ div#tit_info div#cook_detail span:last-child{ border:none;}
 					</div>
 				</div>
 				<div id="inner"
-					style="display: inline-block; width: 320px; float: left; margin-top: 100px; margin-left: 78px; border: 1px solid #ccc;">
+					style="display: inline-block; width: 320px; float: left; margin-top: 100px; margin-left: 76px; border: 1px solid #ccc;">
 					<div>
 						<input type="radio" />
 						<lable>장바구니</lable>
