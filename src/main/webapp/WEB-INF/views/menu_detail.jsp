@@ -5,534 +5,12 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
 <title>Menu_detail</title>
-<style>
-body {
-	width: 100%;
-	magin: 0;
-	padding: 0;
-	font-family: '나눔스퀘어라운드';
-}
-div#contents{
-	width: 1180px; 
-	height: 800px; 
-	text-align: center; 
-	margin: auto; 
-	display: block; 
-	margin-top:100px;
-}
-li {
-	list-style: none;
-}
-
-hr{
-/* 	opacity:0.3; */
-}
-/** 아이콘 **/
-div#subImg>button, #background_stars, .ship_info, .arrow,
-#stars,#sell_select>div>span:last-child,div#choice div>span.xBtn,
-div#cart_add>div:first-child>span {
-	background-image: url(images/ico_set.png);
-	background-size: 800px 800px;
-}
-.ship_info, #icon_person {
-	background-image: url(images/ico_set2.png);
-	background-size: 800px 800px;
-}
-
-/** bold **/
-.bold,div#number_price,div#detail_menu>ul>a>li,
-div#view_detail>div>span:first-child{font-weight:bold;}
-
-/** cursor **/
-.cursor:hover,div#subImg>img,
-div#subImg>button{cursor:pointer;}
-
-/** text-align right **/ 
-.text-align-right{ text-align:right;}
-
-/** font-size **/
-div#tit_info #sub_tit,#tit{
-	font-size:25px;
-	font-family:'Noto Sans';
-}
-
-div#tit_info div#cook_detail{font-size:15px;}
-div#price_div dt, #discount dt,
-#send_info dt,dd,#deadline,div#view_detail>div>span:nth-child(2),
-.order_step_span{font-size:13px;}
-div#price_div dt,div#choice>div>span,div#choice>div>div>span{ font-size:15px;}
-#sell_select>#sell_btn button{font-size:16px;}
-div#price_div dd,div#number_price,div#detail_menu>ul>a>li,
-div#view_detail>div>span:first-child{font-size:20px;}
-div#number_price>div{font-size:23px;}
-
-/** display:inline-block;**/
-div#number_price>div,
-div#cart_add>div,div#cart_add>div:first-child>span,
-div#cart_add>div:last-child>span,div#detail_menu>ul>a>li,
-div#view_detail{display:inline-block;}
-/****************************************
- 	상품 이미지 
- ***************************************/ 
-div#food_img{
- 	width: 600px; 
- 	height: 800px; 
- 	float: left;
-}
-
-div#subImg{
-	height: 90px;
-	overflow: hidden;
-	margin-top:20px;
-}
-
-div#subImg>button {
-	width: 32px;
-	height: 32px;
-	background-position: -674px 0px;
-	background-color: transparent;
-	border: none;
-	position: absolute;
-	opacity: 0.3;
-	margin-top: 34px;
-}
-
-div#subImg>button:first-child {
-	margin-left: -58px;
-}
-
-div#subImg>button:last-child {
-	background-position: -706px 0px;
-	margin-left: 30px;
-}
-
-div#subImg>img {
-	width:90px;
-	height:90px;
-}
-
-div#rating{
-	width: 600px; 
-	height: 30px; 
-	margin-top: 20px; 
-	text-align: left;
-}
-
-div#rating li#review {
-	margin-right:10px;
-	border-right:1px solid #ccc;
-	padding-right:10px;
-}
-
-#background_stars {
-	display: inline-block;
-	width: 88px;
-	height: 16px;
-	background-size: 500px 500px;
-	background-position: 0px 276px;
-	border: none;
-	margin-left: 24px;
-}
-
-span#stars {
-	display:block;
-	width: 88px;
-	height: 16px;
-	background-size: 500px 500px;
-	border: none;
-	background-position:-500px -239px;
-}
-
-li#review {
-	float: left;
-}
-
-/********************************************
-	지불 상세 정보 
-********************************************/
-div#pay_detail{
-	width: 500px; 
-	height: 800px; 
-	float: right;
-	text-align:left;
-}
-
-div#pay_detail span#new{
-	display:inline-block;
-	padding:5px;
-}
-
-#tit_info>span{
-	display:block;
-}
-
-div#tit_info>#new {
-	background-color:#BDD61A;
-}
-
-div#tit_info #sub_tit {
-	margin-top:12px;
-}
-
-
-div#tit_info div#cook_detail{
-	margin-top:15px;
-}
-
-div#tit_info div#cook_detail span{
-	border-right:1px solid #00000070;
-	padding-right:7px;
-}
-
-div#tit_info div#cook_detail span:last-child{ border:none;}
-
-div#price_div dt, #discount dt,
-#send_info dt {
-	display:inline-block;
-	width:80px;
-}
-dd{display:inline-block;}
-
-#send_info hr:last-child{
-	border:1px solid black;
-	opacity:1;
-}
-
-/* 결제 선택 */
-#cart_info {
-	margin-top:32px;
-}
-
-#cart_info>div:first-child>div{
-	display:inline-block;
-}
-
-#deadline{margin-left:299px;}
-
-
-#sell_select ul li button {
-	float:left;
-	display:block;
-}
-#sell_select{
-	width:500px;
-	margin-top:20px;
-	border:1px solid #ccc;
-}
-#sell_select>div.sell_btn span {
-	float:left;
-	height:45px;
-	padding-left:18px;
-	line-height:46px;
-}
-#sell_select>div:first-child{
-	display:block;
-	width:500px;
-	height:46px;
-}
-
-#sell_select>div>span:last-child{
-	width: 2px;
-    height: 28px;
-    background-position: -743px 2px;
-    transform: rotate(-90deg);
-    margin-left: 241px;
-    margin-top: 13px;
-}
-#sell_select>#sell_btn button{
-	display:block;
-	background-color:white;
-	border:none;
-	width:500px;
-	text-align:left;
-	padding:0;
-	margin:0;
-	height:48px;
-	padding-left:20px;
-}
-
-#sell_select>#sell_btn button:hover{
-	background-color:#ccc;
-}
-#sell_btn{
-	width:500px;
-	display:none;
-}
-
-#sell_btn ul {
-	padding:0;
-	margin:0;
-}
-#sell_btn li {
-	overflow:hidden;
-}
-
-#select_date{
-	border-bottom:1px solid #ccc;
-}
-
-div#choice {
-	border:1px solid #ccc;
-	margin-top:24px;
-	width:500px;
-	height:135px;
-	overflow:hidden;
-}
-
-div#choice>div{
-	margin:15px 24px 8px 21px;
-}
-
-div#choice>div>span{
-    height: 20px;
-    display: inline-block;
-    float: left;
-}
-
-div#choice>div#choice_top, div#choice>div#choice_bottom>span {
-	margin-top:25px;
-}
-
-div#choice>div>div{
-	display:inline-block;
-}
-
-div#choice>div>div>span{ float:left; }
-div#choice div>span.xBtn{
-	display:inline-block;
-	width:20px;
-	height:20px;
-	background-position:-321px 0px;
-	margin-left:322px;
-}
-
-div#choice div>span.xBtn:hover{
-	cursor:pointer;
-}
-div#choice>div#choice_bottom{
-	margin-bottom:15px;
-	width:500px;
-	height:48px;
-}
-div#choice>div>div#number{
-	border:1px solid #ccc;
-	float:left;
-	padding:10px;	
-	margin-left: 85px;
-    margin-right: 125px;
-}
-
-div#choice>div>div#number>span{
-	padding:5px;
-	height:20px;
-	display:inline-block;
-	line-height: 25px;
-}
-
-div#pay_detail>div#cart_info>div:last-child{
-	margin-top:24px;
-}
-
-div#number_price>div{
-	margin-left: 310px;
-	color:red;
-}
-div#cart_add{
-	margin-top:12px;
-}
-div#cart_add>div:first-child{
-	width:64px;
-	height:64px;
-	border:1px solid black;
-	float:left;
-}
-div#cart_add>div:first-child>span{
-	width:30px;
-	height:30px;
-	background-position:-710px -324px;
-	margin:17px 17px;
-}
-
-div#cart_add>div:last-child{
-	height:64px;
-	width:420px;
-	border:1px solid red;
-	float:left;
-	margin-left:10px;
-	background-color:red;
-}
-
-div#cart_add>div:last-child>span{
-	width: 92px;
-    height: 20px;
-    padding: 15px;
-    margin: 7px 149px;
-}
-/***********************************************************
-	#detail_menu
-***********************************************************/
-
-div#detail {
-	width: 100%; 
-	text-align: center; 
-	margin: auto; 
-	display: inline-block;
-}
-
-div#detail>div#detail_menu{
-	width: 1180px; 
-	text-align: center; 
-	margin: auto;
-	display:block;
-}
-
-div#detail_menu>ul{
-	text-align: left;
-	display:block;
-	margin:0;
-	padding:0;
-}
-
-div#detail_menu>ul>a>li{
-	color:black;
-	padding-bottom: 20px;
-    padding: 20px 50px;
-}
-
-div#detail_menu>ul>a:first-child>li{
-	border-bottom: 3px solid black;
-}
-
-
-div#detail>hr{
- width: 100%; 
- margin: 0; 
- opacity: 0.3;
-}
-
-/***********************************************************
-  상세 설명 
-***********************************************************/
-
-div#view_detail{
-	width: 1180px; 
-	overflow:hidden; 
-	display:table; 
-	border-collapse:collapse;
-	text-align: center;
-	margin: auto;
-}
-
-div#view_detail>div{
-	width: 780px; 
-	margin-top: 100px; 
-	display: inline-block; 
-	float: left;
-	border-right:2px solid tomato;
-}
-
-div#view_detail img {
-	width:780px;
-}
-
-div#view_detail>div>span{
-	display: block;
-	text-align: left;
-	margin:4px 0px;
-}
-
-#order_step {
-	margin: 0;
-	padding: 0;
-	width: 780px;
-	display: block;
-	height: 104px;
-}
-
-#order_step ul {
-	margin: 0;
-	padding: 0;
-	margin-top: 50px;
-	text-align: left;
-}
-
-#order_step li {
-	float: left;
-	left: 0;
-}
-
-#order_step span {
-	display: inline-block;
-	float: left;
-}
-
-.order_step_span {
-	margin-top: 34px;
-}
-
-/***********************************************************
- 
-***********************************************************/
-
-
-.ship_info {
-	width: 104px;
-	height: 104px;
-	display: inline-block;
-	margin: 0 16px 0 32px;
-}
-
-#ship_icon_1 {
-	background-position: 0 -130px;
-	margin: 0;
-}
-
-#ship_icon_2 {
-	background-position: -116px -130px;
-}
-
-#ship_icon_3 {
-	background-position: -228px -130px;
-}
-
-
-.arrow {
-	width: 33px;
-	height: 53px;
-	background-position: -498px 0px;
-	margin: 30px 0 0 20px;
-}
-
-#icon_person {
-	text-align: right;
-	width: 20px;
-	height: 20px;
-	background-position: -534px -78px;
-	display: inline-block;
-}
-
-#kit_consist {
-	text-align: left;
-}
-
-#kit_consist>div>div {
-	margin-left: 567px;
-	display: inline-block;
-}
-
-.cookImg {
-/* 	margin-top: 100px; */
-	width: 780px;
-}
-
-div#inner{
-display:table;
-	border-collapse:collapse;
-}
-</style>
+<link rel="stylesheet" type="text/css" href="http://localhost:9090/murkit/css/menu_detail.css">
 <script src="http://localhost:9090/murkit/js/jquery-3.4.1.min.js"></script>
 <script>
 	$(document).ready(function(){
+		var bot_menu = "det_explain";
+		
 	/** 별점 **/
 	var starWidth = $("span#star_number").text()*20-5;
 	$("span#stars").css("width",starWidth+"%");
@@ -603,11 +81,23 @@ display:table;
 			});
 			
 			//개수 추가&삭제
-			$("div#number>span:first-child").click(function(){
-				alert("dd");
-			});
+			
 		});
-
+		
+		$("div#detail_menu>ul>li").click(function(){
+			//이전에 선택되었던 메뉴와 하단의 내용 해제, 메뉴 하단에 border 
+			//메뉴 클릭에 따라서 하단의 내용을 바꿈.
+			$("li#"+bot_menu).css("border","none");
+			$("div."+bot_menu).css("display","none");
+			
+			bot_menu = $(this).attr("id");
+			$("li#"+bot_menu).css("border-bottom","3px solid black");
+			$("div."+bot_menu).css("display","block");
+			
+			
+			
+			
+		});
 	});
 </script>
 </head>
@@ -749,16 +239,16 @@ display:table;
 		<div id="detail">
 			<div id="detail_menu">
 				<ul>
-					<a href="#"><li>상세설명</li></a>
-					<a href="#"><li>상품정보</li></a>
-					<a href="#"><li>리뷰 (0개)</li></a>
-					<a href="#"><li>배송/반품/문의</li></a>
+					<li id="det_explain">상세설명</li>
+					<li id="pro_info">상품정보</li>
+					<li id="det_review">리뷰 (0개)</li>
+					<li id="shipRefund">배송/반품/문의</li>
 				</ul>
 			</div>
 			<hr>
 
 			<div id="view_detail">
-				<div>
+				<div class="det_explain">
 					<span>주문 정보 안내</span> 
 					<span>오전7시 이전에 구매하시면 다음날 새벽에 받아보실 수 있습니다.</span>
 
@@ -783,13 +273,13 @@ display:table;
 
 						</ul>
 					</div>
-
+				<div id="bottom_left">
 					<div class="product_detail">
 						<img src="images/menu_detail/0051_pc_detail_01.jpg" />
 					</div>
 
-					<div class="title">
-						<p>속초식 코다리찜</p>
+					<div class="title" >
+						<p class="bold">속초식 코다리찜</p>
 					</div>
 
 					<div class="explain">
@@ -802,8 +292,8 @@ display:table;
 						<img src="images/menu_detail/0051_pc_detail_02.gif" />
 					</div>
 
-					<div class="title">
-						<p>구운 김에 코다리살과 아삭한 콩나물을 얹으니 별미</p>
+					<div class="subtitle">
+						<p class="bold">구운 김에 코다리살과 아삭한 콩나물을 얹으니 별미</p>
 					</div>
 
 					<div class="explain">
@@ -814,14 +304,14 @@ display:table;
 					</div>
 
 					<div class="product_detail">
-						<img src="images/menu_detail/0051_pc_detail_02.jpg" /> <img
-							src="images/menu_detail/0051_pc_detail_03.jpg" /> <img
-							src="images/menu_detail/0051_pc_detail_04.jpg" />
+						<img src="images/menu_detail/0051_pc_detail_02.jpg" /> 
+						<img src="images/menu_detail/0051_pc_detail_03.jpg" /> 
+						<img src="images/menu_detail/0051_pc_detail_04.jpg" />
 					</div>
 
 					<div id="kit_consist">
 						<div>
-							<span>이렇게 보내드려요!</span>
+							<span class="bold">이렇게 보내드려요!</span>
 
 							<div>
 								<span id="icon_person"></span> <span>3인분</span>
@@ -831,31 +321,192 @@ display:table;
 						</div>
 
 						<div>
-							<p>1.코다리 1팩 2.조림용고추장양념 1팩 3.혼합채소 [꽈리고추, 청양고추] 1팩 4.무 1팩 5.콩나물
+							<p class="bold">1.코다리 1팩 2.조림용고추장양념 1팩 3.혼합채소 [꽈리고추, 청양고추] 1팩 4.무 1팩 5.콩나물
 								1팩 6.구운 김 1팩 7.고추기름 1팩 8.고춧가루 1팩</p>
 							<span>*수급상황에 따라 일부 재료는 변경될 수 있습니다.</span>
 						</div>
 
-						<img
-							src="http://localhost:9090/murkit/images/menu_detail/20191115093608367.jpg" />
+						<img src="http://localhost:9090/murkit/images/menu_detail/20191115093608367.jpg" />
 
-						<img class="cookImg"
-							src="http://localhost:9090/murkit/images/menu_detail/BeforeCook.jpg" />
-						<img class="cookImg"
-							src="http://localhost:9090/murkit/images/menu_detail/cook1.jpg" />
-						<img
-							src="http://localhost:9090/murkit/images/menu_detail/cook2.jpg" />
-						<img
-							src="http://localhost:9090/murkit/images/menu_detail/cook3.jpg" />
-						<img
-							src="http://localhost:9090/murkit/images/menu_detail/cook4.jpg" />
+						<img class="cookImg" src="http://localhost:9090/murkit/images/menu_detail/BeforeCook.jpg" />
+						<img class="cookImg" src="http://localhost:9090/murkit/images/menu_detail/cook1.jpg" />
+						<img src="http://localhost:9090/murkit/images/menu_detail/cook2.jpg" />
+						<img src="http://localhost:9090/murkit/images/menu_detail/cook3.jpg" />
+						<img src="http://localhost:9090/murkit/images/menu_detail/cook4.jpg" />
 					</div>
 				</div>
-				<div id="inner"
-					style="display: inline-block; width: 320px; float: left; margin-top: 100px; margin-left: 76px; border: 1px solid #ccc;">
+			</div>	
+			
+			<div class="pro_info">
+				<label class="bold">상품정보</label>
+				<label>상품코드 : 40003724</label>
+				<label>먹킷 상품정보는 전자상거래 등에서의 상품정보 제공 고시에 따라 작성되었습니다.</label>
+				
+				<table border=1>
+					<tr>
+						<th>본상품구성</th>
+						<td>상품 상세 별도 표기</td>
+					</tr>
+					
+					<tr>
+						<th>주원료/원산지</th>
+						<td>상품 상세 별도 표기</td>
+					</tr>
+					
+					
+					<tr>
+						<th>원재료 및 함량</th>
+						<td>상품 상세 별도 표기</td>
+					</tr>
+					
+					
+					<tr>
+						<th>식품의 유형</th>
+						<td>상품 상세 별도 표기</td>
+					</tr>
+					
+					
+					<tr>
+						<th>제조연월일, 유통기한 또는 품질유지기한</th>
+						<td>구성품 내 표시사항 참고</td>
+					</tr>
+					
+					
+					<tr>
+						<th>생산자 및 소재지(수입품의 경우 생산자, 수입자 및 제조국)</th>
+						<td>상품 상세 별도 표기</td>
+					</tr>
+					
+					
+					<tr>
+						<th>포장단위별 용량(중량), 수량</th>
+						<td>상품 상세 별도 표기</td>
+					</tr>
+					
+					<tr>
+						<th>영양성분</th>
+						<td>해당사항 없음</td>
+					</tr>
+					<tr>
+						<th>유전자재조합식품에 해당하는 경우의 표시</th>
+						<td>해당사항 없음</td>
+					</tr>
+					<tr>
+						<th>영유아식 또는 체중조절식품 등에 해당하는 경우 표시광고사전심의필 유무 및 부작용 발생 가능성</th>
+						<td>해당사항 없음</td>
+					</tr>
+					<tr>
+						<th>수입식품에 해당하는 경우 “식품위생법에 따른 수입신고를 필함”의 문구</th>
+						<td>식품위생법에 따른 수입신고를 필함</td>
+					</tr>
+					<tr>
+						<th>소비자상담 관련 전화번호</th>
+						<td>1668-1920</td>
+					</tr>
+					
+				</table>
+				
+				<img src="http://localhost:9090/murkit/images/menu_detail/20191007180011509.jpg" />
+			</div>
+			
+			<div id="det_review" class="det_review">
+				<div id="review_rating">
+					<span class="icon"><span class="icon"></span></span>
+					<span class="bold">4.7<span> / 5</span></span>
+					<a href="#"><div id="review_write_btn">리뷰작성</div></a>
+				</div>
+				
+				<div id="taste_wrap">
+					<span class="bold">맛평가</span>
+					
+				<div id="taste_box">
+					<div id="taste_l">
+						<table>
+							<tr>
+								<th>약간 짭짤했어요</th>
+								<td id="bar_wrap"><div class="bg_bar"><div class="bar"></div></div></td>
+								<td>33명</td>
+							</tr>
+							
+							<tr>
+								<th>적당했어요</th>
+								<td id="bar_wrap"><div class="bg_bar"><div class="bar"></div></div></td>
+								<td>268명</td>
+							</tr>
+							
+							<tr>
+								<th>아주 짭짤했어요</th>
+								<td id="bar_wrap"><div class="bg_bar"><div class="bar"></div></div></td>
+								<td>8명</td>
+							</tr>
+
+						</table>
+						
+					</div>
+					
+					<div id="taste_r">
+						<table>
+							<tr>
+								<th>쉬워요</th>
+								<td class="dash"><span></span></td>
+								<td>98%</td>
+							</tr>
+							
+							<tr>
+								<th>신선해요</th>
+								<td class="dash"><span></span></td>
+								<td>100%</td>
+							</tr>
+							
+							<tr>
+								<th>많아요</th>
+								<td class="dash"><span></span></td>
+								<td>32%</td>
+							</tr>
+							
+							<tr>
+								<th>맛있어요</th>
+								<td class="dash"><span></span></td>
+								<td>97%</td>
+							</tr>
+						</table>
+						
+					</div>
+				</div>
+					<div id="user_review_top">
+						<div id="review_sort">
+							<span class="icon"></span>
+							<span id="sort">등록일순</span>
+						</div>
+						
+						<div id="user_review">
+							<div id="top_wrap">
+								<span id="re_id" class="bold">th**********</span>
+								<div id="re_date_wrap">
+									<span id="re_date">2019-11-26</span>
+								</div>
+							</div>
+							
+							<div id="user_rating">
+								<span class="icon"><span class="icon"></span></span>
+							</div>
+							
+							<div id="user_review_img_p">
+								<img src="http://localhost:9090/murkit/images/menu_detail/6b5ee623-e9e3-4698-81aa-8586f2f8d63b_20191126163329.jpg"/>
+								<p>이번 것은 정말 조리하기 쉽게 되어있네요. <br>기름 두르고 볶고 다시 볶고 같이 볶으면서 소스 넣으면 끝.</p>
+							</div>
+						</div>
+						
+						<hr>
+					</div>
+				</div>
+			</div>
+			
+			
+				<div id="bottom_right" style="display: inline-block; width: 320px; float: left; margin-top: 100px; margin-left: 76px; border: 1px solid #ccc;">
 					<div>
 						<input type="radio" />
-						<lable>장바구니</lable>
+						<label>장바구니</label>
 					</div>
 
 					<div>
@@ -864,20 +515,11 @@ display:table;
 							<a><span>배송받을 날짜를 선택하세요.</span></a>
 							<div>
 								<ul>
-									<li><button type="button" class="btn_date">11월
-											22일 (금)</button></li>
-
-									<li><button type="button" class="btn_date">11월
-											23일 (토)</button></li>
-
-									<li><button type="button" class="btn_date">11월
-											26일 (화)</button></li>
-
-									<li><button type="button" class="btn_date">11월
-											27일 (수)</button></li>
-
-									<li><button type="button" class="btn_date">11월
-											28일 (목)</button></li>
+									<li><button type="button" class="btn_date">11월 22일 (금)</button></li>
+									<li><button type="button" class="btn_date">11월 23일 (토)</button></li>
+									<li><button type="button" class="btn_date">11월 26일 (화)</button></li>
+									<li><button type="button" class="btn_date">11월 27일 (수)</button></li>
+									<li><button type="button" class="btn_date">11월 28일 (목)</button></li>
 
 								</ul>
 							</div>
@@ -898,9 +540,13 @@ display:table;
 							</div>
 						</div>
 					</div>
-				</div>
+					
+					
+				</div> <!-- bottom_right -->
+				
+
 			</div>
-		</div>
+		</div> <!-- contents -->
 
 		<jsp:include page="footer.jsp"></jsp:include>
 	</div>
