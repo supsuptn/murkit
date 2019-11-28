@@ -14,7 +14,7 @@
 
 /* Noto Sans */
 @font-face {
-	font-family:'Noto Sans'; /* Bold */
+	font-family:"나눔스퀘어라운드";
 	src: url('/cjkit/web/cjok/web/font/NotoSans-Bold.eot');
 	src:local(※),
 			url('/cjkit/web/font/NotoSans-Bold.eot#iefix') format('embedded-opentype'),
@@ -26,7 +26,7 @@
 }
 
 @font-face {
-	font-family:'Noto Sans'; /* Medium */
+	font-family:"나눔스퀘어라운드";
 	src: url('/cjkit/web/font/NotoSans-Medium.eot');
 	src:local(※),
 			url('/cjkit/web/font/NotoSans-Medium.eot#iefix') format('embedded-opentype'),
@@ -38,7 +38,7 @@
 }
 
 @font-face {
-	font-family:'Noto Sans'; /* Regular */
+	font-family:"나눔스퀘어라운드";
 	src: url('/cjkit/web/font/NotoSans-Regular.eot');
 	src:local(※),
 			url('/cjkit/web/font/NotoSans-Regular.eot#iefix') format('embedded-opentype'),
@@ -55,28 +55,6 @@
 @media print {
 	@page{size:auto; margin:auto 0cm}
 }
-
-
-/* BASE */
-*{margin:0;padding:0;-webkit-text-size-adjust:none;word-break:break-all;box-sizing:border-box;}
-*, *:after, *:before {-webkit-box-sizing:border-box; box-sizing:border-box;}
-html{overflow-y:scroll;}
-html.laypop{overflow-y:scroll;}
-body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, textarea, p, blockquote, table, th, td, input, select, textarea, button {margin:0;padding:0;word-break:break-all;letter-spacing:-0.5px;}
-body, input, textarea, select, button, table {font-family:'Noto Sans', '맑은 고딕', 'Malgun Gothic', Dotum, '굴림', arial, sans-serif; font-size:15px; font-weight:400; line-height:23px;color:#606060;letter-spacing:-0.5px;}
-em {font-style:normal}
-fieldset, img {border:0 none}
-img  {vertical-align:middle}
-video {vertical-align:middle}
-dl, ul, ol, menu, li {list-style:none}
-input::-ms-clear {display:none}
-button {border:0 none; border-radius:0; background-color:transparent; cursor:pointer}
-a {color:inherit; text-decoration:none}
-a:hover,
-a:focus,
-a:active {background-color:transparent; text-decoration:none;}
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display:block;margin:0;padding:0;}
-strong {font-weight:inherit;}
 
 
 /* HIDDEN */
@@ -199,7 +177,7 @@ textarea {width:100%; border:0; overflow-y:auto; resize:none}
 .term_agreement .history{margin-top:40px;}
 
 /* 약관 */
-.term_wrap .title {padding-bottom:36px; border-bottom:4px solid #202020; color:#101010; font-weight:700; font-size:40px; line-height:56px;}
+.term_wrap .title {padding-bottom:36px; border-bottom:4px solid #202020; color:#101010; font-weight:700; font-size:30px; line-height:56px;}
 .term_wrap .detail{margin-top:40px;}
 
 .term_agreement.indiv_term h3 {margin-bottom:24px; padding-bottom:18px; border-bottom:2px solid #202020; color:#101010; font-weight:700; font-size:22px; line-height:32px;}
@@ -266,6 +244,7 @@ textarea {width:100%; border:0; overflow-y:auto; resize:none}
 </style>
 </head>
 <body>
+<jsp:include page="header.jsp"></jsp:include>
 <section id="container" >
 			<div id="container_title" class="hide" tabindex="-1">본문 시작</div> 
 
@@ -318,7 +297,7 @@ textarea {width:100%; border:0; overflow-y:auto; resize:none}
 							
 							<div id="term_use01" class="p_sec">
 								<h3>제1조 (목적)</h3>
-								<p>본 약관은 씨제이제일제당(주)(이하 “회사”라 합니다)가 운영하는 온라인 사이트에서 제공하는 관련 온라인 서비스(모바일 및 인터넷 관련 서비스 포함, 이하 “서비스”라 합니다)를 이용함에 있어 "회사"와 "이용자"의 권리·의무 및 책임 사항을 규정하는데 목적이 있습니다.</p>
+								<p>본 약관은 먹킷(주)(이하 “회사”라 합니다)가 운영하는 온라인 사이트에서 제공하는 관련 온라인 서비스(모바일 및 인터넷 관련 서비스 포함, 이하 “서비스”라 합니다)를 이용함에 있어 "회사"와 "이용자"의 권리·의무 및 책임 사항을 규정하는데 목적이 있습니다.</p>
 							</div>
 						
 							<div id="term_use02" class="p_sec"> <!-- 각 조항 단위 -->

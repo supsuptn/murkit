@@ -24,8 +24,7 @@
 	div#content>section>div#murkit_board {
 		width:1000px;
 		margin:auto;
-		margin-top:70px;
-		margin-bottom:100px;
+		padding: 72px 0 140px;
 		font-size:15pt;
 	}
 	div#content>section>div table.board_write,

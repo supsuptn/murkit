@@ -6,8 +6,11 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>개인정보처리방침 - 먹킷 </title>
 <style>
+section#container{
+	
+}
 @font-face {
-	font-family:'Noto Sans'; /* Bold */
+	font-family:"나눔스퀘어라운드";
 	src: url('/cjkit/web/cjok/web/font/NotoSans-Bold.eot');
 	src:local(※),
 			url('/cjkit/web/font/NotoSans-Bold.eot#iefix') format('embedded-opentype'),
@@ -19,7 +22,7 @@
 }
 
 @font-face {
-	font-family:'Noto Sans'; /* Medium */
+		font-family:"나눔스퀘어라운드";
 	src: url('/cjkit/web/font/NotoSans-Medium.eot');
 	src:local(※),
 			url('/cjkit/web/font/NotoSans-Medium.eot#iefix') format('embedded-opentype'),
@@ -31,7 +34,7 @@
 }
 
 @font-face {
-	font-family:'Noto Sans'; /* Regular */
+		font-family:"나눔스퀘어라운드";
 	src: url('/cjkit/web/font/NotoSans-Regular.eot');
 	src:local(※),
 			url('/cjkit/web/font/NotoSans-Regular.eot#iefix') format('embedded-opentype'),
@@ -48,29 +51,6 @@
 @media print {
 	@page{size:auto; margin:auto 0cm}
 }
-
-
-/* BASE */
-*{margin:0;padding:0;-webkit-text-size-adjust:none;word-break:break-all;box-sizing:border-box;}
-*, *:after, *:before {-webkit-box-sizing:border-box; box-sizing:border-box;}
-html{overflow-y:scroll;}
-html.laypop{overflow-y:scroll;}
-body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, textarea, p, blockquote, table, th, td, input, select, textarea, button {margin:0;padding:0;word-break:break-all;letter-spacing:-0.5px;}
-body, input, textarea, select, button, table {font-family:'Noto Sans', '맑은 고딕', 'Malgun Gothic', Dotum, '굴림', arial, sans-serif; font-size:15px; font-weight:400; line-height:23px;color:#606060;letter-spacing:-0.5px;}
-em {font-style:normal}
-fieldset, img {border:0 none}
-img  {vertical-align:middle}
-video {vertical-align:middle}
-dl, ul, ol, menu, li {list-style:none}
-input::-ms-clear {display:none}
-button {border:0 none; border-radius:0; background-color:transparent; cursor:pointer}
-a {color:inherit; text-decoration:none}
-a:hover,
-a:focus,
-a:active {background-color:transparent; text-decoration:none;}
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display:block;margin:0;padding:0;}
-strong {font-weight:inherit;}
-
 
 /* HIDDEN */
 .hide {display:inline-block;position:absolute;z-index:-10;width:0 !important;height:0 !important;overflow:hidden !important;font-size:medium;line-height:normal;word-break:break-all}
@@ -192,7 +172,7 @@ textarea {width:100%; border:0; overflow-y:auto; resize:none}
 .term_agreement .history{margin-top:40px;}
 
 /* 약관 */
-.term_wrap .title {padding-bottom:36px; border-bottom:4px solid #202020; color:#101010; font-weight:700; font-size:40px; line-height:56px;}
+.term_wrap .title {padding-bottom:36px; border-bottom:4px solid #202020; color:#101010; font-weight:700; font-size:30px; line-height:56px;}
 .term_wrap .detail{margin-top:40px;}
 
 .term_agreement.indiv_term h3 {margin-bottom:24px; padding-bottom:18px; border-bottom:2px solid #202020; color:#101010; font-weight:700; font-size:22px; line-height:32px;}
@@ -260,7 +240,7 @@ textarea {width:100%; border:0; overflow-y:auto; resize:none}
 </style>
 </head>
 <body>
-
+<jsp:include page="header.jsp"></jsp:include>
 <section id="container" >
 			<div id="container_title" class="hide" tabindex="-1">본문 시작</div> 
 
@@ -273,14 +253,14 @@ textarea {width:100%; border:0; overflow-y:auto; resize:none}
 			<div id="content">
                  <!-- 190618_수정 -->
                 <div class="term_wrap">
-                    <h1 class="title">씨제이제일제당㈜ 개인정보처리방침</h1>
+                    <h1 class="title">먹킷㈜ 개인정보처리방침</h1>
 
                     <div class="detail">
 						
 						<div class="term_agreement indiv_term">
 							<header>
 								<!-- span class="term_titr_data">(2019.07.01 현재)</span-->
-								<p>씨제이제일제당㈜는 개인정보 보호를 위해 「개인정보 보호법」, 「정보통신망 이용촉진 및 정보보호 등에 관한 법률」 등 관련 법령과 규정을 준수하고 있습니다. 씨제이제일제당㈜는 고객님의 개인정보 유출 및 피해방지를 위해 최선을 다하겠습니다.</p>
+								<p>먹킷㈜는 개인정보 보호를 위해 「개인정보 보호법」, 「정보통신망 이용촉진 및 정보보호 등에 관한 법률」 등 관련 법령과 규정을 준수하고 있습니다. 먹킷㈜는 고객님의 개인정보 유출 및 피해방지를 위해 최선을 다하겠습니다.</p>
 								<!-- 바로가기 -->
 								<nav class="box_jump">
 									<ol>
@@ -369,7 +349,7 @@ textarea {width:100%; border:0; overflow-y:auto; resize:none}
 							<div class="p_sec" id="p2">
 								<h3>2. 개인정보보호책임자 이름 및 부서&middot;연락처</h3>
 								<div class="list_sec">
-									<p>고객님의 개인정보를 보호하고 개인정보와 관련한 불만을 처리하기 위하여 씨제이제일제당(주)는 개인정보보호책임자를 두고 있습니다. 개인정보와 관련한 문의 사항이 있으시면 아래의 개인정보보호책임자에게 연락 주시기 바랍니다. 고객님의 문의 사항에 신속하고 성실하게 답변해드리겠습니다.</p>
+									<p>고객님의 개인정보를 보호하고 개인정보와 관련한 불만을 처리하기 위하여 먹킷(주)는 개인정보보호책임자를 두고 있습니다. 개인정보와 관련한 문의 사항이 있으시면 아래의 개인정보보호책임자에게 연락 주시기 바랍니다. 고객님의 문의 사항에 신속하고 성실하게 답변해드리겠습니다.</p>
 									<div class="tb_col">
 										<table>
 											<caption>개인정보보호책임자 성명 및 부서•연락처 내역</caption>
@@ -388,9 +368,9 @@ textarea {width:100%; border:0; overflow-y:auto; resize:none}
 												</tr>
 												<tr>
 													<td class="f_noline">디지털혁신)정보보안팀</td> <!-- 190705_수정 -->
-													<td>류화정</td>
-													<td>02-6740-4030<br>(평일 오전 9~12시,오후 1시~5시 30분)</td>
-													<td>theprivacy@cj.net</td>
+													<td>정수빈</td>
+													<td>02-3482-4632<br>(평일 9~18시)</td>
+													<td>7classroom@naver.com</td>
 												</tr>
 											</tbody>
 										</table>
@@ -401,9 +381,9 @@ textarea {width:100%; border:0; overflow-y:auto; resize:none}
 							<div class="p_sec" id="p3">
 								<h3>3. 개인정보의 자동 수집 장치&middot;운영&middot;거부사항</h3>
 								<div class="list_sec">
-									<p>고객님의 정보를 수시로 저장하고 찾아내는 ‘쿠키(cookie)’를 운용합니다. 쿠키란 씨제이제일제당(주)의 웹사이트를 운영하는데 이용되는 서버가 고객님의 브라우저(인터넷 익스플로러 등)에 보내는 아주 작은 텍스트 데이터로서 고객님이 사이트에 로그온 한 상태에서 고객님을 인증하기 위해 사용되고 있습니다. 쿠키는 고객님의 컴퓨터는 식별하지만 고객님을 개인적으로 식별하지는 않습니다. 또한 고객님은 쿠키에 대한 선택권이 있습니다.</p>
+									<p>고객님의 정보를 수시로 저장하고 찾아내는 ‘쿠키(cookie)’를 운용합니다. 쿠키란 먹킷(주)의 웹사이트를 운영하는데 이용되는 서버가 고객님의 브라우저(인터넷 익스플로러 등)에 보내는 아주 작은 텍스트 데이터로서 고객님이 사이트에 로그온 한 상태에서 고객님을 인증하기 위해 사용되고 있습니다. 쿠키는 고객님의 컴퓨터는 식별하지만 고객님을 개인적으로 식별하지는 않습니다. 또한 고객님은 쿠키에 대한 선택권이 있습니다.</p>
 									<p>웹 브라우저 상단의 도구 &gt; 인터넷 옵션 탭(option tab)에서 모든 쿠키를 다 받아들이거나, 쿠키가 설치될 때 통지를 보내도록 하거나, 아니면 모든 쿠키를 거부할 수 있는 선택권을 가질 수 있습니다. 고객님이 쿠키를 거부하겠다고 선택하는 경우 사용자 등록을 요하는 서버의 서비스는 이용할 수 없음을 감안하시기 바랍니다. </p>
-									<p>씨제이제일제당(주)는 다음과 같은 목적을 위해 쿠키를 사용합니다.</p>
+									<p>먹킷(주)는 다음과 같은 목적을 위해 쿠키를 사용합니다.</p>
 									
 									<div class="list_sec">
 										<ul class="bul_list">
@@ -479,7 +459,7 @@ textarea {width:100%; border:0; overflow-y:auto; resize:none}
 
 							<div class="p_sec" id="p4">
 								<h3>4. 개인정보의 수집 항목 및 이용 목적</h3>
-								<p>씨제이제일제당(주)는 회원고객으로서 원활한 주문, 서비스 접수, 물품 배송, 대금 결제 등 편리하고 유익한 맞춤정보를 제공과 같은 서비스를 이용하기 위해 회원가입을 원하실 경우, 서비스 제공을 위해 홈페이지 및 전화 등을 통해 최소한의 개인정보를 수집하여 이용하고 있습니다.</p>
+								<p>먹킷(주)는 회원고객으로서 원활한 주문, 서비스 접수, 물품 배송, 대금 결제 등 편리하고 유익한 맞춤정보를 제공과 같은 서비스를 이용하기 위해 회원가입을 원하실 경우, 서비스 제공을 위해 홈페이지 및 전화 등을 통해 최소한의 개인정보를 수집하여 이용하고 있습니다.</p>
 								
 								<div class="tb_col">
 									<table>
@@ -914,7 +894,7 @@ textarea {width:100%; border:0; overflow-y:auto; resize:none}
 							<div class="p_sec" id="p5">
 								<h3>5. 개인정보 수집 방법</h3>
 								<div class="list_sec">
-									<p>씨제이제일제당(주)는 적법하고 공정한 수단에 의하여 서비스 계약의 성립 및 이행에 필요한 최소한의 개인정보를 당사의 홈페이지, CJ그룹 제휴사(CJ ONE)로부터 개인정보를 수집하며, 당사의 전화를 통한 회원 가입과 적합한 텔레마케팅 위탁업체 및 개인정보 수집 이용에 관한 고객님의 동의를 통해서 개인정보를 수집하고 있습니다.</p>
+									<p>먹킷(주)는 적법하고 공정한 수단에 의하여 서비스 계약의 성립 및 이행에 필요한 최소한의 개인정보를 당사의 홈페이지, CJ그룹 제휴사(CJ ONE)로부터 개인정보를 수집하며, 당사의 전화를 통한 회원 가입과 적합한 텔레마케팅 위탁업체 및 개인정보 수집 이용에 관한 고객님의 동의를 통해서 개인정보를 수집하고 있습니다.</p>
 									<ul class="bul_list">
 										<li class="bul_star">
 											<span class="bullet">※</span> CJ ONE : CJ 그룹 계열사간의 서비스를 하나의 패밀리서비스로 통합 관리 및 운영
@@ -926,7 +906,7 @@ textarea {width:100%; border:0; overflow-y:auto; resize:none}
 							<div class="p_sec" id="p6">
 								<h3>6. 개인정보의 제 3자 제공 </h3>
 								<div class="list_sec">
-									<p>씨제이제일제당㈜는 고객의 개인정보를 “개인정보의 수집 항목 및 이용 목적” 에서 규정한 범위 내에서 사용하며, 동 범위를 초과하여 이용하거나 타인 또는 타기업, 기관에 제공하지 않습니다. 다만, 아래의 경우에는 예외로 합니다</p>
+									<p>먹킷㈜는 고객의 개인정보를 “개인정보의 수집 항목 및 이용 목적” 에서 규정한 범위 내에서 사용하며, 동 범위를 초과하여 이용하거나 타인 또는 타기업, 기관에 제공하지 않습니다. 다만, 아래의 경우에는 예외로 합니다</p>
 									<div class="list_sec">
 										<ul class="bul_list">
 											<li class="bul_dot">
@@ -940,7 +920,7 @@ textarea {width:100%; border:0; overflow-y:auto; resize:none}
 									
 									<p>그 밖에 개인정보 제3자제공이 필요한 경우에는 합당한 절차를 통한 이용자의 동의를 얻어 제3자에게 개인정보를 제공할 수 있습니다.</p>
 
-									<h4>씨제이제일제당㈜가 현재 고객님의 동의를 얻어 개인정보를 제공하고 있는 업체는 아래와 같습니다.</h4>
+									<h4>먹킷㈜가 현재 고객님의 동의를 얻어 개인정보를 제공하고 있는 업체는 아래와 같습니다.</h4>
 									<div class="tb_row">
 										<table>
 											<caption>개인정보 제 3자 제공 업체</caption>
@@ -963,7 +943,7 @@ textarea {width:100%; border:0; overflow-y:auto; resize:none}
 												</tr>
 												<tr>
 													<th scope="row">보유 및 이용 기간</th>
-													<td>씨제이제일제당㈜ 서비스 이용 약관 철회 시 또는 CJONE 탈퇴 후 30 일까지</td>
+													<td>먹킷㈜ 서비스 이용 약관 철회 시 또는 CJONE 탈퇴 후 30 일까지</td>
 												</tr>
 											</tbody>
 										</table>
@@ -975,7 +955,7 @@ textarea {width:100%; border:0; overflow-y:auto; resize:none}
 								<h3>7. 개인정보의 보유/이용 기간 및 파기</h3>
 								<h4>(1) 개인정보의 보유/이용 기간</h4>
 								<div class="list_sec">
-									<p>씨제이제일제당㈜는 고객님이 동의한 개인정보 수집목적 또는 제공받은 목적이 달성되거나, 씨제이제일제당㈜ 이용약관에 표명한 절차에 따라 탈퇴를 요청한 경우, 지체 없이 파기합니다. 단, 법에 의해 일정기간 보유하여야 할 필요가 있을 경우에는 해당 기간 동안 고객님의 개인정보를 보유합니다.</p>
+									<p>먹킷㈜는 고객님이 동의한 개인정보 수집목적 또는 제공받은 목적이 달성되거나, 먹킷㈜ 이용약관에 표명한 절차에 따라 탈퇴를 요청한 경우, 지체 없이 파기합니다. 단, 법에 의해 일정기간 보유하여야 할 필요가 있을 경우에는 해당 기간 동안 고객님의 개인정보를 보유합니다.</p>
 									<div class="tb_col mtb">
 										<table>
 											<caption>개인정보의 구분 및 보존 근거·보존 기간</caption>
@@ -1018,7 +998,7 @@ textarea {width:100%; border:0; overflow-y:auto; resize:none}
 											</tbody>
 										</table>
 									</div>
-									<p>씨제이제일제당㈜는 수집 목적 또는 제공받은 목적이 달성된 경우에도 관련 법령의 규정에 의하여 다음과 같이 거래 관련 권리의 무관계의 확인 등을 이유로 일정 기간 보존할 필요성이 있는 경우에는 일정 기간 동안 예외적으로 수집한 개인정보의 전부 또는 일부를 보유할 수 있습니다.</p>
+									<p>먹킷㈜는 수집 목적 또는 제공받은 목적이 달성된 경우에도 관련 법령의 규정에 의하여 다음과 같이 거래 관련 권리의 무관계의 확인 등을 이유로 일정 기간 보존할 필요성이 있는 경우에는 일정 기간 동안 예외적으로 수집한 개인정보의 전부 또는 일부를 보유할 수 있습니다.</p>
 									<div class="tb_col">
 										<table>
 											<caption>예외적 개인정보의 구분 및 보존 근거·보존 기간</caption>
@@ -1052,10 +1032,10 @@ textarea {width:100%; border:0; overflow-y:auto; resize:none}
 									<div class="list_sec">
 										<ul class="bul_list">
 											<li class="bul_dot">
-												<i class="dash"></i> 씨제이제일제당(주)는 탈퇴한 고객님이 자신의 게재물에 대한 삭제 요청 시 즉각 삭제 처리하도록 합니다.
+												<i class="dash"></i> 먹킷(주)는 탈퇴한 고객님이 자신의 게재물에 대한 삭제 요청 시 즉각 삭제 처리하도록 합니다.
 											</li>
 											<li class="bul_dash">
-												<i class="dash"></i> 씨제이제일제당(주)은 회원 가입 후 연속 1년 동안 로그인 기록이 없으면 휴면 아이디로 규정하여 별도로 분리 저장하거나 탈퇴 처리할 수 있습니다.
+												<i class="dash"></i> 먹킷(주)은 회원 가입 후 연속 1년 동안 로그인 기록이 없으면 휴면 아이디로 규정하여 별도로 분리 저장하거나 탈퇴 처리할 수 있습니다.
 											</li>
 										</ul>
 									</div>
@@ -1063,21 +1043,21 @@ textarea {width:100%; border:0; overflow-y:auto; resize:none}
 
 								<h4>(2) 개인정보 파기 절차 및 방법</h4>
 								<div class="list_sec">
-									<p>씨제이제일제당㈜는 보유기간의 경과, 개인정보의 처리 목적 달성 등 그 개인정보가 불필요하게 되었을 때에는 해당 정보를 지체없이 파기합니다. 종이에 출력된 개인정보는 분쇄기로 분쇄 또는 소각하여 파 기하고, 전자적 파일 형태로 저장된 개인정보는 기록을 재생할 수 없는 기술적 방법을 사용하여 삭제합니다.</p>
+									<p>먹킷㈜는 보유기간의 경과, 개인정보의 처리 목적 달성 등 그 개인정보가 불필요하게 되었을 때에는 해당 정보를 지체없이 파기합니다. 종이에 출력된 개인정보는 분쇄기로 분쇄 또는 소각하여 파 기하고, 전자적 파일 형태로 저장된 개인정보는 기록을 재생할 수 없는 기술적 방법을 사용하여 삭제합니다.</p>
 								</div>
 							</div>
 			
 							<div class="p_sec" id="p8">
 								<h3>8. 처리위탁 현황</h3>
 								<div class="list_sec">
-									<p>씨제이제일제당㈜는 서비스 향상을 위해서 업무 중 일부를 외부에 위탁하고 있으며 , 위탁 받은 업체가 정보통신망법에 따라 개인정보를 안전하게 처리하도록 필요한 사항을 규정하고 관리 감독을 하고 있습니다 . 또한 위탁 처리하는 정보는 원활한 서비스를 위해 필요한 최소한의 정보에 한하여 제공되며 , 고객의 서비스 요청에 따라 해당하는 업체에 선택적으로 제공됩니다</p>
+									<p>먹킷㈜는 서비스 향상을 위해서 업무 중 일부를 외부에 위탁하고 있으며 , 위탁 받은 업체가 정보통신망법에 따라 개인정보를 안전하게 처리하도록 필요한 사항을 규정하고 관리 감독을 하고 있습니다 . 또한 위탁 처리하는 정보는 원활한 서비스를 위해 필요한 최소한의 정보에 한하여 제공되며 , 고객의 서비스 요청에 따라 해당하는 업체에 선택적으로 제공됩니다</p>
 									<div class="list_sec">
 										<ul class="bul_list">
 											<li class="bul_dot">
 												<i class="dash"></i> 위탁계약 시 서비스제공자의 개인정보보호 관련 지시엄수, 개인정보에 관한 비밀유지, 제3자 제공의 금지 및 사고시의 책임부담, 위탁기간, 처리 종료후의 개인정보의 반환 또는 파기 등을 규정하고 당해 계약내용을 서면 또는 전자적으로 보관합니다.
 											</li>
 											<li class="bul_dash">
-												<i class="dash"></i> 씨제이제일제당㈜ 홈페이지에서 이벤트 진행 시, 고객님들의 추가적 동의 하에 하기 리스트에 명시되지 않은 업체에 대하여도 고객님의 개인정보가 위탁 제공될 수 있습니다.
+												<i class="dash"></i> 먹킷㈜ 홈페이지에서 이벤트 진행 시, 고객님들의 추가적 동의 하에 하기 리스트에 명시되지 않은 업체에 대하여도 고객님의 개인정보가 위탁 제공될 수 있습니다.
 											</li>
 										</ul>
 									</div>
@@ -1200,20 +1180,20 @@ textarea {width:100%; border:0; overflow-y:auto; resize:none}
 							<div class="p_sec" id="p9">
 								<h3>9. 개인 아이디와 비밀 번호 관리</h3>
 								<div class="list_sec">
-									<p>고객 아이디와 비밀 번호는 원칙적으로 고객님만이 사용하도록 되어 있습니다. 씨제이제일제당(주)의 고의 또는 과실이 없는 경우에, 고객님의 아이디와 비밀 번호 도용 또는 기타 타인의 사용으로 인해 발생된 문제에 대하여 씨제이제일제당(주)는 책임지지 않습니다. 어떠한 경우에도 비밀 번호는 타인에게 알려 주지 마시고 로그온 상태에서는 주위의 다른 사람에게 개인 정보가 유출되지 않도록 특별한 주의를 기울여 주시기 바랍니다.</p>
+									<p>고객 아이디와 비밀 번호는 원칙적으로 고객님만이 사용하도록 되어 있습니다. 먹킷(주)의 고의 또는 과실이 없는 경우에, 고객님의 아이디와 비밀 번호 도용 또는 기타 타인의 사용으로 인해 발생된 문제에 대하여 먹킷(주)는 책임지지 않습니다. 어떠한 경우에도 비밀 번호는 타인에게 알려 주지 마시고 로그온 상태에서는 주위의 다른 사람에게 개인 정보가 유출되지 않도록 특별한 주의를 기울여 주시기 바랍니다.</p>
 								</div>
 							</div>
 			
 							<div class="p_sec" id="p10">
 								<h3>10. 만 14세 미만 아동의 개인정보 보호</h3>
 								<div class="list_sec">
-									<p>씨제이제일제당(주)는 만 14세 미만의 아동에 대한 회원 가입을 제한하고 있습니다. </p>
+									<p>먹킷(주)는 만 14세 미만의 아동에 대한 회원 가입을 제한하고 있습니다. </p>
 								</div>
 							</div>
 			
 							<div class="p_sec" id="p11">
 								<h3>11. 기술적&middot;관리적 대책</h3>
-								<p>씨제이제일제당㈜는 개인정보를 처리함에 있어 정보의 분실, 도난, 누출, 외부로부터의 공격, 해킹 등을 방지하고 최상의 안전성을 확보하기 위하여 다음과 같은 기술적, 관리적 대책을 강구하고 있습니다.</p>
+								<p>먹킷㈜는 개인정보를 처리함에 있어 정보의 분실, 도난, 누출, 외부로부터의 공격, 해킹 등을 방지하고 최상의 안전성을 확보하기 위하여 다음과 같은 기술적, 관리적 대책을 강구하고 있습니다.</p>
 								<h4>(1) 기술적 대책</h4>
 								<ul class="bul_list">
 									<li class="bul_dot">
@@ -1247,10 +1227,10 @@ textarea {width:100%; border:0; overflow-y:auto; resize:none}
 								<h4>(3) 개인정보 유효 기간 제도</h4>
 								<ul class="bul_list">
 									<li class="bul_dot">
-										<i class="dash"></i> 씨제이제일제당(주)는 서비스를 장기간 이용하지 않는 자의 개인정보 보호를 위하여 미 이용자의 개인정보를  파기합니다.서비스 이용 여부는 법령에서 정하는 기간 동안의 로그인   접속 또는 주문, 상담 기록 등을 기준으로 합니다.
+										<i class="dash"></i> 먹킷(주)는 서비스를 장기간 이용하지 않는 자의 개인정보 보호를 위하여 미 이용자의 개인정보를  파기합니다.서비스 이용 여부는 법령에서 정하는 기간 동안의 로그인   접속 또는 주문, 상담 기록 등을 기준으로 합니다.
 									</li>
 									<li class="bul_dot">
-										<i class="dash"></i> 씨제이제일제당(주)는 파기 30일 전까지 미 이용자 의 개인정보가 파기되는 사실과 기간 만료일 및 해당 개인정보의 항목을 이메일 등을 통해 해당 이용자에게 공지합니다.
+										<i class="dash"></i> 먹킷(주)는 파기 30일 전까지 미 이용자 의 개인정보가 파기되는 사실과 기간 만료일 및 해당 개인정보의 항목을 이메일 등을 통해 해당 이용자에게 공지합니다.
 									</li>
 									<li class="bul_dot">
 										<i class="dash"></i> 서비스를 다시 이용하려는 자는 본 서비스에 정식 가입 동의하여 다시 이용할 수 있습니다.

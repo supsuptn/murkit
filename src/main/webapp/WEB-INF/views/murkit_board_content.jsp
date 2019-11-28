@@ -9,7 +9,6 @@
 	ArrayList<BoardReplyVO> list = boardCheck.getBoardReplyList(bid);
 
 	if(vo.getBtitle()!="" && vo.getBtitle()!=null){
-		
 		vo.setBcontent(vo.getBcontent().replace("\r\n","<br>"));
 		boardCheck.getResultHit(bid);
 	}else{
@@ -107,16 +106,22 @@ $(document).ready(function(){
 	div#content>section>div table.murkit_board_content,
 	 div#content>section>div table.murkit_board_content th,
 	 div#content>section>div table.murkit_board_content td{
-	 border:1px solid #ccc;
+	 border-top:1px solid lightgray;
 	 	border-collapse:collapse;
 	 	font-family:'나눔스퀘어라운드';
-	 	font-size:10pt;
+	 	font-size:13pt;
 	 }
 	 div#content>section>div table.murkit_board_content{
 	 	width:100%;
 	 }
+	 	 div#content>section>div table.murkit_board_content tr:nth-child(1) {
+	 	border-top:2px solid #ccc;
+	 }
+	 div#content>section>div table.murkit_board_content tr:nth-child(6) {
+	 	border-bottom:2px solid #ccc;
+	 }
 	 div#content>section>div table.murkit_board_content th {
-	 	padding:7px 0px 7px 0px;
+	 	padding:13px 0px 13px 0px;
 	 	background:#F5F5F7;
 	 	opacity:0.9;
 	 	color:black;
@@ -142,10 +147,23 @@ $(document).ready(function(){
 	 	div#content>section>div#murkit_board_content_main {
 		width:1000px;
 		margin:auto;
-		margin-bottom:100px;
+		padding: 72px 0 140px;
 	}
 	div#content>section>div#murkit_board_content_main table.murkit_board_content tr td#bcontent{
 	 	height:400px;
+	 	font-size:15pt;
+	 }
+	 	 tr.button_write_tr button.btn_board_type{
+    	padding: 10px 24px 10px 24px;
+    	border-radius: 3px;
+    	font-size: 13pt;
+    	background:#F3CD9E;
+    	border: none;
+    	color: white;
+    	font-weight: bold;
+    	outline:none;
+    	cursor:pointer;
+    	margin-top:20px;
 	 }
 </style>
 </head>
@@ -157,7 +175,7 @@ $(document).ready(function(){
 	<div id = "content">
 		<section>
 			<div id="murkit_board_content_main">
-				<h1>게시판</h1>
+				<h1 style="font-size:30px;">게시판</h1>
 				<table class="murkit_board_content">
 					<tr>
 						<th>제목</th>
@@ -189,7 +207,7 @@ $(document).ready(function(){
 					<tr>
 						<td colspan=2>
 							<div style="text-align:left;padding:5px 0px 5px 20px">댓글 목록[<%=vo.getRcount() %>]</div>
-							<hr>
+							
 							<ul>
 							<% for(BoardReplyVO rvo:list){ %>
 								<li id="<%=rvo.getRid() %>" style="padding-right:10px; ">
@@ -202,12 +220,12 @@ $(document).ready(function(){
 							</ul>
 						</td>
 					</tr>
-					<tr>
+					<tr class="button_write_tr">
 						<td colspan=2>
-							<a href="#"><button type="button" id="btnReply">댓글쓰기</button></a>
-							<a href="board_update.do?bid=${vo.bid }"><button type="button">수정하기</button></a>
-							<a href="board_delete.do?bid=${vo.bid }"><button type="button">삭제하기</button></a>
-							<a href="murkit_board.do?page=${rpage }"><button type="button">목록으로</button></a>
+							<a href="#"><button type="button" id="btnReply" class="btn_board_type">댓글쓰기</button></a>
+							<a href="board_update.do?bid=${vo.bid }"><button type="button" class="btn_board_type">수정하기</button></a>
+							<a href="board_delete.do?bid=${vo.bid }"><button type="button" class="btn_board_type">삭제하기</button></a>
+							<a href="murkit_board.do?page=${rpage }"><button type="button" class="btn_board_type">목록으로</button></a>
 						</td>
 					</tr>
 				</table>

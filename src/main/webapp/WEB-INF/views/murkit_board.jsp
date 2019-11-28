@@ -37,10 +37,16 @@ ArrayList<BoardVO> list = (ArrayList<BoardVO>)request.getAttribute("list");
 			 	//1000개를 다 갖고와서 잘라서보여준다 옛날방식, 요즘은 필요한 부분만 갖고와서 사용한다
 			   //start와 end / 데이터를 필요한 부분만 갖고와서 쓰려고(ex.3개월치만 1년치만) 다 갖고오면 서버가 다운될수있다
 	    });
+		$("tr.midtr").click(function() {
+			var rid = $(this).attr("id")
+			location.href="murkit_board_content.do?bid="+rid;
+			
+		});
 		
  	});
 </script>
 </head>
+
 <style>
 	div#murkit_board{		
 		margin:auto;
@@ -117,9 +123,9 @@ ArrayList<BoardVO> list = (ArrayList<BoardVO>)request.getAttribute("list");
 						<th>조회수</th>
 						</tr>
 						<% for(BoardVO vo:list){ %>
-					<tr>
+					<tr class="midtr" id="<%=vo.getBid()%>&page=${rpage}&bname=<%=vo.getBname() %>">
 						<td><%=vo.getRno() %></td>
-						<td><a href="murkit_board_content.do?bid=<%=vo.getBid()%>&page=${rpage}&bname=<%=vo.getBname() %>"><%=vo.getBtitle() %></a></td>
+						<td><%=vo.getBtitle() %></td>
 						<td><%=vo.getBname() %>
 						<td><%=vo.getBdate() %></td>
 						<td><%=vo.getBhit() %></td>

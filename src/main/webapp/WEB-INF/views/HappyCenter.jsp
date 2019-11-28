@@ -9,6 +9,15 @@
 	<link rel="stylesheet" type="text/css" href="http://localhost:9090/murkit/css/happycenter_FAQ.css">
 	<link rel="stylesheet" type="text/css" href="//www.cjcookit.com/cjkit/web/css/my.css?20191113090003">
 	<link rel="stylesheet" type="text/css" href="http://localhost:9090/murkit/css/happycenter.css">
+	<script type="text/javascript" src="//www.cjcookit.com/cjkit/web/js/libs/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="//www.cjcookit.com/pc/js/jquery/jquery.form.js"></script>
+	<script type="text/javascript" src="//www.cjcookit.com/pc/js/crew/crew.js?20191113090003"></script>
+	<script type="text/javascript" src="//www.cjcookit.com/pc/js/crew/form/form.js?20191113090003"></script>
+	<script type="text/javascript" src="//www.cjcookit.com/pc/js/cj.js?20191113090003"></script>
+	<script type="text/javascript" src="//www.cjcookit.com/pc/js/oauth/kakao.min.js"></script>
+	<script type="text/javascript" src="//www.cjcookit.com/pc/js/oauth/naveridlogin_js_sdk_2.0.0.js"></script>
+	<script type="text/javascript" src="//www.cjcookit.com/pc/js/netfunnel.js?20191113090003" charset="utf-8"></script>
+	<script type="text/javascript" src="//www.cjcookit.com/pc/js/om_pc_skin.js?20191113090003" charset="utf-8"></script>
 </head>
 <style>
 	div.cs_wrap {
@@ -17,6 +26,19 @@
 	}
 	body {
 		font-family:'나눔스퀘어라운드';
+	}
+	button#happycenter_FAQbutton {
+		width: 65px;
+	    height: 68px;
+	    background: #F5F5F7;
+	    border: none;
+	    cursor: pointer;
+	    border-radius: 3px;
+	    font-size: 18px;
+	    position: relative;
+	    left: 525px;
+	    top: -70px;
+	    font-weight: bold;"
 	}
 </style>
 <body>
@@ -38,8 +60,7 @@
 						<div class="input_wrap sch_area ui_inputfield">
 							<form name="searchForm" method="post" action="/pc/cs/faqList" onsubmit="return false;">
 								<input type="text" class="txt" id="fn_txt_srch" placeholder="검색어를 입력해주세요" name="keyWord" value="" onkeyDown="onkeyDown();" required>
-								<button class="ico del"><span class="hide">입력 삭제</span></button>
-								<button type="button" class="btn btn_srch" onclick="javascript:goSearch()"><span class="hide">검색</span></button>
+								<button type="button" id="happycenter_FAQbutton" ><img src="http://localhost:9090/murkit/images/search_icon.png" style="width:40px; height:40px; margin-top:10px;"/></button>
 							</form>
 						</div>
 					</div>
