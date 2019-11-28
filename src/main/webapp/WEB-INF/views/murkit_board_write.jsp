@@ -9,25 +9,44 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>먹킷 - 게시판글쓰기</title>
 <script src = "http://localhost:9090/murkit/js/jquery-3.4.1.min.js"></script>
+<script>
+	$(document).ready(function(){
+		  $("#bcontent").on('keyup',function(){
+		      if($(this).val().length>300){
+		         $(this).val($(this).val().substring(0,1000));
+		         alert("최대 1000자 입력이 가능합니다.")
+		      }
+		   });
+	});
+
+</script>
 <style>
 	div#content>section>div#murkit_board {
-		width:1200px;
+		width:1000px;
 		margin:auto;
+		margin-top:70px;
 		margin-bottom:100px;
+		font-size:15pt;
 	}
 	div#content>section>div table.board_write,
 	div#content>section>div table.board_write th,
 	 div#content>section>div table.board_write td {
-		border:1px solid #ccc;
 	 	border-collapse:collapse;
 	 	font-family:'나눔스퀘어라운드';
-	 	font-size:10pt;
+	 	font-size:13pt;
+	 	border-top:1px solid lightgray;
 	}
 	div#content>section>div table.board_write{
-	 	width:70%;
+	 	width:100%;
+	 }
+	 div#content>section>div table.board_write tr:nth-child(1) {
+	 	border-top:2px solid #ccc;
+	 }
+	 div#content>section>div table.board_write tr:nth-child(4) {
+	 	border-bottom:2px solid #ccc;
 	 }
 	 div#content>section>div table.board_write th {
-	 	padding:7px 0px 7px 0px;
+	 	padding:13px 0px 13px 0px;
 	 	background:#F5F5F7;
 	 	opacity:0.9;
 	 	color:black;
@@ -48,12 +67,24 @@
 	 }
 	 div#content>section>div table.board_write tr td input,
 	 div#content>section>div table.board_write tr td textarea{
-	 	width:80%;
+	 	width:98%;
 	 	border:none;
 	 	padding:5px;
 	 }
 	 div#content>section>div table.board_write tr td textarea{
-	 	height:300px;
+	 	height:400px;
+	 }
+	 tr.button_write_tr button.btn_board_type{
+    	padding: 10px 24px 10px 24px;
+    	border-radius: 3px;
+    	font-size: 13pt;
+    	background:#F3CD9E;
+    	border: none;
+    	color: white;
+    	font-weight: bold;
+    	outline:none;
+    	cursor:pointer;
+    	margin-top:20px;
 	 }
 </style>
 </head>
@@ -78,17 +109,16 @@
 						<td><%=bid %></td>
 					</tr>
 					<tr>
-						<th>내용</th>
-						<td><textarea name = "bcontent" id= "bcontent"></textarea></td>
+						<td colspan=2><textarea name = "bcontent" id= "bcontent" placeholder="내용을 입력해 주세요.(최대 1000자)" style="font-size:15pt;"></textarea>
 					</tr>
 					<tr>
 						<th>파일</th>
-						<td><input type="file" name="bcfile" id="bfile"></td>
+						<td><input type="file" name="bcfile" id="bfile" ></td>
 					</tr>
-					<tr>
+					<tr class="button_write_tr">
 						<td colspan=2>
-							<a href="murkit_board.do"><button type="button" id="btnList">목록으로</button></a>
-							<button type="submit" >글쓰기</button>
+							<a href="murkit_board.do"><button type="button" id="btnList" class="btn_board_type">목록으로</button></a>
+							<button type="submit" class="btn_board_type" >글쓰기</button>
 						</td>
 					</tr>
 				</table>

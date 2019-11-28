@@ -45,21 +45,19 @@ ArrayList<BoardVO> list = (ArrayList<BoardVO>)request.getAttribute("list");
 	div#murkit_board{		
 		margin:auto;
 		text-align:center;
-		width:1200px;
+		width:1000px;
 		padding: 72px 0 140px;
 	}
 	div#murkit_board>section{
 		margin:20px 0px 30px 0px;
 		text-align:center;
 	}
-	div#murkit_board>section>table{
-		margin:30px;
+	div#murkit_board>section>table.murkit_boardlist{
+		width:100%;
 		margin:auto;
-		width:1200px;
 		border-collapse:collapse;
 		
 	}
-	
 	div#murkit_board>section>table td {
 	border-bottom:1px solid #f0efee;
 	border-top:1px solid #f0efee;
@@ -90,12 +88,19 @@ ArrayList<BoardVO> list = (ArrayList<BoardVO>)request.getAttribute("list");
 		padding-left:0px;
 		text-align:left;
 	}
-	button.board_write_button{
-		background: #f3cd9e;
-		margin-left:1100px;
-		margin-top:-50px;
-		padding:10px;
-	}
+	tr#lasttr a button.btn_board_type{
+    	padding: 10px 24px 10px 24px;
+    	border-radius: 3px;
+    	font-size: 13pt;
+    	background:#F3CD9E;
+    	border: none;
+    	color: white;
+    	font-weight: bold;
+    	outline:none;
+    	cursor:pointer;
+    	margin-left:800px;
+    	margin-top:-50px;
+	 }
 </style>
 <body>
 <!-- header 추가 -->
@@ -122,7 +127,7 @@ ArrayList<BoardVO> list = (ArrayList<BoardVO>)request.getAttribute("list");
 					<%} %>
 					<tr id="lasttr">
 						<td colspan=5><div id="ampaginationsm"></div>
-						<a href="murkit_board_write.do"><button type = "button" class="board_write_button"> 글쓰기</button></a>
+						<a href="murkit_board_write.do"><button type = "button" class="btn_board_type"> 글쓰기</button></a>
 						</td>
 					</tr>	
 				</table>

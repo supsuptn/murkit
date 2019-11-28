@@ -117,9 +117,9 @@ $(document).ready(function(){
 	 }
 	 div#content>section>div table.murkit_board_content th {
 	 	padding:7px 0px 7px 0px;
-	 	background:green;
+	 	background:#F5F5F7;
 	 	opacity:0.9;
-	 	color:white;
+	 	color:black;
 	 }
 	 div#content>section>div table.murkit_board_content td {
 	 padding:3px 0px 3px 10px;
@@ -140,12 +140,12 @@ $(document).ready(function(){
 	 	padding-left:20px;
 	 }
 	 	div#content>section>div#murkit_board_content_main {
-		width:1200px;
+		width:1000px;
 		margin:auto;
 		margin-bottom:100px;
 	}
-	div#content>section>div table.murkit_board_content tr td#context{
-	 	height:300px;
+	div#content>section>div#murkit_board_content_main table.murkit_board_content tr td#bcontent{
+	 	height:400px;
 	 }
 </style>
 </head>
@@ -162,16 +162,22 @@ $(document).ready(function(){
 					<tr>
 						<th>제목</th>
 						<td>${vo.btitle }</td>
+						</tr>
+						<tr>
 						<th>아이디</th>
 						<td><%=bname %></td>
+						</tr>
+						<tr>
 						<th>등록일</th>
 						<td>${vo.bdate }</td>
+						</tr>
+						<tr>
 						<th>조회수</th>
 						<td>${vo.bhit }</td>
+						<tr>
 					</tr>
 					<tr>
-						<th id="content">내용</th>
-						<td colspan=8>
+						<td colspan=2 id= "bcontent">
 							${vo.bcontent }
 						<br>
 						<%--<% if(vo.getBsfile() != null && vo.getBsfile() != ""){ %>
@@ -181,7 +187,7 @@ $(document).ready(function(){
 						</td>
 					</tr>
 					<tr>
-						<td colspan=8>
+						<td colspan=2>
 							<div style="text-align:left;padding:5px 0px 5px 20px">댓글 목록[<%=vo.getRcount() %>]</div>
 							<hr>
 							<ul>
@@ -197,7 +203,7 @@ $(document).ready(function(){
 						</td>
 					</tr>
 					<tr>
-						<td colspan=8>
+						<td colspan=2>
 							<a href="#"><button type="button" id="btnReply">댓글쓰기</button></a>
 							<a href="board_update.do?bid=${vo.bid }"><button type="button">수정하기</button></a>
 							<a href="board_delete.do?bid=${vo.bid }"><button type="button">삭제하기</button></a>
