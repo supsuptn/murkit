@@ -104,8 +104,8 @@
                    <ul>
                    		<li><a href="#">로그인</a></li>
                    		<li><a href="#">회원가입</a></li>
-                   		<li><a href="#">고객행복센터</a></li>
-                   		<li><a href="#">게시판</a></li>
+                   		<li><a href="http://localhost:9090/murkit/happycenter.do">고객행복센터</a></li>
+                   		<li><a href="http://localhost:9090/murkit/murkit_board.do">게시판</a></li>
                    </ul>
                </div>
            </div>

@@ -6,12 +6,18 @@
 <meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
 <title>Insert</title>
 <style>
+
+	*{
+		font-family:"나눔스퀘어라운드";
+	}
 	div#FooterMaindiv > div#footer_center ul li, div#FooterMaindiv > nav > ul#footer_top > li {
 		display:inline-block;
 		border-right:1px solid gray;
-		padding-right:10px;
 		padding-left:10px;
-		font-size:8pt;
+		padding-right:10px;
+		padding-top:3px;
+		padding-bottom:3px;
+		font-size:9pt;
 		color:gray;
 	}
 	div#FooterMaindiv > nav > ul#footer_top li:nth-child(2),
@@ -31,7 +37,10 @@
 		text-decoration:none;
 		color:black;
 		font-weight:bold;
-		font-size:12pt;
+		font-size:14pt;
+	}
+	ul#footer_top {
+		padding-top:15px;
 	}
 	li:last-child a#footer_JoinCheck{
 		text-decoration:underline;
@@ -50,7 +59,7 @@
 		padding-top:50px;
 	}
 	div#FooterMaindiv {
-		width:1180px;
+		width:1200px;
 		text-align:center;
 		margin:auto;
 	}
@@ -70,12 +79,12 @@
 </head>
 <body>
 <footer>
-<hr>
+
 <div id="Footer_margintop"></div>
 <div id="FotterBack">
 <div id="FooterMaindiv">
 	<div>
-		<a href="http://localhost:9090/murkit/index.do"><img src="http://localhost:9090/project/images/logo.png" style="width:150px; height:170px; display:inline-block; float: left;"/></a>
+		<a href="http://localhost:9090/murkit/index.do"><img src="http://localhost:9090/murkit/images/logo_nonBack.png" style="width:150px; height:150px; display:inline-block; float: left; margin-top:10px;"/></a>
 	</div>
 	<nav>
 		<ul id="footer_top">
