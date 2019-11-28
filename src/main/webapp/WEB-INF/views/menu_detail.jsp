@@ -7,99 +7,7 @@
 <title>Menu_detail</title>
 <link rel="stylesheet" type="text/css" href="http://localhost:9090/murkit/css/menu_detail.css">
 <script src="http://localhost:9090/murkit/js/jquery-3.4.1.min.js"></script>
-<script>
-	$(document).ready(function(){
-		var bot_menu = "det_explain";
-		
-	/** 별점 **/
-	var starWidth = $("span#star_number").text()*20-5;
-	$("span#stars").css("width",starWidth+"%");
-		
-	/** 맨 처음에 이미지로 border 설정 **/
-	$("#subImg>img:nth-child(2)").css("border","1px solid red").attr("id","selected");
-	/** 이미지 클릭시 클릭한 이미지를 메인으로 바꾸기 **/
-		$("div#subImg>img").click(function(){
-			//이전에 선택했던 사진의 border none
-			$("img#selected").css("border","none").attr("id","none");
-			
-			//border와 id값을 주고 id로 border를 해제 
-			$(this).css("border","1px solid red").attr("id","selected");
-			$("div#food_img>img").attr("src",$(this).attr("src"));
-		});
-	
-		/** 화살표 누르면 화살표 방향대로 사진이 바뀜**/
-		$("div#subImg>button").click(function(){
-				var child = $("div#subImg>img#selected").attr("class");
-				$("div#subImg>img#selected").attr("id","none").css("border","none");
-			if($(this).attr("id") == "menu_detail_img_arrow_left"){
-				$("div#subImg>img:nth-child("+child+")").attr("id","selected").css("border","1px solid red");
-				$("#food_img>img").attr("src",$("div#subImg>img:nth-child("+child+")").attr("src"));
-			}else {
-				$("div#subImg>img:nth-child("+(Number(child)+2)+")").attr("id","selected").css("border","1px solid red");
-				$("#food_img>img").attr("src",$("div#subImg>img:nth-child("+(Number(child)+2)+")").attr("src"));
-			}
-		});
-		
-		/** 버튼 펴기 **/
-		$("div#sell_select>div>span").click(function(){
-			if($("#sell_btn").attr("class") =="close"){
-				$("#sell_select>div>span:last-child").css("transform","rotate(90deg)").css("margin-top","8px");
-	 			$("#sell_btn").attr("class","open").css("display","block");
-			}else {
-				$("#sell_select>div>span:last-child").css("transform","rotate(-90deg)").css("margin-top","13px");
- 	 			$("#sell_btn").attr("class","close").css("display","none");
-			}
-		});
-
-		/** 날짜 선택 button, div 생성 **/
-		$("div#sell_btn button").click(function(){
-			var id = $(this).attr("id");
-			var date = $(this).text();
-			var cookName = $("span#tit").text();
-			var price = $("dd#price").text();
-			var str = "<div id='choice' class=" +id
-						+"><div id='choice_top'><span>"
-						+date
-						+"</span><div>"
-						+"<span class='xBtn' id=" +id
-						+"></span></div></div>"
-						+"<hr><div id='choice_bottom'><span>"
-						+cookName
-						+"</span>"
-						+"<div id='number'><span class='cursor'>-</span><span>1</span><span class='cursor'>+</span></div>"
-						+"<span>"
-						+price
-						+"</span></div></div>";
-			/** 이미 있는 경우 생성하지 않음. **/
-			if($("div."+id).attr("class")!=id){
-				$("div#cart_info>div:last-child").before(str);
-			}
-			
-			//x버튼 클릭시 remove 
-			$("div#choice>div#choice_top>div>span").click(function(){
-				$("div."+$(this).attr("id")).remove();
-			});
-			
-			//개수 추가&삭제
-			
-		});
-		
-		$("div#detail_menu>ul>li").click(function(){
-			//이전에 선택되었던 메뉴와 하단의 내용 해제, 메뉴 하단에 border 
-			//메뉴 클릭에 따라서 하단의 내용을 바꿈.
-			$("li#"+bot_menu).css("border","none");
-			$("div."+bot_menu).css("display","none");
-			
-			bot_menu = $(this).attr("id");
-			$("li#"+bot_menu).css("border-bottom","3px solid black");
-			$("div."+bot_menu).css("display","block");
-			
-			
-			
-			
-		});
-	});
-</script>
+<script src="http://localhost:9090/murkit/js/menu_detail.js"></script>
 </head>
 <body>
 	<div>
@@ -342,7 +250,7 @@
 				<label>상품코드 : 40003724</label>
 				<label>먹킷 상품정보는 전자상거래 등에서의 상품정보 제공 고시에 따라 작성되었습니다.</label>
 				
-				<table border=1>
+				<table>
 					<tr>
 						<th>본상품구성</th>
 						<td>상품 상세 별도 표기</td>
@@ -409,7 +317,7 @@
 				<img src="http://localhost:9090/murkit/images/menu_detail/20191007180011509.jpg" />
 			</div>
 			
-			<div id="det_review" class="det_review">
+			<div id="det_review" class="det_review ">
 				<div id="review_rating">
 					<span class="icon"><span class="icon"></span></span>
 					<span class="bold">4.7<span> / 5</span></span>
@@ -422,24 +330,24 @@
 				<div id="taste_box">
 					<div id="taste_l">
 						<table>
-							<tr>
+							<tr id="little_salty">
 								<th>약간 짭짤했어요</th>
 								<td id="bar_wrap"><div class="bg_bar"><div class="bar"></div></div></td>
-								<td>33명</td>
+								<td><span>33</span>명</td>
 							</tr>
 							
-							<tr>
+							<tr id="suitable">
 								<th>적당했어요</th>
 								<td id="bar_wrap"><div class="bg_bar"><div class="bar"></div></div></td>
-								<td>268명</td>
+								<td><span>268</span>명</td>
 							</tr>
 							
-							<tr>
+							<tr id="very_salty">
 								<th>아주 짭짤했어요</th>
 								<td id="bar_wrap"><div class="bg_bar"><div class="bar"></div></div></td>
-								<td>8명</td>
+								<td><span>8</span>명</td>
 							</tr>
-
+							<input type="hidden" value="309" plasceholder="맛평가명수총합(33+268+8)" id="taste_sum"/>
 						</table>
 						
 					</div>
@@ -502,18 +410,19 @@
 				</div>
 			</div>
 			
-			<div id="shipRefund">
+			<div class="shipRefund" >
 				<span>상품 관련 문의해 주세요.</span>
-				<div>
-					<span>고객님의 질문에 정성껏 빠르게 답변해 드리겠습니다.<br> 작성해주신 문의내역 및 답변은 MY쿡킷 > 나의활동 > 1:1 문의 내역 메뉴에서 확인 가능합니다.</span>
-					<a><div>1:1문의</div></a>
+				<div id="ship_subTit">
+					<span>고객님의 질문에 정성껏 빠르게 답변해 드리겠습니다.</span>
+					<span>작성해주신 문의내역 및 답변은 MY쿡킷 > 나의활동 > 1:1 문의 내역 메뉴에서 확인 가능합니다.</span>
+					<a href="#"><span>1:1문의</span></a>
 				</div>
 				
-				<div>
-					<div>
-						<div>
-							<span>배송안내</span>
-							<span class="icon"></span>
+				<div id="ship_table">
+					<div id="ship_info">
+						<div id="ship_info_top" class="info_top">
+							<span class="bold">배송안내</span>
+							<span class="icon cursor"></span>
 						</div>
 						
 						<table>
@@ -546,10 +455,10 @@
 						</table>
 					</div>
 					
-					<div>
-						<div>
-							<span>변경/취소/반품 안내</span>
-							<span class="icon"></span>
+					<div id="cancel_info">
+						<div id="cancel_info_top" class="info_top">
+							<span class="bold">변경/취소/반품 안내</span>
+							<span class="icon cursor"></span>
 						</div>
 						
 						<table>
@@ -570,7 +479,7 @@
 								<th>교환/반품 불가 안내</th>
 								<td> 
 									<p>한정 수량 판매 방식으로 교환 시 품절이 발생할 수 있어 교환은 불가합니다.</p>
-									<p>냉장･냉동･신선제품으로 시간이 경과되면 상품의 가치가 훼손되기 쉬우므로 제품의 하자 이외의 이유로(단순변심 등) 인한 교환/반품은 불가합니다.</p>
+									<p>냉장/냉동/신선제품으로 시간이 경과되면 상품의 가치가 훼손되기 쉬우므로 제품의 하자 이외의 이유로(단순변심 등) 인한 교환/반품은 불가합니다.</p>
 									<p>다음의 경우 교환/반품 신청기간 내에라도 취소/교환/반품이 불가합니다.</p>
 									<div>
 										<ol>
@@ -627,16 +536,17 @@
 			</div>
 			
 			
-				<div id="bottom_right" style="display: inline-block; width: 320px; float: left; margin-top: 100px; margin-left: 76px; border: 1px solid #ccc;">
-					<div>
-						<input type="radio" />
+				<div id="bottom_right">
+					<div id="radio_cart">
+						<input type="radio" checked />
 						<label>장바구니</label>
 					</div>
 
-					<div>
+					<div id="item_select_bot">
 						<span>주문마감시간 오전 7시</span>
-						<div>
-							<a><span>배송받을 날짜를 선택하세요.</span></a>
+						<div id="item_select_bot_btn">
+							<a><span>배송받을 날짜를 선택하세요.</span> <span class="icon"></span></a>
+
 							<div>
 								<ul>
 									<li><button type="button" class="btn_date">11월 22일 (금)</button></li>
@@ -648,7 +558,7 @@
 								</ul>
 							</div>
 							
-							<div class ="item_add" style="height:500px;">
+							<div class ="item_add">
 								
 							</div>
 							
@@ -658,7 +568,7 @@
 									<span>0원</span>
 								</div>
 								
-								<div style="background-color:#BDD61A; padding:28px 0px; width:300px; margin:auto;">
+								<div id="add_btn">
 									<span>장바구니 담기</span>
 								</div>
 							</div>

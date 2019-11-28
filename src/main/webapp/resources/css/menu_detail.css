@@ -51,13 +51,15 @@ div#tit_info #sub_tit,#tit{
 div#tit_info div#cook_detail{font-size:15px;}
 div#price_div dt, #discount dt,
 #send_info dt,dd,#deadline,div#view_detail>div>span:nth-child(2),
-.order_step_span,div.pro_info table th,td,#taste_box th,#sort,#top_wrap span#re_date{font-size:13px;}
+.order_step_span,div.pro_info table th,td,#taste_box th,#sort,#top_wrap span#re_date,
+#ship_subTit span{font-size:13px;}
 div#price_div dt,div#choice>div>span,div#choice>div>div>span{ font-size:15px;}
 #sell_select>#sell_btn button,#review_sort>span.icon{font-size:16px;}
+div.shipRefund #ship_table div#ship_info div span:first-child,#cancel_info_top span.bold{font-size: 18px;}
 div#price_div dd,div#number_price,div#detail_menu>ul>li,
 div#view_detail>div>span:first-child,div.explain,
 #kit_consist>div:first-child>span,div.pro_info>label:first-child{font-size:20px;}
-div#number_price>div{font-size:23px;}
+div#number_price>div,div#view_detail div.shipRefund>span{font-size:23px;}
 div.subtitle{font-size:24px;}
 div#bottom_left>div.title{font-size:40px;}
 
@@ -373,6 +375,7 @@ div#detail {
 	margin: auto; 
 	display: inline-block;
 	margin-top: 120px;
+	position:sticky;
 }
 
 div#detail>div#detail_menu{
@@ -380,6 +383,10 @@ div#detail>div#detail_menu{
 	text-align: center; 
 	margin: auto;
 	display:block;
+	position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 100;
 }
 
 div#detail_menu>ul{
@@ -403,7 +410,6 @@ div#detail_menu>ul>li:first-child{
 div#detail>hr{
  width: 100%; 
  margin: 0; 
- opacity: 0.3;
 }
 
 /***********************************************************
@@ -543,7 +549,7 @@ div#kit_consist>div:nth-child(2)>span{
 div#view_detail>div.pro_info{
 	display:none;
 	text-align:left;
-	margin:64px 0 100px 0;
+	margin:48px 0 100px 0;
 }
 
 div.pro_info label{
@@ -553,17 +559,25 @@ div.pro_info label{
 div.pro_info table{
 	width:780px;
 	margin-bottom:24px;
+	border-collapse: collapse;
 }
+
+div.pro_info table,div.pro_info table td,div.pro_info table th{border:1px solid #ccc;}
 div.pro_info table th {
 	background-color:lightgray;
 	padding: 10px 24px;
     width: 200px;
 }
-div#bottom_right{
-	display:table;
-	border-collapse:collapse;
-}
+div.pro_info table td {padding-left:8px;}
 
+div#taste_box div#taste_l td div.bar {
+	width: 240px;
+    height: 8px;
+    background-color: green;
+    border-radius: 16px;
+    margin: 4px 0;
+/*     width: 80%; */
+}
 
 /***********************************************************
  	리뷰  
@@ -637,7 +651,7 @@ div#taste_box{
 }
 
 div#taste_l{
-	width: 395px;
+	width: 431px;
 	padding:25px 0 25px 31px;
 }
 div#taste_r{
@@ -650,8 +664,10 @@ div#taste_r,div#taste_l{
 
 div#taste_l table {
 	border-right:1px solid #ccc;
+	padding-right: 33px;
 }
 
+div#taste_l table td:last-child { padding-left:20px;}
 div#taste_r table, div#taste_l table{
 	float:left;
 }
@@ -736,3 +752,55 @@ div#view_detail #user_review_img_p>p{
 }
 
 #user_review_img_p{margin-bottom: 24px;}
+
+/********************************************
+	배송/반품/문의
+********************************************/
+div#view_detail div.shipRefund { display: none; text-align: left;}
+#ship_table>div>table{display:none;}
+div.shipRefund #ship_subTit{display: inline-block; width:780px; margin-top: 15px;}
+div.shipRefund #ship_subTit div { display:inline-block; width:200px; height: 30px; }
+div.shipRefund #ship_subTit>span { float:left; padding-top:12px; }
+div.shipRefund #ship_subTit a {display: inline-block; width:100px; height: 48px; border:1px solid #ccc; margin-left: 175px;}
+div.shipRefund #ship_subTit a span {  padding:20px 0 20px 32px; float:left; color: black; }
+div.shipRefund #ship_table{ margin-top:18px; border-top:2px solid black;}
+div.shipRefund #ship_table div div.info_top{ margin: 20px 0; border-bottom: 1px solid #ccc; padding: 10px 0 20px;}
+div.shipRefund #ship_table div div.info_top span {display: inline-block;}
+div.shipRefund #ship_table div div.info_top span:first-child{ float: left;}
+div.shipRefund #ship_table div div.info_top span:nth-child(2){ width: 30px; height: 23px; background-position: -91px -307px; transform: rotate( 90deg ); margin-left: 665px;  margin-top: 10px; }
+
+div.shipRefund #cancel_info #cancel_info_top {border-bottom:1px solid black;}
+div.shipRefund #ship_table div#cancel_info div.info_top span:nth-child(2){margin-left:577px;}
+div#ship_info table{border-bottom:1px solid black;}
+
+div.shipRefund div#ship_info table, div#cancel_info table {border-collapse:collapse;}
+div.shipRefund div#ship_info table th, div#cancel_info table th { font-size:13px; width:160px; vertical-align: top;}
+div.shipRefund div#ship_info table td, div#cancel_info table td	{padding-right:10px;}
+div.shipRefund div#ship_info table td, div#cancel_info table td,div.shipRefund div#ship_info table tr, div#cancel_info table tr	{padding-bottom:10px;}	{padding-right:10px;}
+div.shipRefund div#ship_info table tr p:first-child, div#cancel_info table tr p:first-child {margin-top:0;}
+div#cancel_info table tr ol { padding: 10px 0 5px 10px; background-color:#f5f5f5;}
+div#cancel_info table tr ol li { margin-bottom:10px;}
+
+/********************************************
+	bottom_right
+********************************************/
+div#view_detail div#bottom_right{
+	width: 320px; 
+	float: left; 
+	margin-top:0; 
+	margin-left: 76px; 
+	border: 1px solid #ccc;
+	text-align:left;
+}
+
+div#bottom_right div#item_add { height:500px; }
+div#bottom_right div#total_order_price div#add_btn{ background-color:#BDD61A; padding:28px 0px; width:300px; margin:auto;}
+
+div#bottom_right div#radio_cart {  padding-left:10px; margin-top:32px;border-bottom:1px solid #ccc; width:320px;}
+div#bottom_right div#radio_cart label{ padding-bottom:32px;font-size:18px; display:inline-block;}
+div#item_select_bot>span{font-size:13px;}
+div#item_select_bot {padding:15px 10px 24px 10px;}
+div#item_select_bot div#item_select_bot_btn a{}
+div#item_select_bot div#item_select_bot_btn a span {padding: 20px 56px 20px 16px; width:223px; display: inline-block; border: 1px solid green;}
+div#item_select_bot div#item_select_bot_btn span.icon { display:inline-block; width: 2px; height: 28px; background-position: -743px 2px;
+    transform: rotate(-90deg);}
