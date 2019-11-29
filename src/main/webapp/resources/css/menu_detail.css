@@ -791,16 +791,38 @@ div#view_detail div#bottom_right{
 	margin-left: 76px; 
 	border: 1px solid #ccc;
 	text-align:left;
+	height:100%;
 }
 
 div#bottom_right div#item_add { height:500px; }
-div#bottom_right div#total_order_price div#add_btn{ background-color:#BDD61A; padding:28px 0px; width:300px; margin:auto;}
 
 div#bottom_right div#radio_cart {  padding-left:10px; margin-top:32px;border-bottom:1px solid #ccc; width:320px;}
 div#bottom_right div#radio_cart label{ padding-bottom:32px;font-size:18px; display:inline-block;}
 div#item_select_bot>span{font-size:13px;}
 div#item_select_bot {padding:15px 10px 24px 10px;}
-div#item_select_bot div#item_select_bot_btn a{}
-div#item_select_bot div#item_select_bot_btn a span {padding: 20px 56px 20px 16px; width:223px; display: inline-block; border: 1px solid green;}
-div#item_select_bot div#item_select_bot_btn span.icon { display:inline-block; width: 2px; height: 28px; background-position: -743px 2px;
-    transform: rotate(-90deg);}
+div#item_select_bot div#item_select_bot_btn div#item_select_btn{border: 1px solid red;width: 299px; height: 60px; display: inline-block; margin-top: 12px;}
+div#item_select_bot div#item_select_bot_btn div#item_select_btn span {padding: 20px 56px 20px 16px;display: inline-block;float: left;}
+div#item_select_bot div#item_select_bot_btn div#item_select_btn span.icon { padding:0; width:24px;height:24px; display:inline-block; background-position: -739px 2px; transform: rotate(-90deg); margin-top: 20px;}
+
+div#bottom_right div#item_add div#add_top {width:100%; border:1px solid #ccc;}
+div#bottom_right div#item_add div#add_top span#date{margin-top:20px; float:left; display:inline-block; }
+div#bottom_right div#item_add div#add_top span.icon { background-position: -321px 0px; margin-top: 18px; margin-left: 147px; display: inline-block; width:24px; height: 24px; padding-bottom:10px;}
+div#bottom_right div#item_add div#add_bot {width:100%;}
+div#item_add div#add_bot>span { display: inline-block; margin-top: 20px; margin-left:10px;}
+div#item_add div#add_bot div#num_btn{ margin-bottom:12px;}
+div#item_add div#add_bot div#num_btn div {display: inline-block; border:1px solid #ccc; margin-top:12px; margin-left:10px;}
+div#item_add div#add_bot div#num_btn div span { padding:7px 10px; display: inline-block;}
+div#item_add div#add_bot div#num_btn>span {color:red;}
+div#item_add div#add_bot div#num_btn span#item_price{font-size: x-large; margin-left: 80px;}
+
+div#bottom_right div#total_order_price div {float: right;}
+div#bottom_right div#total_order_price div#num_price{text-align:right; margin-bottom:22px;}
+div#bottom_right div#total_order_price div#num_price span:first-child {font-size: 18px;}
+div#bottom_right div#total_order_price div#num_price span:last-child {width:150px;margin-left: 78px; display: inline-block; color:red; font-size: x-large;} 
+div#bottom_right div#total_order_price div#add_btn{ padding-bottom: 28px;width:300px; margin:auto;}
+div#bottom_right div#total_order_price div#add_btn div:first-child{ border:1px solid #ccc; float:left; width:64px; height:64px; display:inline-block;}
+div#bottom_right div#total_order_price div#add_btn div:last-child{border:1px solid red; width:220px; height:64px;}
+div#bottom_right div#total_order_price div#add_btn div:last-child span {display:inline-block; width: 100%; text-align: center; margin: auto; padding-top: 23px;}
+div#bottom_right div#total_order_price div#add_btn div div{ width: 64px; height: 64px; border: 1px solid black; float: left;  }
+div#bottom_right div#total_order_price div#add_btn div span.icon {width: 30px; height: 30px; margin: 17px 17px;  background-position: -710px -324px; display:inline-block;}
+div#bottom_right div#total_order_price div#add_btn>span{ background-color:#BDD61A; padding: 23px 66px; display: inline-block; margin-left: 10px;}

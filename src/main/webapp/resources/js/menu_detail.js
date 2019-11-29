@@ -52,7 +52,7 @@
 						+date
 						+"</span><div>"
 						+"<span class='xBtn' id=" +id
-						+"></span></div></div>"
+						+"></span></div></div>" 
 						+"<hr><div id='choice_bottom'><span>"
 						+cookName
 						+"</span>"

@@ -544,32 +544,51 @@
 
 					<div id="item_select_bot">
 						<span>주문마감시간 오전 7시</span>
-						<div id="item_select_bot_btn">
-							<a><span>배송받을 날짜를 선택하세요.</span> <span class="icon"></span></a>
+						<div id="item_select_bot_btn" >
+							<div id="item_select_btn" class="cursor"><span>배송받을 날짜를 선택하세요.</span> <span class="icon"></span></div>
 
-							<div>
+							<div id="sell_btn" class="close">
 								<ul>
-									<li><button type="button" class="btn_date">11월 22일 (금)</button></li>
-									<li><button type="button" class="btn_date">11월 23일 (토)</button></li>
-									<li><button type="button" class="btn_date">11월 26일 (화)</button></li>
-									<li><button type="button" class="btn_date">11월 27일 (수)</button></li>
-									<li><button type="button" class="btn_date">11월 28일 (목)</button></li>
+									<li><button type="button" class="btn_date" id="1122">11월 22일 (금)</button></li>
+									<li><button type="button" class="btn_date" id="1123">11월 23일 (토)</button></li>
+									<li><button type="button" class="btn_date" id="1126">11월 26일 (화)</button></li>
+									<li><button type="button" class="btn_date" id="1127">11월 27일 (수)</button></li>
+									<li><button type="button" class="btn_date" id="1128">11월 28일 (목)</button></li>
 
 								</ul>
 							</div>
 							
-							<div class ="item_add">
-								
+							<div id ="item_add">
+								<div>
+									<div id="add_top">
+										<span id="date">2019-11-22(금)</span>
+										<span class="icon cursor"></span>
+									</div>
+									
+									<div id="add_bot">
+										<span>속초식 코다리찜</span>
+										<div id="num_btn">
+											<div>
+												<span class="cursor">-</span>
+												<span>1</span>
+												<span class="cursor">+</span>
+											</div>
+											
+											<span id="item_price" class="bold">24,800원</span>
+										</div>
+									</div>
+								</div>
 							</div>
 							
 							<div id="total_order_price">
-								<div>
+								<div id="num_price">
 									<span>수량 0개 </span>
-									<span>0원</span>
+									<span class="bold">240,800원</span>
 								</div>
 								
 								<div id="add_btn">
-									<span>장바구니 담기</span>
+									<div><span class="icon"></span></div>
+									<div><span>장바구니 담기</span></div>
 								</div>
 							</div>
 						</div>
