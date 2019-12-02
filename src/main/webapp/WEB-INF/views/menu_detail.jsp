@@ -65,7 +65,7 @@
 					<div id="price_div">
 						<dl>
 							<dt>판매가</dt>
-							<dd class="bold" id="price">24,800원</dd>
+							<dd class="bold"><span id="product_price">24800</span>원</dd>
 						</dl>
 
 						<hr>
@@ -127,15 +127,15 @@
 
 					<div>
 						<div id="number_price">
-							<span>수량 1개</span>
+							<span>수량 <span>0</span>개</span>
 							<div>
-								<span>24,800원</span>
+								<span><span>24,800<span>원</span>
 							</div>
 						</div>
 
 						<div id="cart_add">
-							<div><span></span></div>
-							<div><span>장바구니 담기</span></div>
+							<div><a href="#"><span></span></a></div>
+							<div><a href="#"><span>장바구니 담기</span></a></div>
 						</div>
 					</div>
 					
@@ -319,7 +319,7 @@
 			
 			<div id="det_review" class="det_review ">
 				<div id="review_rating">
-					<span class="icon"><span class="icon"></span></span>
+					<span class="icon"><span class="icon" id="color_stars"></span></span>
 					<span class="bold">4.7<span> / 5</span></span>
 					<a href="#"><div id="review_write_btn">리뷰작성</div></a>
 				</div>
@@ -547,7 +547,7 @@
 						<div id="item_select_bot_btn" >
 							<div id="item_select_btn" class="cursor"><span>배송받을 날짜를 선택하세요.</span> <span class="icon"></span></div>
 
-							<div id="sell_btn" class="close">
+							<div id="sell_btn_2" class="close">
 								<ul>
 									<li><button type="button" class="btn_date" id="1122">11월 22일 (금)</button></li>
 									<li><button type="button" class="btn_date" id="1123">11월 23일 (토)</button></li>
@@ -558,7 +558,7 @@
 								</ul>
 							</div>
 							
-							<div id ="item_add">
+							<!-- <div id ="item_add">
 								<div>
 									<div id="add_top">
 										<span id="date">2019-11-22(금)</span>
@@ -578,17 +578,17 @@
 										</div>
 									</div>
 								</div>
-							</div>
+							</div> -->
 							
 							<div id="total_order_price">
 								<div id="num_price">
-									<span>수량 0개 </span>
+									<span>수량 <span>0</span>개 </span>
 									<span class="bold">240,800원</span>
 								</div>
 								
 								<div id="add_btn">
 									<div><span class="icon"></span></div>
-									<div><span>장바구니 담기</span></div>
+									<div><a href="#"><span>장바구니 담기</span></a></div>
 								</div>
 							</div>
 						</div>
