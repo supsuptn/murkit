@@ -8,6 +8,7 @@
 <style>
 
 	*{
+		
 		font-family:"³ª´®½ºÄù¾î¶ó¿îµå";
 	}
 	div#FooterMaindiv > div#footer_center ul li, div#FooterMaindiv > nav > ul#footer_top > li {
@@ -71,9 +72,10 @@
 		text-align:left;
 		margin:auto;
 	}
-	div#FotterBack {
+	div#FooterBack { 
 		width:100%;
 		background:#f3cd9e;
+		clear:both;
 	}
 </style>
 </head>
@@ -81,7 +83,7 @@
 <footer>
 
 <div id="Footer_margintop"></div>
-<div id="FotterBack">
+<div id="FooterBack">
 <div id="FooterMaindiv">
 	<div>
 		<a href="http://localhost:9090/murkit/index.do"><img src="http://localhost:9090/murkit/images/logo_nonBack.png" style="width:150px; height:150px; display:inline-block; float: left; margin-top:10px;"/></a>

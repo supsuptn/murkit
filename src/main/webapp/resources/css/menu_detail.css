@@ -538,6 +538,12 @@ div#kit_consist span, div#kit_consist p {
 	padding:0 5px;
 }
 
+div#kit_consist span#icon_person{    
+	display: inline-block;
+    background-position: -521px -79px;
+    width: 24px;
+    height: 19px;
+}
 div#kit_consist>div:nth-child(2)>span{
 	padding:8px 0  24px 0;
 	display:inline-block;
