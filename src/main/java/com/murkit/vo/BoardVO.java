@@ -4,7 +4,8 @@ import org.springframework.web.multipart.commons.CommonsMultipartFile;
 
 public class BoardVO {
 	String btitle,bcontent,bfile,bsfile,bdate,bname;
-	
+	int bid,rno,rcount;
+	CommonsMultipartFile bcfile;
 
 	public String getBname() {
 		return bname;
@@ -12,10 +13,6 @@ public class BoardVO {
 	public void setBname(String bname) {
 		this.bname = bname;
 	}
-	int bid,bhit,rno,rcount;
-	CommonsMultipartFile bcfile;
-	
-	
 	public CommonsMultipartFile getBcfile() {
 		return bcfile;
 	}
@@ -63,12 +60,6 @@ public class BoardVO {
 	}
 	public void setBid(int bid) {
 		this.bid = bid;
-	}
-	public int getBhit() {
-		return bhit;
-	}
-	public void setBhit(int bhit) {
-		this.bhit = bhit;
 	}
 	public int getRno() {
 		return rno;

@@ -244,7 +244,6 @@ textarea {width:100%; border:0; overflow-y:auto; resize:none}
 </style>
 </head>
 <body>
-<jsp:include page="header.jsp"></jsp:include>
 <section id="container" >
 			<div id="container_title" class="hide" tabindex="-1">본문 시작</div> 
 
@@ -715,6 +714,5 @@ textarea {width:100%; border:0; overflow-y:auto; resize:none}
 			<!-- //content -->
 			<!-- //content -->
 		</section>
-		<jsp:include page="footer.jsp"></jsp:include>
 </body>
 </html>

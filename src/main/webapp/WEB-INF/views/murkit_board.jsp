@@ -69,6 +69,7 @@ ArrayList<BoardVO> list = (ArrayList<BoardVO>)request.getAttribute("list");
 	border-top:1px solid #f0efee;
 	padding:7px 7px 7px 7px;
 	font-size:12pt;
+	cursor:pointer;
 	}
 	div#murkit_board>section>table tr:last-child td {
 		border-bottom:none;
@@ -109,8 +110,6 @@ ArrayList<BoardVO> list = (ArrayList<BoardVO>)request.getAttribute("list");
 	 }
 </style>
 <body>
-<!-- header 추가 -->
-<jsp:include page="header.jsp"></jsp:include>
 	<div id="murkit_board">
 		<section>
 				<h1 style="font-size:30px;">먹킷 게시판</h1>
@@ -120,7 +119,6 @@ ArrayList<BoardVO> list = (ArrayList<BoardVO>)request.getAttribute("list");
 						<th>제목</th>
 						<th>아이디</th>
 						<th>등록일</th>
-						<th>조회수</th>
 						</tr>
 						<% for(BoardVO vo:list){ %>
 					<tr class="midtr" id="<%=vo.getBid()%>&page=${rpage}&bname=<%=vo.getBname() %>">
@@ -128,7 +126,6 @@ ArrayList<BoardVO> list = (ArrayList<BoardVO>)request.getAttribute("list");
 						<td><%=vo.getBtitle() %></td>
 						<td><%=vo.getBname() %>
 						<td><%=vo.getBdate() %></td>
-						<td><%=vo.getBhit() %></td>
 					</tr>
 					<%} %>
 					<tr id="lasttr">
@@ -139,7 +136,5 @@ ArrayList<BoardVO> list = (ArrayList<BoardVO>)request.getAttribute("list");
 				</table>
 		</section>
 	</div>
-	<!-- footer 추가 -->
-	<jsp:include page="footer.jsp"></jsp:include>
 </body>
 </html>

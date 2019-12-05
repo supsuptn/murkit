@@ -160,7 +160,6 @@ public class BoardReplyDAO {
 					vo.setBid(rs.getInt(2));
 					vo.setBtitle(rs.getString(3));
 					vo.setBdate(rs.getString(4));
-					vo.setBhit(rs.getInt(5));
 					
 					list.add(vo);
 				}
@@ -186,29 +185,14 @@ public class BoardReplyDAO {
 					vo.setBid(rs.getInt(1));
 					vo.setBtitle(rs.getString(2));
 					vo.setBdate(rs.getString(3));
-					vo.setBhit(rs.getInt(4));
-					vo.setBcontent(rs.getString(5));
-					vo.setBfile(rs.getString(6));
-					vo.setBsfile(rs.getString(7));
+					vo.setBcontent(rs.getString(4));
+					vo.setBfile(rs.getString(5));
+					vo.setBsfile(rs.getString(6));
 				}
 			}catch(Exception e) {
 				e.printStackTrace();
 			}
 			return vo;
-		}
-		
-		/** ´ñ±Û Á¶È¸¼ö**/
-		public void getResultHit(String bid) {
-			String sql="update murkit_board set bhit = (bhit+1) where bid = ?";
-			getPreparedStatement(sql);
-			try {
-				pstmt.setString(1, bid);
-				pstmt.executeUpdate();
-				
-			} catch (Exception e) {
-				e.printStackTrace();
-			}
-			
 		}
 		
 		/** ´ñ±Û ¼öÁ¤**/

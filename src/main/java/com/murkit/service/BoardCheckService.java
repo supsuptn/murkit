@@ -61,11 +61,6 @@ public class BoardCheckService {
 		return vo;
 	}
 	
-	/** 게시판 조회수**/
-	public void getResultHit(String bid) {
-		BoardDAO dao = new BoardDAO();
-		dao.getResultHit(bid);
-	}
 	
 	/** 게시판 수정**/
 	public boolean getResultUpdate(BoardVO vo) {

@@ -86,7 +86,7 @@
 <div id="FooterBack">
 <div id="FooterMaindiv">
 	<div>
-		<a href="http://localhost:9090/murkit/index.do"><img src="http://localhost:9090/murkit/images/logo_nonBack.png" style="width:150px; height:150px; display:inline-block; float: left; margin-top:10px;"/></a>
+		<a href="http://localhost:9090/murkit/index.do"><img src="http://localhost:9090/murkit/images/logo_nonBack.png" style="width:220px; height:150px; display:inline-block; float: left; margin-top:10px;"/></a>
 	</div>
 	<nav>
 		<ul id="footer_top">

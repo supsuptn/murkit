@@ -1125,7 +1125,7 @@ div.bul_dot, p.bul_dot, span.bul_dot {text-indent:-10px;margin-left:10px;font-si
 .sch_wrap {position:relative; z-index:30; width:450px; margin-left:280px;}
 .sch_wrap .input_wrap {height:68px;}
 .sch_wrap .input_wrap .ico {right:66px;}
-.sch_wrap input.txt {height:68px; padding:0 50px 0 20px; border:2px solid #f7f7f7; color:#101010; font-size:17px; opacity:1;}
+.sch_wrap input.txt {width: 450px; height:45px; padding:0 50px 0 20px; color:#101010; font-size:17px; opacity:1;}
 .sch_wrap input.txt::-webkit-input-placeholder {color:#606060;font-size:17px; font-weight:700;}
 .sch_wrap input.txt::-moz-placeholder {color:#606060;font-size:17px;}
 .sch_wrap input.txt:-ms-input-placeholder {color:#606060;font-size:17px;}

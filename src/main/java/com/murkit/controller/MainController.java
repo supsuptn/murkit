@@ -71,7 +71,6 @@ public class MainController {
 		if(vo.getBtitle()!="" && vo.getBtitle()!=null){
 			vo.setBcontent(vo.getBcontent().replace("\r\n","<br>"));
 			
-			boardCheck.getResultHit(bid);
 			mv.addObject("vo",vo);
 			mv.addObject("rpage",page);
 			mv.setViewName("/murkit_board_content");
@@ -136,6 +135,11 @@ public class MainController {
 	public String murkit_event_page1() {
 		
 		return "/murkit_event_page1";
+	}
+	@RequestMapping(value="/murkit_event_page2.do",method=RequestMethod.GET)
+	public String murkit_event_page2() {
+		
+		return "/murkit_event_page2";
 	}
 	@RequestMapping(value="/test.do", method=RequestMethod.GET)
 	public String test() {

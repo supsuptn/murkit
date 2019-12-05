@@ -21,7 +21,7 @@
 </head>
 <style>
 	div.cs_wrap {
-		width:1200px;
+		width:1100px;
 		margin:auto;
 	}
 	body {
@@ -29,20 +29,19 @@
 	}
 	button#happycenter_FAQbutton {
 		width: 65px;
-	    height: 68px;
-	    background: #F5F5F7;
+	    height: 46px;
+	    background: #f3cd9e;
 	    border: none;
 	    cursor: pointer;
 	    border-radius: 3px;
 	    font-size: 18px;
 	    position: relative;
 	    left: 525px;
-	    top: -70px;
+	    top: -46px;
 	    font-weight: bold;"
 	}
 </style>
 <body>
-<jsp:include page="header.jsp"></jsp:include>
 <div id="content" class="cs_content">
 	<div class="cs_wrap">
 		<h1 class="title">고객행복센터</h1>
@@ -60,7 +59,7 @@
 						<div class="input_wrap sch_area ui_inputfield">
 							<form name="searchForm" method="post" action="/pc/cs/faqList" onsubmit="return false;">
 								<input type="text" class="txt" id="fn_txt_srch" placeholder="검색어를 입력해주세요" name="keyWord" value="" onkeyDown="onkeyDown();" required>
-								<button type="button" id="happycenter_FAQbutton" ><img src="http://localhost:9090/murkit/images/search_icon.png" style="width:40px; height:40px; margin-top:10px;"/></button>
+								<button type="button" id="happycenter_FAQbutton" ><img src="http://localhost:9090/murkit/images/search_icon.png" style="width:40px; height:40px;"/></button>
 							</form>
 						</div>
 					</div>
@@ -132,6 +131,5 @@
 		</div>
 	</div>
 </div>
-<jsp:include page="footer.jsp"></jsp:include>
 </body>
 </html>

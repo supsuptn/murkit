@@ -89,13 +89,10 @@
 </head>
 <body>
 <div>
-	<!-- header 추가 -->
-	<jsp:include page="header.jsp"></jsp:include>
-	
 	<div id = "content">
 		<section>
 			<div id = "murkit_board">
-				<h1>게시판</h1>
+				<h1>먹킷 게시판</h1>
 				<form action="board_write_proc.do" method="POST" class="board_write" id ="board_write"
 				enctype="multipart/form-data">
 				<table class="board_write">
@@ -125,8 +122,6 @@
 			</div>
 		</section>
 	</div>
-	<!-- footer 추가 -->
-	<jsp:include page="footer.jsp"></jsp:include>
 	</div>
 </body>
 </html>
