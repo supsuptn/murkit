@@ -121,7 +121,7 @@
 					
 						<li><a href="http://localhost:9090/murkit/murkit_event.do">¿Ã∫•∆Æ</a></li>
 	
-						<li><a href="#">MY∏‘≈∂</a></li>
+						<li><a href="http://localhost:9090/murkit/mymurkit.do">MY∏‘≈∂</a></li>
 					
                </ul>
                

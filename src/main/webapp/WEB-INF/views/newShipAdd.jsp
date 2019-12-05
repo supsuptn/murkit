@@ -14,8 +14,8 @@
 	section div input {margin-top:8px; height:48px; width:99%;}
 	#form_phone input { width:136px;}
 	#form_addr #addr {width:333px; display:inline-block;}
-	#form_addr button{width:95px; height:54px; display:inline-block;}
-	footer button { width:49%; height:48px; border:none;}
+	#form_addr input#postCode{background-color:#ffcb6d; border:none;}
+	footer button { width:49%; height:48px; border:none; background-color:#ffcb6d;}
 	footer button#add {margin-left:3px;}
 </style>
 <script src="http://localhost:9090/murkit/js/jquery-3.4.1.min.js"></script>
@@ -75,7 +75,7 @@ function sample6_execDaumPostcode() {
 	<header>
 		<h3>배송지 추가</h3>
 	</header>
-	<form action="#" name="shippingForm">
+	<form action="#" name="shippingForm" method="POST">
 		<section>
 			<div>
 				<label>받는분</label><input type="text" placeholder="받는분 성함을 입력하세요."/>
@@ -91,7 +91,7 @@ function sample6_execDaumPostcode() {
 			<div id="form_addr">
 
 				<input type="text" id="sample6_postcode" placeholder="우편번호">
-				<input type="button" onclick="sample6_execDaumPostcode()" value="우편번호 찾기"><br>
+				<input type="button" onclick="sample6_execDaumPostcode()" value="우편번호 찾기" id="postCode"><br>
 				<input type="text" id="sample6_address" placeholder="주소"><br>
 				<input type="text" id="sample6_detailAddress" placeholder="상세주소">
 				<input type="hidden" id="sample6_extraAddress" placeholder="참고항목">
