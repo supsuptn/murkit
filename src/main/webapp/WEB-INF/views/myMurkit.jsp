@@ -19,7 +19,6 @@
 </head>
 <body>
 <div>
-<jsp:include page="header.jsp"></jsp:include>
 	<div id="myMurkit">
 		<div id="myMurkit_menu">
 			<div>
@@ -58,7 +57,6 @@
 			<jsp:include page="shipMgm.jsp"></jsp:include>
 		</div>
 	</div>
-	<jsp:include page="footer.jsp"></jsp:include>
 </div>
 </body>
 </html>
