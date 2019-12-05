@@ -116,7 +116,7 @@
 			<artifactId>junit</artifactId>
 			<version>4.7</version>
 			<scope>test</scope>
-		</dependency> 
+		</dependency>    
 		
 		<!-- tiles start -->
 		<dependency> 
@@ -145,7 +145,7 @@
 			<version>${org.apache.tiles.version}</version> 
 		</dependency>
 		<!-- tiles end -->
-		       
+		    
 	</dependencies>
     <build>
         <plugins>

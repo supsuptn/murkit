@@ -11,7 +11,7 @@ $(document).ready(function(){
 	
 
 $("#btnidsearch").click(function() {
-	window.open("http://localhost:9090/murkit/murkit_origin.do","아이디 찾기","width=500,height=450,top = 100, left = 400, location = no");
+	window.open("http://localhost:9090/murkit/murkit_origin.do","원산지 표시","width=1200,height=1000,top = 100, left = 400, location = no");
 })
 });
 </script>

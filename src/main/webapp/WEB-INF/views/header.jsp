@@ -96,6 +96,8 @@
 	
 	.my_gmenu{
 		margin-left: 247px;
+		
+		display:inline-block;
 	}
 	
 	li.g_od , li.g_mu{width:60px;}
@@ -146,7 +148,12 @@
                                <span class="icon_label">장바구니</span>
                            </a>
                        </li>
-                       <li class="g_mu"><a href="#"><span class="icon"></span> <span class="icon_label">메뉴찾기</span></a></li>
+                       <li class="g_mu">
+                       <a href="#">
+                       <span class="icon"></span> 
+                       <span class="icon_label">메뉴찾기</span>
+                       </a>
+                       </li>
                               
                    </ul>
 				</div>
