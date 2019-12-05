@@ -72,9 +72,9 @@
 	
 	.gnb_menu {
 		margin:auto;
+		text-align: center;
 		height:86px;  
 		width:1180px; 
-		text-align:left;
 		display:inline-block;
 	}
 	
