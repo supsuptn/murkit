@@ -74,7 +74,7 @@
 		margin:auto;
 		text-align: center;
 		height:86px;  
-		width:1180px; 
+		width:1200px; 
 		display:inline-block;
 	}
 	
@@ -97,6 +97,18 @@
 	.my_gmenu{
 		margin-left: 247px;
 	}
+	
+	li.g_od , li.g_mu{width:60px;}
+	.icon_label{display: block;}
+	li.g_od .icon, li.g_mu .icon{
+		background-image:url("http://localhost:9090/murkit/images/ico_set.png");
+		background-size:800px 800px;
+		display: inline-block;
+		width:32px; height:32px;
+		background-position:-584px -320px;
+	}
+	li.g_mu .icon{background-position:-628px -320px;}
+		
 </style>
 </head>
 <body>
@@ -118,30 +130,26 @@
 	               <img  id="logo_img" src="http://localhost:9090/murkit/images/logo.png" />
 	           <div class="gnb_menu">
 	               <ul class="list_gmenu" >
-	
 							<li><a href="#" >먹킷소개</a></li>
-	
 							<li><a href="#" ><span class="red_dot">먹킷 메뉴</span></a></li>
-		             		
 							<li><a href="#">리뷰</a></li>
-						
 							<li><a href="http://localhost:9090/murkit/murkit_event.do">이벤트</a></li>
-		
 							<li><a href="#">MY먹킷</a></li>
-						
 	               </ul>
 	               
 	           </div>
-	               <div class="my_gmenu" >
-	                   <ul >
-	                       <li class="g_od">
-	                           <a href="#">
-	                               <span>장바구니</span>
-	                           </a>
-	                       </li>
-	                       <li class="g_mu"><a href="#"><span>메뉴찾기</span></a></li>
-	                   </ul>
-	               </div>
+               <div class="my_gmenu" >
+                   <ul >
+                       <li class="g_od">
+                           <a href="#">
+                               <span class="icon"></span>
+                               <span class="icon_label">장바구니</span>
+                           </a>
+                       </li>
+                       <li class="g_mu"><a href="#"><span class="icon"></span> <span class="icon_label">메뉴찾기</span></a></li>
+                              
+                   </ul>
+				</div>
            </div>
        <hr>
        </div>

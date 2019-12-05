@@ -165,7 +165,7 @@ div#pay_detail span#new{
 }
 
 div#tit_info>#new {
-	background-color:#ffcb6d;
+	background-color:#BDD61A;
 }
 
 div#tit_info #sub_tit {
@@ -356,10 +356,10 @@ div#cart_add>div:first-child span{
 div#cart_add>div:last-child{
 	height:64px;
 	width:420px;
-	border:1px solid #f3cd9e;
+	border:1px solid #BDD61A;
 	float:left;
 	margin-left:10px;
-	background-color:#f3cd9e;
+	background-color:#BDD61A;
 }
 
 div#cart_add>div:last-child span{
@@ -836,7 +836,7 @@ div#bottom_right div#total_order_price div#num_price span:first-child {font-size
 div#bottom_right div#total_order_price div#num_price>span:last-child {width:150px;margin-left: 78px; display: inline-block; color:red; font-size: x-large;} 
 div#bottom_right div#total_order_price div#add_btn{ padding-bottom: 28px;width:300px; margin:auto;}
 div#bottom_right div#total_order_price div#add_btn div:first-child{ border:1px solid #ccc; float:left; width:64px; height:64px; display:inline-block;}
-div#bottom_right div#total_order_price div#add_btn div:last-child{background-color: #f3cd93;border:1px solid #f3cd93; width:220px; height:64px;}
+div#bottom_right div#total_order_price div#add_btn div:last-child{background-color: #BDD61A;border:1px solid #BDD61A; width:220px; height:64px;}
 div#bottom_right div#total_order_price div#add_btn div:last-child span {display:inline-block; width: 100%; text-align: center; margin: auto; padding-top: 23px; padding-bottom:23px; color:black;}
 div#bottom_right div#total_order_price div#add_btn div div{ width: 64px; height: 64px; border: 1px solid black; float: left;  }
 div#bottom_right div#total_order_price div#add_btn div span.icon {width: 30px; height: 30px; margin: 17px 17px;  background-position: -710px -324px; display:inline-block;}

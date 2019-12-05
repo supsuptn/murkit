@@ -11,7 +11,6 @@
 </head>
 <body>
 	<div>
-		<jsp:include page="header.jsp"></jsp:include>
 		<div id="contents">
 			<div id="food_img">
 				<img src="http://localhost:9090/murkit/images/menu_detail/20191115092743402.jpg" />
@@ -601,7 +600,6 @@
 			</div>
 		</div> <!-- contents -->
 
-		<jsp:include page="footer.jsp"></jsp:include>
 	</div>
 </body>
 </html>

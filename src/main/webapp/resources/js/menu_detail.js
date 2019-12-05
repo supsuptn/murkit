@@ -24,10 +24,10 @@
 				var child = $("div#subImg>img#selected").attr("class");
 				$("div#subImg>img#selected").attr("id","none").css("border","none");
 			if($(this).attr("id") == "menu_detail_img_arrow_left"){
-				$("div#subImg>img:nth-child("+child+")").attr("id","selected").css("border","2px solid #f3cd9e");
+				$("div#subImg>img:nth-child("+child+")").attr("id","selected").css("border","2px solid #BDD61A");
 				$("#food_img>img").attr("src",$("div#subImg>img:nth-child("+child+")").attr("src"));
 			}else {
-				$("div#subImg>img:nth-child("+(Number(child)+2)+")").attr("id","selected").css("border","2px solid #f3cd9e");
+				$("div#subImg>img:nth-child("+(Number(child)+2)+")").attr("id","selected").css("border","2px solid #BDD61A");
 				$("#food_img>img").attr("src",$("div#subImg>img:nth-child("+(Number(child)+2)+")").attr("src"));
 			}
 		});

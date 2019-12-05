@@ -82,7 +82,7 @@
 <div id="FooterBack">
 <div id="FooterMaindiv">
 	<div>
-		<a href="http://localhost:9090/murkit/index.do"><img id="fot_logo" src="http://localhost:9090/murkit/images/logo_nonBack.png" /></a>
+		<a href="http://localhost:9090/murkit/index.do"><img id="fot_logo" src="http://localhost:9090/murkit/images/logo_footer.png" /></a>
 	</div>
 	<nav>
 		<ul id="footer_top">

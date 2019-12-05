@@ -6,7 +6,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
 <style>
-	h3{ padding-bottom:36px; border-bottom:3px solid black;}
+	#shipMgm_wrap>h3{ padding-bottom:36px; border-bottom:3px solid black;}
 	#shipMgm_wrap{width:950px; margin-left: 50px; text-align:left;}
 	#shipMgm_wrap h3{font-size:36px;}
 	div#shipMgm {padding-top:64px;}
@@ -18,10 +18,22 @@
 	#ship_add span.icon{width:24px; height:24px; background-position:-50px -192px; background-size:500px 500px;}
 	#ship_add span span {float:left;}
 	#ship_add>span{padding: 17px 10px; display: inline-block;}
+	
+	#Data {width:100%; margin-bottom:140px;}
+	#Data h3{font-size:22px;}
+	#ship_item {border: 1px solid #ccc;}
+	#ship_item #basic_ship{ color:green;}
+	#ship_item_top {margin: 20px 15px; border-bottom: 1px solid black;}
+	#ship_item_bottom {margin: 20px 15px;}
+	#ship_item #ship_item_top p{width:750px; display:inline-block;}
+	#ship_item #ship_item_top div {width:100px; margin-left:62px; border:1px solid #ccc; display: inline-block;}
+	#ship_item #ship_item_top div a{color:black;}
+	#ship_item #ship_item_top div span{ display: inline-block; padding: 7px 35px;}
+	
 </style>
 <script>
 	function openNewWindow(){
-		newWindow = window.open("newshipadd.do","배송지 관리","height=700px, width=540px, resizable=yes");
+		newWindow = window.open("newshipadd.do","배송지 관리","height=600px, width=438px, resizable=yes");
 	}
 </script>
 </head>
@@ -36,7 +48,22 @@
 				
 				<div id="ship_add" onclick="openNewWindow()"><span><span>신규배송지 추가</span> <span class="icon"></span></span></div>
 			</div>
-			<div id="Date"></div>
+			<div id="Data">
+				<div>
+					<h3>배송지를 관리하세요.</h3>
+					
+					<div id="ship_item">
+						<div id="ship_item_top">
+							<p>OOO <span id="basic_ship">(기본배송지)</span></p>
+							<div><a href="#"><span id="modify">수정</span></a></div>
+						</div>
+						<div id="ship_item_bottom">
+							<p>[06235] 서울 강남구 테헤란로 132 (한독약품빌딩)</p>
+							<p>010-0000-0000</p>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
