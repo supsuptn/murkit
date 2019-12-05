@@ -33,10 +33,9 @@
 	
 	.gnb_util{
 		width:100%;
-		background-color:#f3cd9e;
+		background-color:#202020;
 	}
 	.util_wrap{
-		width:1180px;
 		text-align:center;
 		margin:auto;
 		line-height: 25px;
@@ -47,6 +46,7 @@
 	
 	.list_gmenu {
 		font-weight:bold;
+		margin-left:150px;
 	}
 	.util_wrap a{
 		color:white;
@@ -66,6 +66,8 @@
 		display:block;  
 		height:25px; 
 		margin:0;
+		margin-right:50px;
+		padding: 5px 0px;
 	}
 	
 	.gnb_menu {
@@ -73,11 +75,14 @@
 		height:86px;  
 		width:1180px; 
 		text-align:left;
+		display:inline-block;
 	}
 	
 	#logo_img{
 		width:150px; 
 		float: left;
+		margin-left:120px;
+		margin-top:8px;
 	}
 	
 	.list_gmenu{
@@ -109,32 +114,34 @@
                    </ul>
                </div>
            </div>
-           <div class="gnb_menu">
-               <img  id="logo_img" src="http://localhost:9090/murkit/images/logo.png" />
-               <ul class="list_gmenu" >
-
-						<li><a href="#" >먹킷소개</a></li>
-
-						<li><a href="#" ><span class="red_dot">먹킷 메뉴</span></a></li>
-	             		
-						<li><a href="#">리뷰</a></li>
-					
-						<li><a href="http://localhost:9090/murkit/murkit_event.do">이벤트</a></li>
+           <div>
+	               <img  id="logo_img" src="http://localhost:9090/murkit/images/logo.png" />
+	           <div class="gnb_menu">
+	               <ul class="list_gmenu" >
 	
-						<li><a href="#">MY먹킷</a></li>
-					
-               </ul>
-               
-               <div class="my_gmenu" >
-                   <ul >
-                       <li class="g_od">
-                           <a href="#">
-                               <span>장바구니</span>
-                           </a>
-                       </li>
-                       <li class="g_mu"><a href="#"><span>메뉴찾기</span></a></li>
-                   </ul>
-               </div>
+							<li><a href="#" >먹킷소개</a></li>
+	
+							<li><a href="#" ><span class="red_dot">먹킷 메뉴</span></a></li>
+		             		
+							<li><a href="#">리뷰</a></li>
+						
+							<li><a href="http://localhost:9090/murkit/murkit_event.do">이벤트</a></li>
+		
+							<li><a href="#">MY먹킷</a></li>
+						
+	               </ul>
+	               
+	           </div>
+	               <div class="my_gmenu" >
+	                   <ul >
+	                       <li class="g_od">
+	                           <a href="#">
+	                               <span>장바구니</span>
+	                           </a>
+	                       </li>
+	                       <li class="g_mu"><a href="#"><span>메뉴찾기</span></a></li>
+	                   </ul>
+	               </div>
            </div>
        <hr>
        </div>
