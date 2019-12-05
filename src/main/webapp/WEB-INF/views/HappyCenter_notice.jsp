@@ -15,7 +15,7 @@
 	div#murkit_notice{		
 		margin:auto;
 		text-align:center;
-		width:1100px;
+		width:1200px;
 	}
 	div#murkit_notice>section{
 		margin:20px 0px 30px 0px;
@@ -23,7 +23,7 @@
 	}
 	div#murkit_notice>section>table{
 		margin-top:60px;
-		width:1100px;
+		width:1200px;
 		border-collapse:collapse;
 	}
 	
@@ -59,7 +59,7 @@
 		text-align:left;
 	}
 	div.cs_wrap {
-		width:1100px;
+		width:1200px;
 		margin:auto;
 	}
 	body {

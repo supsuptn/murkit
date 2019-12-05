@@ -89,14 +89,14 @@
 		</div>
 		<div style="width: 1000px; margin: auto;">
 			<img src="http://localhost:9090/murkit/images/img_first_top.jpg"
-				style="width: 1000px; height: 400px; margin-top: 20px;" />
+				style="width: 1000px; height: auto; margin-top: 20px;" />
 			<div style="background: #088561; margin-top: -10px;">
 				<img src="http://localhost:9090/murkit/images/img_first_step01.png"
-					style="width: 100px; height: 50px; margin-top: 20px; margin-left: 30px;" />
+					style="width: 100px; height: auto; margin-top: 50px; margin-left: 30px;" />
 				<h3 style="margin-left: 70px;">여러가지 메뉴를 구경하고 원하는 상품을 장바구니에
 					담기!!!</h3>
 				<img src="http://localhost:9090/murkit/images/img_first_step01.png"
-					style="width: 100px; height: 50px; margin-top: 20px; margin-left: 30px;" />
+					style="width: 100px; height: auto; margin-top: 20px; margin-left: 30px;" />
 				<div>
 					<h3 style="margin-left: 70px;">구매후, 5,000원 쿠폰 확인하기</h3>
 					<img src="http://localhost:9090/murkit/images/event_buy1.png"
@@ -106,18 +106,18 @@
 			<div class="purchase_notice">
 				<div class="gray_box">
 					<dl>
-						<dt>이벤트 안내</dt>
+						<dt style="font-weight:800;">이벤트 안내</dt>
 						<dd>
-							<ul class="bul_list">
+							<ul class="bul_list" style="font-weight:600;">
 								<li class="bul_dot"><i class="bullet"></i> 쿡킷 메뉴를 최초 구매하는 고객 대상으로 최대 5,000상당의 혜택을 제공하는
 									이벤트 입니다.</li>
 							</ul>
 						</dd>
 					</dl>
 					<dl>
-						<dt>주문/배송 안내</dt>
+						<dt style="font-weight:800;">주문/배송 안내</dt>
 						<dd>
-							<ul class="bul_list">
+							<ul class="bul_list" style="font-weight:600;">
 								<li class="bul_dot"><i class="bullet"></i> 배송 가능 지역 : 서울,
 									경기, 인천의 새벽 배송이 가능한 곳</li>
 								<li class="bul_dot"><i class="bullet"></i> 배송비 : 3,000원
@@ -140,9 +140,9 @@
 						</dd>
 					</dl>
 					<dl>
-						<dt>첫 구매 감사 5,000 포인트 지급</dt>
+						<dt style="font-weight:800;">첫 구매 감사 5,000 포인트 지급</dt>
 						<dd>
-							<ul class="bul_list">
+							<ul class="bul_list" style="font-weight:600;">
 								<li class="bul_dot"><i class="bullet"></i> MURKIT 홈페이지 및
 									모바일에서 MURKIT 메뉴를 최초로 구매하시는 경우 지급 (탈퇴/재가입 등에 의한 중복 지급 없으며 구매 취소한
 									경우에도 첫 회 구매가 최초로 인식됨)</li>
@@ -160,7 +160,7 @@
 							</ul>
 						</dd>
 					</dl>
-					<p class="txt">해당 이벤트는 당사의 사정에 따라 별도 고지 없이 변경 또는 종료될 수 있습니다.</p>
+					<p class="txt" style="color:red;">해당 이벤트는 당사의 사정에 따라 별도 고지 없이 변경 또는 종료될 수 있습니다.</p>
 				</div>
 			</div>
 		</div>

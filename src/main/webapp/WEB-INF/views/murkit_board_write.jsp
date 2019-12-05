@@ -22,7 +22,7 @@
 </script>
 <style>
 	div#content>section>div#murkit_board {
-		width:1000px;
+		width:1200px;
 		margin:auto;
 		padding: 72px 0 140px;
 		font-size:15pt;

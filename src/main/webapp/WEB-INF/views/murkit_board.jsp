@@ -51,7 +51,7 @@ ArrayList<BoardVO> list = (ArrayList<BoardVO>)request.getAttribute("list");
 	div#murkit_board{		
 		margin:auto;
 		text-align:center;
-		width:1000px;
+		width:1200px;
 		padding: 72px 0 140px;
 	}
 	div#murkit_board>section{

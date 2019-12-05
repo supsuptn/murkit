@@ -21,7 +21,7 @@
 </head>
 <style>
 	div.cs_wrap {
-		width:1100px;
+		width:1200px;
 		margin:auto;
 	}
 	body {

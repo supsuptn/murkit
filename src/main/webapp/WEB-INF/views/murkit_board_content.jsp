@@ -144,7 +144,7 @@ $(document).ready(function(){
 	 	padding-left:20px;
 	 }
 	 	div#content>section>div#murkit_board_content_main {
-		width:1000px;
+		width:1200px;
 		margin:auto;
 		padding: 72px 0 140px;
 	}
