@@ -15,7 +15,7 @@
 	div#murkit_notice{		
 		margin:auto;
 		text-align:center;
-		width:1200px;
+		width:1100px;
 	}
 	div#murkit_notice>section{
 		margin:20px 0px 30px 0px;
@@ -23,7 +23,7 @@
 	}
 	div#murkit_notice>section>table{
 		margin-top:60px;
-		width:1200px;
+		width:1100px;
 		border-collapse:collapse;
 	}
 	
@@ -59,7 +59,7 @@
 		text-align:left;
 	}
 	div.cs_wrap {
-		width:1200px;
+		width:1100px;
 		margin:auto;
 	}
 	body {
@@ -67,8 +67,6 @@
 	}
 </style>
 <body>
-<!-- header 추가 -->
-<jsp:include page="header.jsp"></jsp:include>
 <div id="content" class="cs_content">
 	<div class="cs_wrap">
 		<h1 class="title">고객행복센터</h1>
@@ -121,7 +119,5 @@
 		</section>
 	</div>
 	</div>
-	<!-- footer 추가 -->
-	<jsp:include page="footer.jsp"></jsp:include>
 </body>
 </html>

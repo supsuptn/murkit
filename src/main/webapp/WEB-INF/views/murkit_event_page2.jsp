@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+	pageEncoding="EUC-KR"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -8,7 +8,7 @@
 <style>
 .purchase_notice .gray_box {
 	padding: 32px 32px;
-	background-color: RGB(240,183,115);
+	background-color: #f7f7f7;
 }
 
 .purchase_notice .gray_box dl {
@@ -76,36 +76,40 @@
 </style>
 </head>
 <body>
-			<div id="content" class="ev_content" style="width:1100px; margin:auto;">
-                
-                <div class="ev_wrap" style="margin-top:100px;">
-                    <h1 class="title">이벤트</h1>
-</div>
-<hr>
-<div>
-<h2>회원가입시 3천원 포인트 지급</h2>
-<span>2019-12-01~2019-12-31</span>
-</div>
-<div style="width:1000px; margin:auto;">
-<img src="http://localhost:9090/murkit/images/event_join_top.jpg" style="width:1000px; height:400px; margin-top:20px;"/>
-<div style="background:#f3cd9e; margin-top:-20px;">
-<img src="http://localhost:9090/murkit/images/img_first_step01.png" style="width: 100px; height: 50px; margin-top: 20px; margin-left: 30px; " />
-<h3 style="margin-left: 70px;">회원가입시 3천원 포인트 지급!!!</h3>
+	<div id="content" class="ev_content"
+		style="width: 1100px; margin: auto;">
+
+		<div class="ev_wrap" style="margin-top: 100px;">
+			<h1 class="title">이벤트</h1>
+		</div>
+		<hr>
+		<div>
+			<h2>첫구매 5천원 포인트 지급</h2>
+			<span>2019-12-01~2019-12-31</span>
+		</div>
+		<div style="width: 1000px; margin: auto;">
+			<img src="http://localhost:9090/murkit/images/img_first_top.jpg"
+				style="width: 1000px; height: 400px; margin-top: 20px;" />
+			<div style="background: #088561; margin-top: -10px;">
+				<img src="http://localhost:9090/murkit/images/img_first_step01.png"
+					style="width: 100px; height: 50px; margin-top: 20px; margin-left: 30px;" />
+				<h3 style="margin-left: 70px;">여러가지 메뉴를 구경하고 원하는 상품을 장바구니에
+					담기!!!</h3>
 				<img src="http://localhost:9090/murkit/images/img_first_step01.png"
 					style="width: 100px; height: 50px; margin-top: 20px; margin-left: 30px;" />
 				<div>
-					<h3 style="margin-left: 70px;">회원가입 후, 3000원 쿠폰 받기 클릭!!</h3>
-					<img src="http://localhost:9090/murkit/images/event_join01.PNG"
+					<h3 style="margin-left: 70px;">구매후, 5,000원 쿠폰 확인하기</h3>
+					<img src="http://localhost:9090/murkit/images/event_buy1.png"
 						style="width: 200px; height: 100px; margin-top: 20px; margin-left: 70px; margin-bottom: 30px; cursor: pointer;" />
 				</div>
-</div>
-<div class="purchase_notice">
+			</div>
+			<div class="purchase_notice">
 				<div class="gray_box">
 					<dl>
 						<dt>이벤트 안내</dt>
 						<dd>
 							<ul class="bul_list">
-								<li class="bul_dot"><i class="bullet"></i> 쿡킷을 처음 이용하는 고객 대상으로 최대 3,000상당의 혜택을 제공하는
+								<li class="bul_dot"><i class="bullet"></i> 쿡킷 메뉴를 최초 구매하는 고객 대상으로 최대 5,000상당의 혜택을 제공하는
 									이벤트 입니다.</li>
 							</ul>
 						</dd>
@@ -136,11 +140,12 @@
 						</dd>
 					</dl>
 					<dl>
-						<dt>회원가입 감사 3,000 포인트 지급</dt>
+						<dt>첫 구매 감사 5,000 포인트 지급</dt>
 						<dd>
 							<ul class="bul_list">
 								<li class="bul_dot"><i class="bullet"></i> MURKIT 홈페이지 및
-									모바일에서 MURKIT 회원가입을 하신 경우 지급</li>
+									모바일에서 MURKIT 메뉴를 최초로 구매하시는 경우 지급 (탈퇴/재가입 등에 의한 중복 지급 없으며 구매 취소한
+									경우에도 첫 회 구매가 최초로 인식됨)</li>
 								<li class="bul_dot"><i class="bullet"></i> 배송 완료 후 3일 내 자동
 									지급, MY먹킷 > 쿠폰에서 확인 가능하며 취소한 경우 발급된 쿠폰도 함께 취소</li>
 								<li class="bul_dot"><i class="bullet"></i> 사용조건
@@ -158,11 +163,7 @@
 					<p class="txt">해당 이벤트는 당사의 사정에 따라 별도 고지 없이 변경 또는 종료될 수 있습니다.</p>
 				</div>
 			</div>
-
-
-</div>
-
-
-</div>
+		</div>
+	</div>
 </body>
 </html>

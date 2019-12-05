@@ -90,7 +90,6 @@ public class BoardDAO {
 					vo.setBtitle(rs.getString(3));
 					vo.setBname(rs.getString(4));
 					vo.setBdate(rs.getString(5));
-					vo.setBhit(rs.getInt(6));
 					
 					list.add(vo);
 				}
@@ -116,7 +115,6 @@ public class BoardDAO {
 					vo.setBtitle(rs.getString(3));
 					vo.setBname(rs.getString(4));
 					vo.setBdate(rs.getString(5));
-					vo.setBhit(rs.getInt(6));
 					
 					list.add(vo);
 				}
@@ -144,10 +142,9 @@ public class BoardDAO {
 					vo.setBtitle(rs.getString(2));
 					vo.setBcontent(rs.getString(3));
 					vo.setBdate(rs.getString(4));
-					vo.setBhit(rs.getInt(5));
-					vo.setBfile(rs.getString(6));
-					vo.setBsfile(rs.getString(7));
-					vo.setRcount(rs.getInt(8));
+					vo.setBfile(rs.getString(5));
+					vo.setBsfile(rs.getString(6));
+					vo.setRcount(rs.getInt(7));
 				}
 
 			}catch(Exception e) {
@@ -155,21 +152,7 @@ public class BoardDAO {
 			}
 			return vo;
 		}
-		
-		/** 게시판 조회수**/
-		public void getResultHit(String bid) {
-			String sql="update murkit_board set bhit = (bhit+1) where bid = ?";
-			getPreparedStatement(sql);
-			try {
-				pstmt.setString(1, bid);
-				pstmt.executeUpdate();
-				
-			} catch (Exception e) {
-				e.printStackTrace();
-			}
-			
-		}
-		
+
 		/** 게시판 수정**/
 		public boolean getResultUpdate(BoardVO vo) {
 			boolean result=false;

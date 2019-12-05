@@ -10,7 +10,6 @@
 
 	if(vo.getBtitle()!="" && vo.getBtitle()!=null){
 		vo.setBcontent(vo.getBcontent().replace("\r\n","<br>"));
-		boardCheck.getResultHit(bid);
 	}else{
 		response.sendRedirect("../errorPage.jsp");
 	}
@@ -169,13 +168,10 @@ $(document).ready(function(){
 </head>
 <body>
 <div>
-	<!-- header 추가 -->
-	<jsp:include page="header.jsp"></jsp:include>
-	
 	<div id = "content">
 		<section>
 			<div id="murkit_board_content_main">
-				<h1 style="font-size:30px;">게시판</h1>
+				<h1 style="font-size:30px;">먹킷 게시판</h1>
 				<table class="murkit_board_content">
 					<tr>
 						<th>제목</th>
@@ -189,10 +185,6 @@ $(document).ready(function(){
 						<th>등록일</th>
 						<td>${vo.bdate }</td>
 						</tr>
-						<tr>
-						<th>조회수</th>
-						<td>${vo.bhit }</td>
-						<tr>
 					</tr>
 					<tr>
 						<td colspan=2 id= "bcontent">
@@ -223,8 +215,6 @@ $(document).ready(function(){
 					<tr class="button_write_tr">
 						<td colspan=2>
 							<a href="#"><button type="button" id="btnReply" class="btn_board_type">댓글쓰기</button></a>
-							<a href="board_update.do?bid=${vo.bid }"><button type="button" class="btn_board_type">수정하기</button></a>
-							<a href="board_delete.do?bid=${vo.bid }"><button type="button" class="btn_board_type">삭제하기</button></a>
 							<a href="murkit_board.do?page=${rpage }"><button type="button" class="btn_board_type">목록으로</button></a>
 						</td>
 					</tr>
@@ -232,9 +222,6 @@ $(document).ready(function(){
 			</div>
 		</section>
 	</div>
-	
-	<!-- footer 추가 -->
-	<jsp:include page="footer.jsp"></jsp:include>
 	</div>
 </body>
 </html>

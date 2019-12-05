@@ -14,10 +14,7 @@
 	div#FooterMaindiv > div#footer_center ul li, div#FooterMaindiv > nav > ul#footer_top > li {
 		display:inline-block;
 		border-right:1px solid gray;
-		padding-left:10px;
-		padding-right:10px;
-		padding-top:3px;
-		padding-bottom:3px;
+		padding:8px 10px 3px 10px;
 		font-size:9pt;
 		color:gray;
 	}
@@ -32,27 +29,25 @@
 		float:right;
 	}
 	div#FooterMaindiv {
-		padding-bottom:10px;
+		padding: 17px 0;
 	}
 	ul#footer_top li a {
 		text-decoration:none;
-		color:black;
+		color:white;
 		font-weight:bold;
-		font-size:14pt;
-	}
-	ul#footer_top {
-		padding-top:15px;
+		font-size:11pt;
 	}
 	li:last-child a#footer_JoinCheck{
 		text-decoration:underline;
-		color:black;
+		color:white;
 	}
 	div#footer_question button,div#footer_happycenter {
 		font-size:12pt;
 		margin-right:8px;
+		color:white;
 	}
 	div#footer_question button {
-		background:#f3cd9e;
+		background:#202020;
 		border:1px solid white;
 		font-weight:bold;
 	}
@@ -74,9 +69,10 @@
 	}
 	div#FooterBack { 
 		width:100%;
-		background:#f3cd9e;
+		background:#202020;
 		clear:both;
 	}
+	#fot_logo{width:220px; height:150px; display:inline-block; float: left; padding:26px 0;}
 </style>
 </head>
 <body>
@@ -86,7 +82,7 @@
 <div id="FooterBack">
 <div id="FooterMaindiv">
 	<div>
-		<a href="http://localhost:9090/murkit/index.do"><img src="http://localhost:9090/murkit/images/logo_nonBack.png" style="width:150px; height:150px; display:inline-block; float: left; margin-top:10px;"/></a>
+		<a href="http://localhost:9090/murkit/index.do"><img id="fot_logo" src="http://localhost:9090/murkit/images/logo_nonBack.png" /></a>
 	</div>
 	<nav>
 		<ul id="footer_top">
