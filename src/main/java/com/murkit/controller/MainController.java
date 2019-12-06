@@ -149,4 +149,11 @@ public class MainController {
 	public String murkit_origin() {
 		return "murkit_origin";
 	}
+	@RequestMapping(value="/main.do",method=RequestMethod.GET)
+	public String main() {
+		return "main";
+			
+	}
+	
+	
 }

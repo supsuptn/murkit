@@ -1,369 +1,386 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-	 pageEncoding="UTF-8"%>
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"/>
+	<script src="http://localhost:9090/murkit/js/jquery-3.4.1.min.js"></script>
+	<script src="http://localhost:9090/murkit/js/slick.min.js"></script>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
-<script src="http://localhost:9090/murkit/js/jquery-3.4.1.min.js"></script>
-<script src="http://localhost:9090/murkit/js/swiper.min.js"></script>
-<link rel="stylesheet" type="text/css" href="http://localhost:9090/murkit/css/swiper.min.css" />
 
 
+<script>
+	$(document).ready(function(){
+		$('div.food_all_menu>div.multiple-items').slick({
+			infinite: true,
+			slidesToShow: 4,
+			slidesToScroll: 4
+		});
+		
+		$('div.food_all_review>div.multiple-items2').slick({
+			infinite: true,
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			autoplay:true,
+			autoplaySpeed: 3000,
+		});
+		
+	
+		
+	});
+
+</script>
 <style>
-* {
-	font-family:"나눔스퀘어";
+/* div.food_all_review>div.multiple-items2 div.slick-slide.slick-current.slick-active>div:active{
+	outline:none;
+
+} */
+label.all_menu{
+	
+	font-size: 35px;
+	font-weight: bold;
+
+	border-left: 3px solid #f3cd9e;
+	padding-left:5px;
+
+}
+*{
+	font-family: "nanumsquareround";
+	outline:none;
+}
+
+div#content{
+	width:1200px;
+	margin:auto;
+}
+p.food_name{
+	
+	font-size:25px;
+	font-weight:bold;
+	padding-left: 5px;
+}
+div.food_main_1{
+	margin-top:10px;
+	height:500px;
+	width:1200px;
+	border:1px solid red;
+}
+div.food_main_2{
+	border:1px solid blue;
+	height:200px;
+}
+div.food_main_3{
+	border:1px solid pink;
+	height:500px;
+}
+div.food_rec_best{
+
+	margin-top:80px;
+}
+
+div.food_rec_best>label{
+
+
+	font-size: 35px;
+	font-weight: bold;
+
+	border-left: 3px solid #f3cd9e;
+	padding-left:5px;
+}
+div.food_all_menu{
+
+	margin-top:80px;
+	height:300px;
+}
+div.food_all_review{
+
+	margin-top:80px;
+/* 	text-align:center; */
+	height:500px;
+	
+}
+div.food_all_review>div>label{
+	
+	font-size: 35px;
+	font-weight: bold;
+	border-left: 3px solid #f3cd9e;
+	padding-left:5px;
+
+}
+div.food_all_review>div.multiple-items2{
+	border:2px solid rgb(243,243,243);
+	background:rgb(243,243,243);
+	border-radius:20px;
+	/* display:inline-block; */
+	width:1100px;
+	height:400px;
+	margin-left:50px;
+	margin-top:10px;
+	
+}
+p.food_info{
+	display:inline;
+}
+div.best_pic{
+
+	padding-left:35px;
+}
+div.best_pic>div img.first{
+	width:360px;
+	height:250px;
+	border-radius:10px;
+	margin-bottom:5px;
+}
+div.best_pic>div{
+	display: inline-block;
+
+}
+article.best_info{
+	height:300px;
+}
+div.best_info{
+	
+	display:inline-block;
+}
+p.food_price{
+	
 	padding:0px;
+	margin:0px;
+	width:370px;
+}
+
+p.food_price>span{
+	
+	position:relative;
+	top:-15px;
+	left:5px;
+	
+}
+p.food_price>img{
+
+	width:40px;
+	height:40px;
+	margin-left:180px;
+}
+div.best_name{
+
+	background:black;
+	width:55px;
+	height:50px;
+	font-size:20px;
+	display:inline-block;
+	text-align:center;
+	color:white;
+	position:relative;
+	top:70px;
+	left:10px;
+	
+	
+}
+p.food_name{
+	
+	display:inline-block;
+	left:-420px;
+	top:20px;
+	margin: 0px;
+}
+div.multiple-items button, div.multiple-items button:hover, div.multiple-items button:before {
+	width: 20px;
+	background-color: #ccc;
+	border-radius: 20px;
+}
+	
+}
+div.food_rec_best>label{
+	font-size: 35px;
+	font-weight: bold;
+
+	border-left: 3px solid rgba(14, 168, 225, 0.5);
+	padding-left:5px;
+
+}
+article.all_pic{
+	display:inline-block;
+	width:380px;
+	margin-top:-25px;
+}
+/* div.multiple-items>div{
+	display:inline-block;
+} */
+article.whole_food_menu img.multi{
+	width:270px;
+	height:170px;
+	border-radius:10px;
+}
+article.whole_food_menu{
+	
+	padding-left:13px;
+	padding-top:20px;
+}
+
+article.whole_food_menu p:nth-child(1){
+	
+	margin:0px;
+	margin-top:5px;
+	font-size:18px;
+	font-weight:bold;
+	margin-left:5px;
+}
+article.whole_food_menu>div{
+	padding:0px;
+}
+article.whole_food_menu div img{
+	width:40px;
+	height:40px;
+	display:inline-block;
+	margin-left:100px;
+	
+}
+p.whole_multi{
+	
+	display:inline-block;
 	margin:0px;
 }
 
-div#content {
-	width:1200px;
-	/* border:1px solid green; */
-	margin:auto;
+p.food_price>span{
+	font-size:18px;
 }
-div.main_1 {
-	margin-bottom:50px;
-	/* height:500px; */
-	width:100%;
-	border:1px solid red;
-}
-
-
-div.main_2 {
-	border:1px solid blue;
-	height:200px;
-	/* vertical-align:middle; */
-}
-
-div.main_2 div.info_card { /* 자랑 카드 */
-	border:1px solid black;
-	/* display:inline-block; */
-	display:table-cell;
-	width:580px; height: 150px;
-	background:#F2F2F2;
-	float:left;
+p.whole_multi span{
 	position:relative;
-	top:25px;
-	/* margin:25px 0px 25px 60px; */
+	top:-15px;
+	left:5px;
+	font-size:17px;
 }
-
-div.main_2 div.info_card:nth-child(2) {
-	float:right;
-}
-
-div.main_2 div.info_card div.info_card_1 p {
-	font-size:13pt;
-	margin:15px;
-}
-
-div.main_2 div.info_card div.info_card_1 p:nth-child(1) {
-	font-size:18pt;
-	font-weight:bold;
-	margin-bottom:30px;
-}
-
-div.main_2 div.info_card div.info_card_1 p span { /* 00:00:00 */
-	font-size:16pt;
-	font-weight:bold;
-}
-
-div.main_2 div.info_card div.info_card_1 { /* 자랑카드 내용 */
-	border:1px solid red;
+article.food_review_content{
 	display:inline-block;
-	width:420px; height:150px;
-}
-
-div.main_2 div.info_card div.info_card_2 { /* 자랑카드 아이콘 */
-	border:1px solid green;
-	display:inline-block;
-	/* margin-left:20px; */
-	width:120px; height:120px;
-	position:relative;
-	left:20px; top:10px;
-}
-
-div.main_2 div.info_card div.info_card_2 img {
-	width:100%;
-}
-
-
-div.main_3 {
-	border:1px solid pink;
-	height:600px;
-}
-
-div.main_3 > div:first-child {
-	border:1px solid brown;
-	display:inline-block;
-	margin:0px; padding:0px;
-	vertical-align:top;
-	height:100%;
-}
-
-/* button.taste_select_1 {
-	position: relative;
-	width: 222px;
-	border-bottom: 4px solid #202020;
-	overflow: visible;
-	text-align: left;
-	z-index: 3;
-}
-
-button.taste_select_1:after {
-	content: '';
-	position: absolute;
-	top: 50%;
-	right: 7px;
-	width: 13px;
-	height: 13px;
-	margin-top: -9px;
-	border-right: 2.5px solid #303030;
-	border-bottom: 2.5px solid #303030;
-	-ms-transform: rotate(45deg);
-	-webkit-transform: rotate(45deg);
-	-moz-transform: rotate(45deg);
-	transform: rotate(45deg);
-}
-
-button.taste_select_1 strong {
-	display: inline-block;
-	color: #101010;
-	font-weight: 700;
-	font-size: 40px;
-	line-height: 54px;
-	padding-right: 40px;
-} */
-
-div.main_3 select#taste_select { /* 맛 추천 select box */
-	/* width: 200px; */
-	padding: .8em .5em;
-	/* border: 1px solid #999; */
-	/* font-family: inherit; */
-	background: url('http://localhost:9090/murkit/images/main_top/arrow.jpg') no-repeat 95% 50%;
-	/* border-radius: 0px; */
-	-webkit-appearance: none; /* 디폴트 화살표 없앰 */
-	/* -moz-appearance: none;
-	appearance: none; */
-	
 	width:300px;
-	font-size:30px;
-	font-weight:bold;
-	border:none;
-	border-bottom:3px solid black;
-	
-	opacity:0.8;
-	/* background-color: rgba( 255, 255, 255, 0.5 );	arrow.jpg 배경 흰색 없애고 이거*/
-}
-
-/* div.main_3 div.taste_select_2 a {
-	display: block;
-	width: 100%;
-	height: 54px;
-	padding: 5px 0 0 23px;
-	color: #606060;
-	font-weight: 500;
-	font-size: 28px;
-	line-height: 42px;
-	text-align: left;
-} */
-
-div.main_3 div.taste {
-	border:1px solid blue;
-	width:300px;
-	/* margin:20px 20px -30px 50px; */
-	margin:10px;
-}
-
-div.main_3 div.taste_msg {
-	border:1px solid blue;
-	display:inline-block;
-	width:300px; height:300px;
-	margin:10px;
-}
-
-
-div.main_3 > div:last-child {
-	border:1px solid brown;
-	display:inline-block;
-	margin:0px; padding:0px;
 	vertical-align:top;
-	width:865px; height:100%;
+	padding-top:50px;
+	padding-left: 120px;
+	
 }
-
-div.main_3 div.taste_icon {
-	border:1px solid cyan;
+article.food_review_content>p:nth-child(1){
+	font-size:19px;
+	font-weight:bold;
+}
+article.food_review_content>p:nth-child(2){
+	font-size:17px;
+	font-weight:bold;
+}
+article.food_review_content>p:nth-child(4){
+	font-size:16px;
+	font-weight:bold;
+}
+div.food_img_review{
+	
 	display:inline-block;
-	width:180px; height:270px;
+	height:480px;
 }
-
-div.main_3 div.taste_icon img {
-	width:100%;
+img.food_first,img.food_second{
+	 position:relative; 
 }
-
-div.main_3 div.taste_main {
-	display:inline-block;
-	width:500px; height:500px;
-	border:1px solid black;
+img.food_first{
+	margin-top:40px;
+	left:50px;
+	height:320px;
+ 	border-radius:30px; 
 }
-
-div.main_3 div.taste_main img {
-	width:100%;
+img.food_second{
+    top: -150px;
+    left: 380px;
+    height: 270px;
 }
-
-
-div.clear {
-	border:1px solid yellow;
-	clear:both;
-}
-
-
-
-
-.swiper-container {
-	width: 100%;
-	height: 100%;
-}
-.swiper-slide {
-	text-align: center;
-	font-size: 18px;
-	background: #fff;
-	/* Center slide text vertically */
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: -webkit-flex;
-	display: flex;
-	-webkit-box-pack: center;
-	-ms-flex-pack: center;
-	-webkit-justify-content: center;
-	justify-content: center;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	-webkit-align-items: center;
-	align-items: center;
+p.food_price>img{
+	cursor:pointer;
 }
 </style>
-<script>
-	$(document).ready(function(){
-		
-		$("div.taste_select_2").hide();
-		
-		$("button.taste_select_1").click(function(){
-			$("div.taste_select_2").toggle();
-		});
-		
-		
-		var swiper = new Swiper('.swiper-container', {
-			pagination: {
-				el: '.swiper-pagination',
-			},
-		});
-		
-	});
-</script>
 
 </head>
 <body>
-	<jsp:include page="header.jsp"></jsp:include>
-	<div class="main_1">
-	
-		<!-- Swiper -->
-		<div class="swiper-container">
-		
-			<div class="swiper-wrapper">
-				<div class="swiper-slide"><img src="http://localhost:9090/murkit/images/main_top/20190910132047417.jpg" /></div>
-				<div class="swiper-slide"><img src="http://localhost:9090/murkit/images/main_top/20191114092525869.jpg" /></div>
-				<div class="swiper-slide"><img src="http://localhost:9090/murkit/images/main_top/20191115180915159.jpg" /></div>
-				<div class="swiper-slide"><img src="http://localhost:9090/murkit/images/main_top/20191121094814617.jpg" /></div>
-				<div class="swiper-slide"><img src="http://localhost:9090/murkit/images/main_top/20191122163502116.jpg" /></div>
-				<!-- <div class="swiper-slide">Slide 6</div>
-				<div class="swiper-slide">Slide 7</div>
-				<div class="swiper-slide">Slide 8</div>
-				<div class="swiper-slide">Slide 9</div>
-				<div class="swiper-slide">Slide 10</div> -->
-			</div>
-			
-			
-			
-			<!-- Add Pagination -->
-			<div class="swiper-pagination"></div>
-			
-		</div>
-		
-	</div>
-			
-			
 	<div id="content">
-		<div id="main_top">
-			
-			
-			<div class="main_2">
-				<div class="info_card">
-					<div class="info_card_1">
-						<p>11월 22일(금)에 받을 수 있어요</p>
-						<p>오전 7시까지 주문하시면 다음날 배송됩니다.</p>
-						<p><span>00:00:00</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;남은 시간</p>
-					</div>
-					<div class="info_card_2">
-						<img src="http://localhost:9090/murkit/images/main_top/truck.png" />
-					</div>
-				</div>
-				
-				<div class="info_card">
-					<div class="info_card_1">
-						<p>뭐야..</p>
-						<p>포지션 릴레이티브..</p>
-						<p><span>00:00:00</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;남은 시간</p>
-					</div>
-				</div>
-				
-				<div class="clear"></div>
+		<div id="food_main_header">
+			<div class="food_main_1">
+				<span>뀨1</span>
 			</div>
-			
-			<div class="main_3">
-			<div>
-					<div class="taste">
-						<!-- <button type="button" class="taste_select_1">
-							<strong>매콤한맛</strong>
-						</button>
-						<div class="taste_select_2">
-							<a href="#"><span>매콤한맛</span></a>
-							<a href="#"><span>짭짤한맛</span></a>
-							<a href="#"><span>담백한맛</span></a>
-							<a href="#"><span>이국적인맛</span></a>
-							<a href="#"><span>얼큰한맛</span></a>
-						</div> -->
-						
-						<select id="taste_select">
-							<option>매콤한맛</option>
-							<option>짭짤한맛</option>
-							<option>담백한맛</option>
-							<option>이국적인맛</option>
-							<option>얼큰한맛</option>
-						</select>
-					</div>
-					
-					<div class="taste_msg">
-						<h1>메뉴<br>추천드려요</h1>
-						<h3><a href="">로그인</a>하시면<br>고객님의 맛 취향에 따라<br>딱 맞는 맛있는 메뉴를 추천드려요</h3>
-					</div>
-				</div>
-				
-				<div>
-					<div class="taste_icon">
-						<img src="http://localhost:9090/murkit/images/main_top/taste_1.png" />
-					</div>
-					
-					<div class="taste_main">
-						<img src="http://localhost:9090/murkit/images/main_top/20191113101250804.png" />
-					</div>
-				</div>
-				
+			<div class="food_main_2">
+				<span>뀨2</span>
 			</div>
-			
+			<div class="food_main_3">
+				<span>뀨3</span>
+			</div>
 		</div>
 		
-	</div>
-	<jsp:include page="footer.jsp"></jsp:include>
+		<div id="food_main_content">
+			<div class="food_rec_best">
+				<label>실시간 베스트</label>
+				<div class="best_pic">
+				<%for(int i=0 ; i<6; i++){ %>
+					<div>
+						<article class="all_pic">
+						<a href="#"><div class="best_name">BEST <br>01</div><img src="http://localhost:9090/murk/images/food_menu/rec_best1.jpg" class="first">
+						</a>
+						<div>
+						<p class="food_name">얼큰구수 꽃게탕</p>
+						<p class="food_price">
+							<span>26,800원</span> 
+							<span>/ 3인분</span>
+							<img src="http://localhost:9090/murk/images/icon/cart2.png">
+						</p>	
+						</div>
+						</article>
+					</div>
+					<%} %>	
+				</div>
+				
+			</div>		
+			<div class="food_all_menu">
+				<label class="all_menu">전체 메뉴</label>
+				<div class="multiple-items">
+				<%for(int i=0; i<20; i++){ %>
+					 <div>
+						<article class="whole_food_menu">
+							<a href="#"><img src="http://localhost:9090/murk/images/food_menu/rec_best2.jpg" class="multi"></a>
+							<div>
+								<p>얼큰시원 알탕</p>
+								<p class="whole_multi">
+									<span>24,800원</span>
+									<span> / 2인분</span>
+									<img src="http://localhost:9090/murk/images/icon/cart2.png">
+								</p>
+							</div>
+						</article>
+					</div> 
+					<%} %>
+				</div>
+			</div>
+			<div class="food_all_review">
+			<div>
+				<label>생생한 리뷰</label>	
+			</div>
+			<div class="multiple-items2">
+			 <%for(int i=0; i<10; i++){ %>
+				<div>
+					<div>
+						<article class="food_review_content"><p>보들계란 삼색 닭고기 덮밥</p>
+							<p>엄청 신경 쓴 느낌이 팍팍 나는 메뉴 계란, 닭고기는 당연히 맛있을 수 밖에 없고 담백하게 부담없는 식사로 딱이에요</p>
+							<img src="http://localhost:9090/murk/images/icon/bigstar4_size.png">
+							<p>mama4280@naver.com</p>
+						</article>
+						
+						<div class="food_img_review">
+							<img src="http://localhost:9090/murk/images/food_menu/review_food.jpeg" class="food_first">
+							<img src="http://localhost:9090/murk/images/food_menu/food_small.png" class="food_second">
+						</div>
+					</div>
+				</div>
+					<%} %>
+				</div>
+			</div>
+		</div>
+	</div>	
+
 </body>
 </html>
