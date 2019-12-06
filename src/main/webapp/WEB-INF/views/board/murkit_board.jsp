@@ -108,11 +108,14 @@ ArrayList<BoardVO> list = (ArrayList<BoardVO>)request.getAttribute("list");
     	margin-left:800px;
     	margin-top:-50px;
 	 }
+	 div#murkit_board > section > h1 {
+	 	font-size:30px;
+	 }
 </style>
 <body>
 	<div id="murkit_board">
 		<section>
-				<h1 style="font-size:30px;">먹킷 게시판</h1>
+				<h1>먹킷 게시판</h1>
 				<table class="murkit_boardlist">
 					<tr id="firsttr">
 						<th>번호</th>

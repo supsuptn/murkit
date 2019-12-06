@@ -73,13 +73,56 @@
 	font-size: 14px;
 	line-height: 22px;
 }
+div#Eventpage2Maindiv {
+	width: 1200px; 
+	margin: auto;
+}
+div#Eventpage2Maindiv > div.ev_wrap {
+	margin-top:100px;
+}
+div#Eventpage2Maindiv > div#Eventpage2_1 {
+	width:1100px;
+	margin: auto;
+}
+div#Eventpage2Maindiv > div#Eventpage2_1 > img#img1 {
+	width: 1100px; height: auto; margin-top: 20px;
+}
+div#Eventpage2Maindiv > div#Eventpage2_1 > div#Eventpage2_2 {
+	background: #088561; 
+	margin-top: -10px;
+}
+div#Eventpage2Maindiv > div#Eventpage2_1 > div#Eventpage2_2 > img#img2 {
+	width: 100px; 
+	height: auto; 
+	margin-top: 50px; 
+	margin-left: 30px;
+}
+div#Eventpage2Maindiv > div#Eventpage2_1 > div#Eventpage2_2 > h3 {
+	margin-left: 70px;
+}
+div#Eventpage2Maindiv > div#Eventpage2_1 > div#Eventpage2_2 > img#img3 {
+	width: 100px; 
+	height: auto; 
+	margin-top: 20px; 
+	margin-left: 30px;
+}
+div#Eventpage2Maindiv > div#Eventpage2_1 > div#Eventpage2_2 > div#Eventpage2_3 > h3{
+	margin-left: 70px;
+}
+div#Eventpage2Maindiv > div#Eventpage2_1 > div#Eventpage2_2 > div#Eventpage2_3 > img#img4 {
+	width: 200px; 
+	height: 100px; 
+	margin-top: 20px; 
+	margin-left: 70px; 
+	margin-bottom: 30px; 
+	cursor: pointer;
+}
 </style>
 </head>
 <body>
-	<div id="content" class="ev_content"
-		style="width: 1100px; margin: auto;">
+	<div id="Eventpage2Maindiv" class="ev_content">
 
-		<div class="ev_wrap" style="margin-top: 100px;">
+		<div class="ev_wrap">
 			<h1 class="title">이벤트</h1>
 		</div>
 		<hr>
@@ -87,20 +130,15 @@
 			<h2>첫구매 5천원 포인트 지급</h2>
 			<span>2019-12-01~2019-12-31</span>
 		</div>
-		<div style="width: 1000px; margin: auto;">
-			<img src="http://localhost:9090/murkit/images/img_first_top.jpg"
-				style="width: 1000px; height: auto; margin-top: 20px;" />
-			<div style="background: #088561; margin-top: -10px;">
-				<img src="http://localhost:9090/murkit/images/img_first_step01.png"
-					style="width: 100px; height: auto; margin-top: 50px; margin-left: 30px;" />
-				<h3 style="margin-left: 70px;">여러가지 메뉴를 구경하고 원하는 상품을 장바구니에
-					담기!!!</h3>
-				<img src="http://localhost:9090/murkit/images/img_first_step01.png"
-					style="width: 100px; height: auto; margin-top: 20px; margin-left: 30px;" />
-				<div>
-					<h3 style="margin-left: 70px;">구매후, 5,000원 쿠폰 확인하기</h3>
-					<img src="http://localhost:9090/murkit/images/event_buy1.png"
-						style="width: 200px; height: 100px; margin-top: 20px; margin-left: 70px; margin-bottom: 30px; cursor: pointer;" />
+		<div id="Eventpage2_1">
+			<img id="img1" src="http://localhost:9090/murkit/images/img_first_top.jpg"/>
+			<div id="Eventpage2_2">
+				<img id="img2" src="http://localhost:9090/murkit/images/img_first_step01.png"/>
+				<h3>여러가지 메뉴를 구경하고 원하는 상품을 장바구니에 담기!!!</h3>
+				<img id="img3" src="http://localhost:9090/murkit/images/img_first_step01.png"/>
+				<div id="Eventpage2_3">
+					<h3>구매후, 5,000원 쿠폰 확인하기</h3>
+					<img id="img4" src="http://localhost:9090/murkit/images/event_buy1.png"/>
 				</div>
 			</div>
 			<div class="purchase_notice">

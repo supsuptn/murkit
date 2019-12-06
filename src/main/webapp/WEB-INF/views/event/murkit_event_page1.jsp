@@ -73,12 +73,56 @@
 	font-size: 14px;
 	line-height: 22px;
 }
+div#Eventpage1Maindiv {
+	width:1200px;
+	margin:auto;
+}
+div#Eventpage1Maindiv > div.ev_wrap {
+	margin-top:100px;
+}
+div#Eventpage1Maindiv > div#EventDiv1 {
+	width:1100px;
+	margin:auto;
+} 
+div#Eventpage1Maindiv > div#EventDiv1 > img#img1 {
+	width:1100px; height:auto; margin-top:20px;
+}
+div#Eventpage1Maindiv > div#EventDiv1 > div#EventDiv2 {
+	background:#f3cd9e; 
+	margin-top:-20px;
+}
+div#Eventpage1Maindiv > div#EventDiv1 > div#EventDiv2 > img#img2 {
+	width: 100px; 
+	height: auto; 
+	margin-top: 50px; 
+	margin-left: 30px;
+}
+div#Eventpage1Maindiv > div#EventDiv1 > div#EventDiv2 >h3{
+	margin-left: 70px;
+}
+div#Eventpage1Maindiv > div#EventDiv1 > div#EventDiv2 > img#img3 {
+	width: 100px; 
+	height: auto; 
+	margin-top: 20px; 
+	margin-left: 30px;
+}
+div#Eventpage1Maindiv > div#EventDiv1 > div#EventDiv2 > div > h3 {
+	margin-left: 70px;
+}
+div#Eventpage1Maindiv > div#EventDiv1 > div#EventDiv2 > div > img#img4 {
+	width: 200px; 
+	height: 100px; 
+	margin-top: 20px; 
+	margin-left: 70px; 
+	margin-bottom: 30px; 
+	cursor: pointer;
+}
 </style>
 </head>
 <body>
-			<div id="content" class="ev_content" style="width:1100px; margin:auto;">
+			<div id="Eventpage1Maindiv" class="ev_content">
                 
-                <div class="ev_wrap" style="margin-top:100px;">
+                <div class="ev_wrap">
                     <h1 class="title">이벤트</h1>
 </div>
 <hr>
@@ -86,17 +130,15 @@
 <h2>회원가입시 3천원 포인트 지급</h2>
 <span>2019-12-01~2019-12-31</span>
 </div>
-<div style="width:1000px; margin:auto;">
-<img src="http://localhost:9090/murkit/images/event_join_top.jpg" style="width:1000px; height:auto; margin-top:20px;"/>
-<div style="background:#f3cd9e; margin-top:-20px;">
-<img src="http://localhost:9090/murkit/images/img_first_step01.png" style="width: 100px; height: auto; margin-top: 50px; margin-left: 30px; " />
-<h3 style="margin-left: 70px;">회원가입시 3천원 포인트 지급!!!</h3>
-				<img src="http://localhost:9090/murkit/images/img_first_step01.png"
-					style="width: 100px; height: auto; margin-top: 20px; margin-left: 30px;" />
+<div id="EventDiv1">
+<img id="img1" src="http://localhost:9090/murkit/images/event_join_top.jpg"/>
+<div id="EventDiv2">
+<img id="img2" src="http://localhost:9090/murkit/images/img_first_step01.png"/>
+<h3>회원가입시 3천원 포인트 지급!!!</h3>
+				<img id="img3" src="http://localhost:9090/murkit/images/img_first_step01.png"/>
 				<div>
-					<h3 style="margin-left: 70px;">회원가입 후, 3000원 쿠폰 받기 클릭!!</h3>
-					<img src="http://localhost:9090/murkit/images/event_join01.PNG"
-						style="width: 200px; height: 100px; margin-top: 20px; margin-left: 70px; margin-bottom: 30px; cursor: pointer;" />
+					<h3>회원가입 후, 3000원 쿠폰 받기 클릭!!</h3>
+					<img id="img4" src="http://localhost:9090/murkit/images/event_join01.PNG"/>
 				</div>
 </div>
 <div class="purchase_notice">

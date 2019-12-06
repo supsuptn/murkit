@@ -21,56 +21,56 @@
 
 </script>
 <style>
-	div#content>section>div#murkit_board {
+	div#BoardWriteMainDiv>section>div#murkit_board {
 		width:1200px;
 		margin:auto;
 		padding: 72px 0 140px;
 		font-size:15pt;
 	}
-	div#content>section>div table.board_write,
-	div#content>section>div table.board_write th,
-	 div#content>section>div table.board_write td {
+	div#BoardWriteMainDiv>section>div table.board_write,
+	div#BoardWriteMainDiv>section>div table.board_write th,
+	 div#BoardWriteMainDiv>section>div table.board_write td {
 	 	border-collapse:collapse;
 	 	font-family:'나눔스퀘어라운드';
 	 	font-size:13pt;
 	 	border-top:1px solid lightgray;
 	}
-	div#content>section>div table.board_write{
+	div#BoardWriteMainDiv>section>div table.board_write{
 	 	width:100%;
 	 }
-	 div#content>section>div table.board_write tr:nth-child(1) {
+	 div#BoardWriteMainDiv>section>div table.board_write tr:nth-child(1) {
 	 	border-top:2px solid #ccc;
 	 }
-	 div#content>section>div table.board_write tr:nth-child(4) {
+	 div#BoardWriteMainDiv>section>div table.board_write tr:nth-child(4) {
 	 	border-bottom:2px solid #ccc;
 	 }
-	 div#content>section>div table.board_write th {
+	 div#BoardWriteMainDiv>section>div table.board_write th {
 	 	padding:13px 0px 13px 0px;
 	 	background:#F5F5F7;
 	 	opacity:0.9;
 	 	color:black;
 	 }
-	 div#content>section>div table.board_write td {
+	 div#BoardWriteMainDiv>section>div table.board_write td {
 	 padding:3px 0px 3px 0px;
 	 }
-	 div#content>section>div table.board_write tr td:nth-child(1),
-	 div#content>section>div table.board_write tr td:nth-child(2) {
+	 div#BoardWriteMainDiv>section>div table.board_write tr td:nth-child(1),
+	 div#BoardWriteMainDiv>section>div table.board_write tr td:nth-child(2) {
 	 text-align:left; padding-left:10px;
 	 }
-	 div#content>section>div table.board_write tr:nth-child(5) td{
+	 div#BoardWriteMainDiv>section>div table.board_write tr:nth-child(5) td{
 	 	text-align:center;
 	 }
-	 div#content>section>div table.board_write tr:last-child td {
+	 div#BoardWriteMainDiv>section>div table.board_write tr:last-child td {
 	 	border:1px solid rgb(251,251,239);
 	 	padding-top:15px;
 	 }
-	 div#content>section>div table.board_write tr td input,
-	 div#content>section>div table.board_write tr td textarea{
+	 div#BoardWriteMainDiv>section>div table.board_write tr td input,
+	 div#BoardWriteMainDiv>section>div table.board_write tr td textarea{
 	 	width:98%;
 	 	border:none;
 	 	padding:5px;
 	 }
-	 div#content>section>div table.board_write tr td textarea{
+	 div#BoardWriteMainDiv>section>div table.board_write tr td textarea{
 	 	height:400px;
 	 }
 	 tr.button_write_tr button.btn_board_type{
@@ -85,11 +85,14 @@
     	cursor:pointer;
     	margin-top:20px;
 	 }
+	 div#BoardWriteMainDiv > section > div#murkit_board > form#board_write > table.board_write tr td textarea#bcontent {
+	 	font-size:15pt;
+	 }
 </style>
 </head>
 <body>
 <div>
-	<div id = "content">
+	<div id = "BoardWriteMainDiv">
 		<section>
 			<div id = "murkit_board">
 				<h1>먹킷 게시판</h1>
@@ -105,7 +108,7 @@
 						<td><%=bid %></td>
 					</tr>
 					<tr>
-						<td colspan=2><textarea name = "bcontent" id= "bcontent" placeholder="내용을 입력해 주세요.(최대 1000자)" style="font-size:15pt;"></textarea>
+						<td colspan=2><textarea name = "bcontent" id= "bcontent" placeholder="내용을 입력해 주세요.(최대 1000자)"></textarea>
 					</tr>
 					<tr>
 						<th>파일</th>

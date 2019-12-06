@@ -5,120 +5,232 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
 <title>Insert title here</title>
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
-<script type="text/javascript">
- $(document).ready(function(){
+<script src="http://localhost:9090/murkitproject/js/jquery-3.4.1.min.js"></script>
+<script>
+$(document).ready(function(){
+	 var origin=1;
+	 var fishery=1;
+	 var animal=1;
+	 
+	 $("img#origin_img1").click(function() {
+			var origin_img1=document.getElementById("origin_img1");
+			var origin_img2=document.getElementById("origin_img2");
+			if(origin%2==1) {
+				origin_img1.src="http://localhost:9090/murkitproject/images/upimage.png";
+				origin_img2.src="http://localhost:9090/murkitproject/images/downimage.png";
+			} else {
+				origin_img1.src="http://localhost:9090/murkitproject/images/downimage.png";
+				origin_img2.src="http://localhost:9090/murkitproject/images/upimage.png";
+			}
+			origin++;
+			$("#murkit_origin_table_tbody").toggle();
+			
+		});
+	 
+			$("img#fish_img1").click(function() {
+				var fish_img1=document.getElementById("fish_img1");
+				var fish_img2=document.getElementById("fish_img2");
+				if(fishery%2==1) {
+					fish_img1.src="http://localhost:9090/murkitproject/images/upimage.png";
+					fish_img2.src="http://localhost:9090/murkitproject/images/downimage.png";
+				} else {
+					fish_img1.src="http://localhost:9090/murkitproject/images/downimage.png";
+					fish_img2.src="http://localhost:9090/murkitproject/images/upimage.png";
+				}
+				fishery++;
+				$("#murkit_fishery_table_tbody").toggle();
 
-	$("#test").click(function() {
-		$("#content").slideToggle("slow");
+			});
+			$("img#ani_img1").click(function() {
+				var ani_img1=document.getElementById("ani_img1");
+				var ani_img2=document.getElementById("ani_img2");
+				if(animal%2==1) {
+					ani_img1.src="http://localhost:9090/murkitproject/images/upimage.png";
+					ani_img2.src="http://localhost:9090/murkitproject/images/downimage.png";
+				} else {
+					ani_img1.src="http://localhost:9090/murkitproject/images/downimage.png";
+					ani_img2.src="http://localhost:9090/murkitproject/images/upimage.png";
+				}
+				animal++;
+				$("#murkit_animal_table_tbody").toggle();
 
-	});
-	$("#test2").click(function() {
-		$("#content2").slideToggle("slow");
+			});
+});
 
-	});
-	$("#test3").click(function() {
-		$("#content3").slideToggle("slow");
-
-	});
-	
- });
 </script>
 <style>
-div#content table#murkit_origin_table {
-		width:100%;
-		margin:auto;
-		border:1px solid black;
+table#murkit_origin_table img,
+table#murkit_fishery_table img,
+table#murkit_animal_table img{
+   width:140px;
+   height:140px;
+   margin-left:5px;
+   margin-top:10px;
 }
-div#content2 table#murkit_fishery_table {
-		width:100%;
-		margin:auto;
-		border:1px solid black;
+#murkit_origin_table th,
+#murkit_fishery_table th,
+#murkit_animal_table th {
+   background: #F5F5F7;
 }
-div#content3 table#murkit_animal_table {
-		width:100%;
-		margin:auto;
-		border:1px solid black;
+table#murkit_origin_table,table#murkit_origin_table tr,
+table#murkit_fishery_table,table#murkit_fishery_table tr,
+table#murkit_animal_table,table#murkit_animal_table tr{
+   border: 1px solid #ccc;
+   border-collapse: collapse;
+   text-align: center;
+}
+
+table#murkit_origin_table tr,
+table#murkit_fishery_table tr,
+table#murkit_animal_table tr {
+      height: 40px;
+      padding: 10px;
+}
+table#murkit_origin_table tr#murkit_origin_table_tr th:nth-child(4),
+table#murkit_fishery_table tr#murkit_fishery_table_tr th:nth-child(4),
+table#murkit_animal_table tr#murkit_animal_table_tr th:nth-child(4) {
+	text-align:right;
+}
+table#murkit_origin_table td,
+table#murkit_fishery_table td,
+table#murkit_animal_table td{
+   height:180px;
+}   
+
+tr#murkit_origin_table_tr>th>label,
+tr#murkit_fishery_table_tr>th>label,
+tr#murkit_animal_table_tr>th>label{
+   
+   margin-right:100px;
+   float:left;
+   margin-left:20px;
+   font-size:23px;
+   font-weight:bold;
+}
+tr#murkit_origin_table_content>td:nth-child(1) label:nth-child(2),
+tr#murkit_fishery_table_content>td:nth-child(1) label:nth-child(2),
+tr#murkit_animal_table_content>td:nth-child(1) label:nth-child(2){
+   font-size:15px;
+   font-weight:bold;
+}
+
+table#murkit_origin_table,
+table#murkit_fishery_table,
+table#murkit_animal_table{
+   margin-bottom:50px;
+}
+
+/**테이블 행간격**/
+      table#murkit_origin_table th:first-child, table#murkit_origin_table td:first-child,
+      table#murkit_fishery_table th:first-child, table#murkit_fishery_table td:first-child,
+      table#murkit_animal_table th:first-child, table#murkit_animal_table td:first-child
+      {
+         width: 20%;
+      
+      }
+      
+      table#murkit_origin_table th:nth-child(2), table#murkit_origin_table td:nth-child(2),
+      table#murkit_fishery_table th:nth-child(2), table#murkit_fishery_table td:nth-child(2),
+      table#murkit_animal_table th:nth-child(2), table#murkit_animal_table td:nth-child(2)
+      {
+         width: 15%;
+      }
+      
+      table#murkit_origin_table th:nth-child(3), table#murkit_origin_table td:nth-child(3),
+      table#murkit_fishery_table th:nth-child(3), table#murkit_fishery_table td:nth-child(3),
+      table#murkit_animal_table th:nth-child(3), table#murkit_animal_table td:nth-child(3)
+         {
+         width: 15%;
+      }
+      
+tr#murkit_origin_table_content>td:nth-child(1) div,
+tr#murkit_fishery_table_content>td:nth-child(1) div,
+tr#murkit_animal_table_content>td:nth-child(1) div{
+   font-weight:bold;
+   margin-top:5px;
+   margin-bottom:5px;
+   font-size:16px;
+}
+table#murkit_origin_table,
+table#murkit_fishery_table,
+table#murkit_animal_table{
+	width:600px;
+	margin:auto;
+}
+table#murkit_origin_table tr#murkit_origin_table_tr th:nth-child(4) img#origin_img2,
+table#murkit_fishery_table tr#murkit_fishery_table_tr th:nth-child(4) img#fish_img2,
+table#murkit_animal_table tr#murkit_animal_table_tr th:nth-child(4) img#ani_img2 {
+	display:none;
+}
+table#murkit_origin_table tr#murkit_origin_table_tr th:nth-child(4) img#origin_img1,
+table#murkit_fishery_table tr#murkit_fishery_table_tr th:nth-child(4) img#fish_img1,
+table#murkit_animal_table tr#murkit_animal_table_tr th:nth-child(4) img#ani_img1 {
+	width:30px;
+	height:auto;
 }
 </style>
 </head>
 <body>
-<div style="width:1200px; margin:auto;">
-<h1 style="font-size:30px;">먹킷 원산지</h1>
-<div style="background:green; width:800px; margin:auto; color:white;" id="test">농산물<img src="http://localhost:9090/murkit/images/upimage.png" 
-	style="margin-left:700px; width:30px; height:auto;" id="button_agri"/></div>
-<div id="content" style="width:800px; margin:auto;">
-<table id="murkit_origin_table">
-		<tr>
-			<th>재료</th>
-			<th>재료명</th>
-			<th>원산지</th>
-	    </tr>
-		<tr>
-			<td><img alt="당근" src="http://localhost:9090/murkit/images/origin_carret.jpg" style="width:400px; height:auto;"></td>
-			<td>당근</td>
-			<td>국내산</td>
-		</tr>
-		<tr>
-			<td><img alt="당근" src="http://localhost:9090/murkit/images/origin_carret.jpg" style="width:400px; height:auto;"></td>
-			<td>당근</td>
-			<td>국내산</td>
-		</tr>
-
-</table>
-
-</div>
-
-<div style="background:green; width:800px; margin:auto; color:white;" id="test2">수산물<img src="http://localhost:9090/murkit/images/upimage.png" 
-	style="margin-left:700px; width:30px; height:auto;" id="button_agri"/></div>
-<div id="content2" style="width:800px; margin:auto;">
-<table id="murkit_fishery_table">
-		<tr>
-			<th>재료</th>
-			<th>재료명</th>
-			<th>원산지</th>
-	    </tr>
-		<tr>
-			<td><img alt="고등어" src="http://localhost:9090/murkit/images/fishery_fish.jpg" style="width:400px; height:auto;"></td>
-			<td>고등어</td>
-			<td>국내산</td>
-		</tr>
-		<tr>
-			<td><img alt="고등어" src="http://localhost:9090/murkit/images/fishery_fish.jpg" style="width:400px; height:auto;"></td>
-			<td>고등어</td>
-			<td>국내산</td>
-		</tr>
-
-</table>
-
-</div>
-
-<div style="background:green; width:800px; margin:auto; color:white;" id="test3">축산물<img src="http://localhost:9090/murkit/images/upimage.png" 
-	style="margin-left:700px; width:30px; height:auto;" id="button_agri"/></div>
-<div id="content3" style="width:800px; margin:auto;">
-<table id="murkit_animal_table">
-		<tr>
-			<th>재료</th>
-			<th>재료명</th>
-			<th>원산지</th>
-	    </tr>
-		<tr>
-			<td><img alt="돼지고기" src="http://localhost:9090/murkit/images/animal_pig.jpg" style="width:400px; height:auto;"></td>
-			<td>돼지고기</td>
-			<td>국내산</td>
-		</tr>
-		<tr>
-			<td><img alt="돼지고기" src="http://localhost:9090/murkit/images/animal_pig.jpg" style="width:400px; height:auto;"></td>
-			<td>돼지고기</td>
-			<td>국내산</td>
-		</tr>
-
-</table>
-
-</div>
-
-
-
-</div>
+	<table id="murkit_origin_table">
+	
+               <tr id="murkit_origin_table_tr">
+                  <th>재료</th>
+                  <th>재료명</th>
+                  <th>원산지</th>
+                  <th>
+                  <img src="http://localhost:9090/murkitproject/images/downimage.png" class="button_ori" id="origin_img1">
+					<img src="http://localhost:9090/murkitproject/images/upimage.png" id="origin_img2"></th>
+               </tr>
+               <tbody id="murkit_origin_table_tbody">
+               <%for(int i=0; i<4; i++){ %>
+               <tr id="murkit_origin_table_content">
+                  <td><img src="http://localhost:9090/murkit/images/origin_carret.jpg"></td>
+                  <td><label>당근</label></td>
+                  <td>2개</td>
+               </tr>
+               <%} %>
+               </tbody>
+    </table>
+            
+	<table id="murkit_fishery_table">
+               <tr id="murkit_fishery_table_tr">
+                  <th>재료</th>
+                  <th>재료명</th>
+                  <th>원산지</th>
+                  <th>
+                  <img src="http://localhost:9090/murkitproject/images/downimage.png" class="button_fish" id="fish_img1">
+					<img src="http://localhost:9090/murkitproject/images/upimage.png" id="fish_img2"></th>
+               </tr>
+               <tbody id="murkit_fishery_table_tbody">
+               <%for(int i=0; i<4; i++){ %>
+               <tr id="murkit_fishery_table_content">
+                  <td><img src="http://localhost:9090/murkit/images/fishery_fish.jpg"></td>
+                  <td><label>고등어</label></td>
+                  <td>2개</td>
+               </tr>
+               <%} %>
+               </tbody>
+    </table>
+            
+	<table id="murkit_animal_table">
+               <tr id="murkit_animal_table_tr">
+                  <th>재료</th>
+                  <th>재료명</th>
+                  <th>원산지</th>
+                  <th>
+                  <img src="http://localhost:9090/murkitproject/images/downimage.png" class="button_ani" id="ani_img1">
+					<img src="http://localhost:9090/murkitproject/images/upimage.png" id="ani_img2"></th>
+               </tr>
+               <tbody id="murkit_animal_table_tbody">
+               <%for(int i=0; i<4; i++){ %>
+               <tr id="murkit_animal_table_content">
+                  <td><img src="http://localhost:9090/murkit/images/animal_pig.jpg"></td>
+                  <td><label>돼지고기</label></td>
+                  <td>2개</td>
+               </tr>
+               <%} %>
+               </tbody>
+    </table>
+            
 </body>
 </html>

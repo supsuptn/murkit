@@ -143,7 +143,7 @@
               </div>
               <div class="gnb_menu">
                   <ul class="list_gmenu" >
-                     <li><a href="#" >∏‘≈∂º“∞≥</a></li>
+                     <li><a href="http://localhost:9090/murkit/murkit_intro.do" >∏‘≈∂º“∞≥</a></li>
                      <li><a href="http://localhost:9090/murkit/menu_main.do" ><span class="red_dot">∏‘≈∂ ∏ﬁ¥∫</span></a></li>
                      <li><a href="#">∏Æ∫‰</a></li>
                      <li><a href="http://localhost:9090/murkit/murkit_event.do">¿Ã∫•∆Æ</a></li>

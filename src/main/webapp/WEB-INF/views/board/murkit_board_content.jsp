@@ -102,53 +102,53 @@ $(document).ready(function(){
 		text-align:left;
 		font-size:9pt;
 	}
-	div#content>section>div table.murkit_board_content,
-	 div#content>section>div table.murkit_board_content th,
-	 div#content>section>div table.murkit_board_content td{
+	div#BoardContentMaindiv>section>div table.murkit_board_content,
+	 div#BoardContentMaindiv>section>div table.murkit_board_content th,
+	 div#BoardContentMaindiv>section>div table.murkit_board_content td{
 	 border-top:1px solid lightgray;
 	 	border-collapse:collapse;
 	 	font-family:'나눔스퀘어라운드';
 	 	font-size:13pt;
 	 }
-	 div#content>section>div table.murkit_board_content{
+	 div#BoardContentMaindiv>section>div table.murkit_board_content{
 	 	width:100%;
 	 }
-	 	 div#content>section>div table.murkit_board_content tr:nth-child(1) {
+	 	 div#BoardContentMaindiv>section>div table.murkit_board_content tr:nth-child(1) {
 	 	border-top:2px solid #ccc;
 	 }
-	 div#content>section>div table.murkit_board_content tr:nth-child(6) {
+	 div#BoardContentMaindiv>section>div table.murkit_board_content tr:nth-child(6) {
 	 	border-bottom:2px solid #ccc;
 	 }
-	 div#content>section>div table.murkit_board_content th {
+	 div#BoardContentMaindiv>section>div table.murkit_board_content th {
 	 	padding:13px 0px 13px 0px;
 	 	background:#F5F5F7;
 	 	opacity:0.9;
 	 	color:black;
 	 }
-	 div#content>section>div table.murkit_board_content td {
+	 div#BoardContentMaindiv>section>div table.murkit_board_content td {
 	 padding:3px 0px 3px 10px;
 	 }
-	 div#content>section>div table.murkit_board_content tr:last-child td {
+	 div#BoardContentMaindiv>section>div table.murkit_board_content tr:last-child td {
 	 	border:1px solid rgb(251,251,239);
 	 	padding-top:15px;
 	 }
-	  div#content>section>div table.murkit_board_content tr:last-child td{
+	  div#BoardContentMaindiv>section>div table.murkit_board_content tr:last-child td{
 	 	text-align:right;
 	 	padding-right:10px;
 	 }
-	 div#content>section>div table.murkit_board_content tr th:first-child{
+	 div#BoardContentMaindiv>section>div table.murkit_board_content tr th:first-child{
 	 	width:10%;
 	 }
-	 div#content>section>div table.murkit_board_content tr:nth-child(2) td p{
+	 div#BoardContentMaindiv>section>div table.murkit_board_content tr:nth-child(2) td p{
 	 	text-align:left;
 	 	padding-left:20px;
 	 }
-	 	div#content>section>div#murkit_board_content_main {
+	 	div#BoardContentMaindiv>section>div#murkit_board_content_main {
 		width:1200px;
 		margin:auto;
 		padding: 72px 0 140px;
 	}
-	div#content>section>div#murkit_board_content_main table.murkit_board_content tr td#bcontent{
+	div#BoardContentMaindiv>section>div#murkit_board_content_main table.murkit_board_content tr td#bcontent{
 	 	height:400px;
 	 	font-size:15pt;
 	 }
@@ -164,11 +164,32 @@ $(document).ready(function(){
     	cursor:pointer;
     	margin-top:20px;
 	 }
+	 div#BoardContentMaindiv>section>div#murkit_board_content_main table.murkit_board_content tr:nth-child(5) td div#board_replylist {
+	 	text-align:left;
+	 	padding:5px 0px 5px 20px;
+	 }
+	 div#BoardContentMaindiv>section>div#murkit_board_content_main table.murkit_board_content tr:nth-child(5) td ul li {
+	 	padding-right:10px;
+	 	border:1px solid black;
+	 }
+	 div#BoardContentMaindiv>section>div#murkit_board_content_main table.murkit_board_content tr:nth-child(5) td ul li span.rep_s1 {
+	 	display:inline-block; 
+		float:left; 
+		width:70%; 
+		height:17px; 
+		overflow:hidden; 
+		text-align:left;
+	 }
+	 div#BoardContentMaindiv>section>div#murkit_board_content_main table.murkit_board_content tr:nth-child(5) td ul li span.rep_s2 {
+	 	display:inline-block; 
+	 	float:right;
+	 }
+	 
 </style>
 </head>
 <body>
 <div>
-	<div id = "content">
+	<div id = "BoardContentMaindiv">
 		<section>
 			<div id="murkit_board_content_main">
 				<h1 style="font-size:30px;">먹킷 게시판</h1>
@@ -176,15 +197,14 @@ $(document).ready(function(){
 					<tr>
 						<th>제목</th>
 						<td>${vo.btitle }</td>
-						</tr>
-						<tr>
+					</tr>
+					<tr>
 						<th>아이디</th>
 						<td><%=bname %></td>
-						</tr>
-						<tr>
+					</tr>
+					<tr>
 						<th>등록일</th>
 						<td>${vo.bdate }</td>
-						</tr>
 					</tr>
 					<tr>
 						<td colspan=2 id= "bcontent">
@@ -198,15 +218,14 @@ $(document).ready(function(){
 					</tr>
 					<tr>
 						<td colspan=2>
-							<div style="text-align:left;padding:5px 0px 5px 20px">댓글 목록[<%=vo.getRcount() %>]</div>
+							<div id="board_replylist">댓글 목록[<%=vo.getRcount() %>]</div>
 							
 							<ul>
 							<% for(BoardReplyVO rvo:list){ %>
-								<li id="<%=rvo.getRid() %>" style="padding-right:10px; ">
-								<span class="rep_s1" id="<%=rvo.getRid() %>" style="display:inline-block; 
-								float:left; width:70%; height:17px; overflow:hidden; text-align:left; ">
+								<li id="<%=rvo.getRid() %>">
+								<span class="rep_s1" id="<%=rvo.getRid() %>">
 								<%=rvo.getRcontent() %></span>
-								<span style=" display:inline-block; float:right; ">
+								<span class="rep_s2">
 								<%=rvo.getRdate() %></span></li>
 								<%} %>
 							</ul>
