@@ -27,13 +27,6 @@ div#order_perform {
    
 }
 
-div#left_bar {
-   width:200px;
-   margin-right:40px;
-   border-top:2px solid black;
-   display:inline-block;
-}
-
 /**table **/
 table#order_table img{
 
@@ -101,7 +94,6 @@ div.category_month_day{
 	margin-bottom:50px;
 }
 
-
 /**테이블 행간격**/
 		table#order_table th:first-child, table#order_table td:first-child
 		{
@@ -160,9 +152,7 @@ div#content{
 <body>
    <div id="content">
    
-	   <div id="left_bar">
-	   
-	   </div>
+	   <jsp:include page="../leftbar.jsp"></jsp:include>
 	   
 	   <div id="order_perform">
 	   	<div class="order_title">주문 조회</div>

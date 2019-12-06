@@ -71,8 +71,9 @@
 		width:100%;
 		background:#202020;
 		clear:both;
+		overflow:hidden;
 	}
-	#fot_logo{width:220px; height:150px; display:inline-block; float: left; padding:26px 0;}
+	#fot_logo{width:220px; height:180px; display:inline-block; float: left; padding:26px 0;}
 </style>
 </head>
 <body>

@@ -9,43 +9,49 @@
 <style>
 
 
-div#content>div.delete_user {
+div#content_de>div.delete_user {
 	text-align: center;
 	padding-bottom: 30px;
 	padding-top: 0px;
+	display:inline-block;
+	margin-top:80px;
 	/* border:2px solid #ccc; */
 }
 
-div#content>div.delete_user>h1 {
+div#content_de>div.delete_user>h1 {
 	display: inline-block;
 	margin-bottom: 10px;
 	margin-top: 50px;
-	font-size: 19pt;
+	font-size: 30px;
+	margin-left: -150px;
 }
-div#content>div.delete_user p:nth-child(1){
+div#content_de>div.delete_user p:nth-child(1){
 	font-size:18pt;
 }
-div#content>div.delete_user p {
+div#content_de>div.delete_user p {
 	font-size: 13pt;
 	padding-bottom: 10px;
 	width: 500px;
 	text-align: left;
 }
 
-div#content>div.delete_user p:nth-child(2) {
+div#left_bar ul{
+	padding-left:0px;
+}
+div#content_de>div.delete_user p:nth-child(2) {
 	line-height: 40px; /*p ³¢¸®ÀÇ °£°Ý Á¶Á¤À» ÇØÁÜ*/
 }
 
-div#content>div.delete_user>div.delete_content {
+div#content_de>div.delete_user>div.delete_content {
 	margin-top: 30px;
 	width: 500px;
-	padding-left: 350px;
+	padding-left: 180px;
 }
 
 div.delete_question {
 	text-align: right;
 	padding-top: 30px;
-	margin-right: 350px;
+
 
 }
 
@@ -58,7 +64,7 @@ div.delete_menu a {
 	border: 1px solid #ccc;
 }
 
-div#content>div.delete_menu a {
+div#content_de>div.delete_menu a {
 	text-align: center;
 	display: inline-block;
 	width: 90px;
@@ -69,7 +75,7 @@ div#content>div.delete_menu a {
 	background-color: rgba(14, 168, 225, 0.5);
 }
 
-div#content>div.delete_menu a div {
+div#content_de>div.delete_menu a div {
 	color: white;
 	font-size: 11pt;
 	font-weight: bold;
@@ -86,10 +92,14 @@ div.delete_content>div>p:nth-child(1) {
 
 div.delete_user_button {
 	text-align: center;
-	width: 500px;
-	height: 40px;
-	margin-left: 350px;
-	margin-bottom: 50px;
+    width: 500px;
+    height: 40px;
+    margin-left: 350px;
+    margin-bottom: 50px;
+    
+    position: relative;
+    top: -150px;
+    left: 80px;
 }
 
 div.delete_user_button button {
@@ -106,9 +116,9 @@ div.delete_user_button button {
 	border:white;
 	outline:none;
 }
-div#content{
+div#content_de{
 	width:1200px;
-	text-align:center;
+	text-align:left;
 	margin:auto;
 	font-family:"nanumsquareround";
 	font-weight:bold;
@@ -120,6 +130,9 @@ div.delete_content>div{
  	padding-top:30px;
  	padding-bottom:15px;
  
+}
+div#left_bar{
+	margin-top:92px;
 }
 </style>
     
@@ -150,7 +163,8 @@ div.delete_content>div{
 <body>
 	
 		<form action="#" method="post" class="mypage_delete" name="deleteCheck">
-			<div id="content">
+			<div id="content_de">
+			<jsp:include page="../leftbar.jsp"></jsp:include>
 				<div class="delete_user">
 					<h1>È¸¿øÅ»Åð</h1>
 					<div class="delete_content">

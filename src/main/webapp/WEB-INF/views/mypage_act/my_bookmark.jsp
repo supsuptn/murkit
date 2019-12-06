@@ -4,17 +4,15 @@
 <html>
 <head>
 <script src="http://localhost:9090/murkit/js/jquery-3.4.1.min.js"></script>
+
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
 <style>
-* {
-   font-family:"NanumSquareround";
+div#content {
+  font-family:"NanumSquareround";
    padding:0px;
    margin:0px;
    outline:none;
-}
-
-div#content {
    width:1200px;
    margin:auto;
    margin-bottom:50px;
@@ -27,12 +25,7 @@ div#shopping_good {
    
 }
 
-div#left_bar {
-   width:200px;
-   margin-right:40px;
-   border-top:2px solid black;
-   display:inline-block;
-}
+
 
 /**table **/
 table#shopping_table img{
@@ -107,10 +100,10 @@ div#content{
 	margin-top:100px;
 }
 </style>
-<script src="http://localhost:9090/murk/js/jquery-3.4.1.min.js"></script>
-<script>
+
+<%-- <script>
 	$(document).ready(function(){
-		<%-- var pager = jQuery('#ampaginationsm').pagination({
+		 var pager = jQuery('#ampaginationsm').pagination({
 			
 		    maxSize: 7,	    		// max page size
 		    totals: <%=dbCount%>,	// total pages	
@@ -129,17 +122,16 @@ div#content{
 		jQuery('#ampaginationsm').on('am.pagination.change',function(e){
 			   jQuery('.showlabelsm').text('The selected page no: '+e.page);
 	           $(location).attr('href', "http://localhost:9090/yhhg/travel_mypage/travel_mypage_paylist.jsp?page="+e.page);         
-	    }); --%>
+	    });
 		
 	});
-	</script>
+</script> --%>
+
 </head>
 <body>
    <div id="content">
    
-	   <div id="left_bar">
-	   
-	   </div>
+	 <jsp:include page="../leftbar.jsp"></jsp:include>
 	   
 	   <div id="shopping_good">
 	   	<div class="shopping_title">쇼핑찜</div>

@@ -51,32 +51,29 @@
 		
 		$("button.cart_plus").click(function(){ //+버튼
 			
-		var size = parseInt($(this).prev().val());
-		var total =parseInt($(this).closest("tr").find("label.tot_price").text().replace(",","").replace("원",""));	
+			var size = parseInt($(this).prev().val());
+			var total =parseInt($(this).closest("tr").find("label.tot_price").text().replace(",","").replace("원",""));	
 
-		var total2=total/size;
-		
-			if(size<20){
-				var total_size=size+1;
-				var total_price=total_size * total2;
-				//var tatal_price1=total_price.replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-				
-				
-
-			/* 	var mid_price=total_size * */
-				
-			/* 	var price=$("span#"+cart_id).text();
-				var total_sum=total_size*parseInt(price);
-				$("tr#"+cart_id+" td#"+cart_id).text(total_sum); */
-				
-				var ca_input=$(this).parent().find("input");
-				var ca_label=$(this).closest("tr").find("label.tot_price");
-				$(ca_input).val(total_size);
-				$(ca_label).text(tatal_price1);
-				
-			}
+			var total2=total/size;
 			
-		});
+				if(size<20){
+					var total_size=size+1;
+					var total_price=total_size * total2;
+					
+				/* 	var mid_price=total_size * */
+					
+				/* 	var price=$("span#"+cart_id).text();
+					var total_sum=total_size*parseInt(price);
+					$("tr#"+cart_id+" td#"+cart_id).text(total_sum); */
+					
+					var ca_input=$(this).parent().find("input");
+					var ca_label=$(this).closest("tr").find("label.tot_price");
+					$(ca_input).val(total_size);
+					$(ca_label).text(total_price);
+					
+				}
+				
+			});
 
 		$("button.delete_on").click(function(){
 			var delete_item=$(this).attr("id");	

@@ -47,18 +47,15 @@ border: none;
     text-decoration: none;
     background: 0 0;
 		}
-		
-* {
+
+div#content {
    font-family:"NanumSquareround";
    padding:0px;
    margin:0px;
    outline:none;
-}
-
-div#content {
    width:1200px;
    margin:auto;
-   margin-bottom:50px;
+  /*  margin-bottom:50px; */
    vertical-align:top;
 }
 
@@ -69,14 +66,14 @@ div#cancle_perform {
    
 }
 
-div#left_bar {
+/* div#left_bar {
    width:200px;
    height:800px;
    margin-right:40px;
    display:inline-block;
    vertical-align:top;
 }
-
+ */
 /**table **/
 table#cancle_table img{
 
@@ -235,7 +232,7 @@ span.span_date_cal{
     position: relative;
     top: 2px;
 }
-div#left_bar{
+/* div#left_bar{
 	text-align:left;
 }
 div#left_bar ul{
@@ -299,14 +296,15 @@ font-size:16px;
 	margin-bottom:15px;
 
 }
-
+ */
 </style>
 
 </head>
 <body>
    <div id="content">
    
-	   <div id="left_bar">
+   <jsp:include page="../leftbar.jsp"></jsp:include>
+	 <!--   <div id="left_bar">
 	   <div>
 	   		<label>MY 먹킷</label>
 	   </div>
@@ -327,7 +325,7 @@ font-size:16px;
 		   		<li><a href="#">리뷰</a></li>
 		   		<li><a href="#">나의 맛취향</a></li>
 		   	</ul>
-	   	</div>
+	   	</div> 
 	   	
 	   	<div class="my_order_murkit">
 		   	<ul>
@@ -339,7 +337,7 @@ font-size:16px;
 		   		<li><a href="#"></a>환불계좌 관리</li>
 		   	</ul>
 	   	</div>
-	   </div>
+	   </div>-->
 	   
 	   <div id="cancle_perform">
 	   	<div class="cancle_title">취소/반품 조회</div>

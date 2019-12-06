@@ -9,7 +9,7 @@
 	<script src="http://localhost:9090/murkit/js/jquery-3.4.1.min.js"></script>
 	<script src="http://localhost:9090/murkit/js/slick.min.js"></script>
 	<script src="https://kit.fontawesome.com/6de59477c1.js" crossorigin="anonymous"></script>
-	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
@@ -324,7 +324,7 @@ $(document).ready(function(){
 					<p class="menu_name_content">부추가득 오리불고기</p>
 					<p class="menu_price_content">24,800원</p>
 					<div class="all_review_star">
-						<img src="http://localhost:9090/murkir/images/icon/bigstar4_size.png">
+						<img src="http://localhost:9090/murkit/images/icon/bigstar4_size.png">
 						<p class="review_menu"> |  리뷰 14</p>
 					</div>
 					<div class="img_all_icon">

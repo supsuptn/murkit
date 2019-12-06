@@ -9,6 +9,7 @@
 <title>Insert title here</title>
 
 <script>
+$(document).ready(function() {
 		$("section#join button#btnJoin").click(function(){
 	 		if($("#id").val() == ""){
 	 			alert("아이디를 입력하세요");
