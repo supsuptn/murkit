@@ -46,12 +46,15 @@
 	
 	.list_gmenu {
 		font-weight:bold;
-		margin-left:150px;
 	}
 	.util_wrap a{
 		color:white;
+		border-right: 2px solid #ffffff30;
+	    padding-right: 10px;
+	    padding-left: 5px;
 	}
 	
+	.util_wrap li:last-child a{border:none;}
 	h1.logo a{
 		text-decoration:none;
 		color:black;
@@ -76,17 +79,20 @@
 		height:86px;  
 		width:1200px; 
 		display:inline-block;
+		float:left;
+	    padding: 4px 0px;
+	    margin-left: 198px;
 	}
 	
 	#logo_img{
 		width:150px; 
 		float: left;
 		margin-left:120px;
-		margin-top:8px;
+		margin-top:13px;
 	}
 	
 	.list_gmenu{
-		padding-top: 12px; 
+		margin: 32px 0;
 		font-size: 20px;
 	}
 	
@@ -95,13 +101,15 @@
 	}
 	
 	.my_gmenu{
+		margin-left: -44px;
+		margin-top:10px;
 		margin-left: 247px;
 		
 		display:inline-block;
 	}
 	
 	li.g_od , li.g_mu{width:60px;}
-	.icon_label{display: block;}
+	.icon_label{display: block; font-size:12px;}
 	li.g_od .icon, li.g_mu .icon{
 		background-image:url("http://localhost:9090/murkit/images/ico_set.png");
 		background-size:800px 800px;
@@ -109,7 +117,9 @@
 		width:32px; height:32px;
 		background-position:-584px -320px;
 	}
+	li.g_mu{float:left;}
 	li.g_mu .icon{background-position:-628px -320px;}
+	li.g_mu ul{margin: 0; padding: 0; padding: 27px 0;}
 		
 </style>
 </head>
@@ -137,6 +147,7 @@
 							<li><a href="#">리뷰</a></li>
 							<li><a href="http://localhost:9090/murkit/murkit_event.do">이벤트</a></li>
 							<li><a href="http://localhost:9090/murkit/my_product_cancle.do">MY먹킷</a></li>
+							<li><a href="http://localhost:9090/murkit/mymurkit.do">MY먹킷</a></li>
 	               </ul>
 	               
 	           </div>
@@ -150,8 +161,8 @@
                        </li>
                        <li class="g_mu">
                        <a href="http://localhost:9090/murkit/menu_search.do">
-                       <span class="icon"></span> 
-                       <span class="icon_label">메뉴찾기</span>
+		                       <span class="icon"></span> 
+		                       <span class="icon_label">메뉴찾기</span>
                        </a>
                        </li>
                               
