@@ -6,8 +6,8 @@
 
 	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"/>
 	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"/>
-	<script src="http://localhost:9090/murk/js/jquery-3.4.1.min.js"></script>
-	<script src="http://localhost:9090/murk/js/slick.min.js"></script>
+	<script src="http://localhost:9090/murkit/js/jquery-3.4.1.min.js"></script>
+	<script src="http://localhost:9090/murkit/js/slick.min.js"></script>
 	<script src="https://kit.fontawesome.com/6de59477c1.js" crossorigin="anonymous"></script>
 	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -315,7 +315,7 @@ $(document).ready(function(){
 			<%for(int i=0; i<20; i++){ %>
 				<div class="food_all">
 					<article class="all_menu">
-					<a href="#"><img src="http://localhost:9090/murk/images/food_menu/rec_best4.jpg" class="all_menu_pic"></a>
+					<a href="#"><img src="http://localhost:9090/murkit/images/food_menu/rec_best4.jpg" class="all_menu_pic"></a>
 					<div class="menu_all_content">
 						<span>3인분 |</span>
 						<span>조리 20분 |</span>
@@ -324,12 +324,12 @@ $(document).ready(function(){
 					<p class="menu_name_content">부추가득 오리불고기</p>
 					<p class="menu_price_content">24,800원</p>
 					<div class="all_review_star">
-						<img src="http://localhost:9090/murk/images/icon/bigstar4_size.png">
+						<img src="http://localhost:9090/murkir/images/icon/bigstar4_size.png">
 						<p class="review_menu"> |  리뷰 14</p>
 					</div>
 					<div class="img_all_icon">
-						<img src="http://localhost:9090/murk/images/icon/heart.png">
-						<img src="http://localhost:9090/murk/images/icon/cart2.png">
+						<img src="http://localhost:9090/murkit/images/icon/heart.png">
+						<img src="http://localhost:9090/murkit/images/icon/cart2.png">
 					</div>
 					</article>
 				</div>
@@ -364,7 +364,7 @@ $(document).ready(function(){
 				
 				궁금한 점을 물어봐 주세요<br>
 				</div>
-				<img src="http://localhost:9090/murk/images/icon/cook3.gif" class="cook_gif">
+				<img src="http://localhost:9090/murkit/images/icon/cook3.gif" class="cook_gif">
 				<div><button type="button" id="question1" class="quest" >먹킷이 뭐에요?</button></div>
 				<div><button type="button" id="question2" class="quest">배송현황이 궁금해요</button></div>
 				<div><button type="button" id="question3" class="quest">인기메뉴 알려주세요</button></div>

@@ -8,10 +8,10 @@
 <!-- < 날짜 >  표시  -->
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-<script src="http://localhost:9090/murk/js/jquery-3.4.1.min.js"></script>
+<script src="http://localhost:9090/murkit/js/jquery-3.4.1.min.js"></script>
 
 <script type="text/javascript" src="http://momentjs.com/downloads/moment-with-locales.min.js"></script>
-<script type="text/javascript" src="http://localhost:9090/murk/js/bootstrap-material-datetimepicker.js"></script>
+<script type="text/javascript" src="http://localhost:9090/murkit/js/bootstrap-material-datetimepicker.js"></script>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
 <script type="text/javascript">
@@ -314,15 +314,15 @@ font-size:16px;
 		   	<ul>
 		   		<li>나의 정보</li>
 		   		<li><a href="#">먹킷 포인트</a></li>
-		   		<li><a href="#">개인정보 변경</a></li>
-		   		<li><a href="#">회원 탈퇴</a></li>
+		   		<li><a href="http://localhost:9090/murkit/my_info_update.do">개인정보 변경</a></li>
+		   		<li><a href="http://localhost:9090/murkit/my_info_delete.do">회원 탈퇴</a></li>
 		   	</ul>
 	   	</div>
 	   	
 	   	<div class="my_act_murkit">
 		   	<ul>
 		   		<li>나의 활동</li>
-		   		<li><a href="#">쇼핑찜</a></li>
+		   		<li><a href="http://localhost:9090/murkit/my_bookmark.do">쇼핑찜</a></li>
 		   		<li><a href="#">1:1문의</a></li>
 		   		<li><a href="#">리뷰</a></li>
 		   		<li><a href="#">나의 맛취향</a></li>
@@ -332,8 +332,8 @@ font-size:16px;
 	   	<div class="my_order_murkit">
 		   	<ul>
 		   		<li>나의 주문정보</li>
-		   		<li><a href="#">주문조회</a></li>
-		   		<li><a href="#">취소/반품 조회</a></li>
+		   		<li><a href="http://localhost:9090/murkit/my_product_order.do">주문조회</a></li>
+		   		<li><a href="http://localhost:9090/murkit/my_product_cancle.do">취소/반품 조회</a></li>
 		   		<li><a href="#"></a>배송지 관리</li>
 		   		<li><a href="#"></a>알림 설정관리</li>
 		   		<li><a href="#"></a>환불계좌 관리</li>
@@ -366,7 +366,7 @@ font-size:16px;
 					</tr>
 					<%for(int i=0; i<4; i++){ %>
 					<tr id="cancle_content">
-						<td><img src="http://localhost:9090/murk/images/food_menu/rec_best4.jpg"></td>
+						<td><img src="http://localhost:9090/murkit/images/food_menu/rec_best4.jpg"></td>
 						<td><label>카이팟퐁커리</label></td>
 						<td>2개</td>
 						<td><label>49,600원 |</label><label>  1인분</label></td>

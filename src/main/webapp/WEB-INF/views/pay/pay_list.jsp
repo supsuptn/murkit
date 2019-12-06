@@ -3,7 +3,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-	<script src="http://localhost:9090/murk/js/jquery-3.4.1.min.js"></script>
+	<script src="http://localhost:9090/murkit/js/jquery-3.4.1.min.js"></script>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
 <script>
@@ -695,7 +695,7 @@ div#validity_div>div>button{
 				</tr>
 				<%for(int i=0; i<4; i++){ %>
 				<tr>
-					<td><img src="http://localhost:9090/murk/images/food_menu/rec_best4.jpg"></td>
+					<td><img src="http://localhost:9090/murkit/images/food_menu/rec_best4.jpg"></td>
 					<td><label>카이팟퐁커리</label></td>
 					<td><label>수량 2개</label></td>
 					<td><label>49,600원</label></td>

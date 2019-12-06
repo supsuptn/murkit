@@ -9,8 +9,8 @@
 	<title>Insert title here</title>
 	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"/>
 	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"/>
-	<script src="http://localhost:9090/murk/js/jquery-3.4.1.min.js"></script>
-	<script src="http://localhost:9090/murk/js/slick.min.js"></script>
+	<script src="http://localhost:9090/murkit/js/jquery-3.4.1.min.js"></script>
+	<script src="http://localhost:9090/murkit/js/slick.min.js"></script>
 
 </head>
 
@@ -310,7 +310,7 @@ div.cart_name_lab{
 				<%for(int i=0; i<4; i++){ %>
 				<tr>
 					<td><label for="cart_check"></label><input type="checkbox" class="cart_check" name="cart_check"></td>
-					<td><img src="http://localhost:9090/murk/images/food_menu/rec_best4.jpg"></td>
+					<td><img src="http://localhost:9090/murkit/images/food_menu/rec_best4.jpg"></td>
 					<td><label>카이팟퐁커리</label></td>
 					
 					<td>
@@ -343,7 +343,7 @@ div.cart_name_lab{
 						</div>
 						<div class="cart_button_whole">
 							<a href="#"><button type="button" class="cart_but"id="cart_delete">삭제하기</button></a>
-							<a href="http://localhost:9090/murk/pay_list.do"><button type="button" class="order" id="order">주문하기</button></a> 
+							<a href="http://localhost:9090/murkit/pay_list.do"><button type="button" class="order" id="order">주문하기</button></a> 
 						</div>
 						
 					</div>	

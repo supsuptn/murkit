@@ -8,7 +8,7 @@
 	<meta charset="UTF-8">
 	<title>insert titie here</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<script src="http://localhost:9090/murk/js/jquery-3.4.1.min.js"></script>
+	<script src="http://localhost:9090/murkit/js/jquery-3.4.1.min.js"></script>
  
  <style>
  button{
@@ -106,7 +106,7 @@ input::placeholder {
 <body>
 	<div>
 		<div id="main_header">
-			<img src="http://localhost:9090/murk/images/food_menu/login_banner.jpg">
+			<img src="http://localhost:9090/murkit/images/food_menu/login_banner.jpg">
 		</div>
 		<div id="content">
 			<section id="login">

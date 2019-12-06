@@ -121,8 +121,8 @@
            <div class="gnb_util">
                <div class="util_wrap" >
                    <ul>
-                   		<li><a href="#">로그인</a></li>
-                   		<li><a href="#">회원가입</a></li>
+                   		<li><a href="http://localhost:9090/murkit/login.do">로그인</a></li>
+                   		<li><a href="http://localhost:9090/murkit/join.do">회원가입</a></li>
                    		<li><a href="http://localhost:9090/murkit/happycenter.do">고객행복센터</a></li>
                    		<li><a href="http://localhost:9090/murkit/murkit_board.do">게시판</a></li>
                    </ul>
@@ -133,23 +133,23 @@
 	           <div class="gnb_menu">
 	               <ul class="list_gmenu" >
 							<li><a href="#" >먹킷소개</a></li>
-							<li><a href="#" ><span class="red_dot">먹킷 메뉴</span></a></li>
+							<li><a href="http://localhost:9090/murkit/menu_main.do" ><span class="red_dot">먹킷 메뉴</span></a></li>
 							<li><a href="#">리뷰</a></li>
 							<li><a href="http://localhost:9090/murkit/murkit_event.do">이벤트</a></li>
-							<li><a href="#">MY먹킷</a></li>
+							<li><a href="http://localhost:9090/murkit/my_product_cancle.do">MY먹킷</a></li>
 	               </ul>
 	               
 	           </div>
                <div class="my_gmenu" >
                    <ul >
                        <li class="g_od">
-                           <a href="#">
+                           <a href="http://localhost:9090/murkit/pay_cart.do">
                                <span class="icon"></span>
                                <span class="icon_label">장바구니</span>
                            </a>
                        </li>
                        <li class="g_mu">
-                       <a href="#">
+                       <a href="http://localhost:9090/murkit/menu_search.do">
                        <span class="icon"></span> 
                        <span class="icon_label">메뉴찾기</span>
                        </a>

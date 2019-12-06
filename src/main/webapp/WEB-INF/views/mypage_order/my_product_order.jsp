@@ -5,7 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
-<script src="http://localhost:9090/murk/js/jquery-3.4.1.min.js"></script>
+<script src="http://localhost:9090/murkit/js/jquery-3.4.1.min.js"></script>
 <style>
 * {
    font-family:"NanumSquareround";
@@ -181,7 +181,7 @@ div#content{
 					</tr>
 					<%for(int i=0; i<4; i++){ %>
 					<tr id="order_content">
-						<td><img src="http://localhost:9090/znam/img/food_menu/rec_best4.jpg"><div><label>49,600원 |</label><label>  1인분</label></div></td>
+						<td><img src="http://localhost:9090/murkit/images/food_menu/rec_best4.jpg"><div><label>49,600원 |</label><label>  1인분</label></div></td>
 						<td><label>카이팟퐁커리</label></td>
 						<td>2개</td>
 						<td>2019-12-03</td>

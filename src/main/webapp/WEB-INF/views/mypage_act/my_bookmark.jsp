@@ -3,6 +3,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
+<script src="http://localhost:9090/murkit/js/jquery-3.4.1.min.js"></script>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
 <style>
@@ -149,7 +150,7 @@ div#content{
 				</tr>
 				<%for(int i=0; i<2; i++){ %>
 				<tr id="shopping_content">
-					<td><img src="http://localhost:9090/znam/img/food_menu/rec_best4.jpg"></td>
+					<td><img src="http://localhost:9090/murkit/images/food_menu/rec_best4.jpg"></td>
 					<td><label>카이팟퐁커리</label></td>
 					<td><label>49,600원 |</label><label>  1인분</label></td>
 					<td><span>장바구니</span><span>삭제</span></td>

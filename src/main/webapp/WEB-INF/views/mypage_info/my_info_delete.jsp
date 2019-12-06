@@ -5,7 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
 <title>Insert title here</title>
-<script src="http://localhost:9090/murk/js/jquery-3.4.1.min.js"></script>
+<script src="http://localhost:9090/murkit/js/jquery-3.4.1.min.js"></script>
 <style>
 
 
@@ -169,7 +169,7 @@ div.delete_content>div{
 				 	
 				 <div class="delete_user_button">
 				 	<button type="button" id="btnDeleteConfirm">회원탈퇴</button>
-					<a href="travel_mypage_update.jsp"><button type="reset" id="btnCancle">취소</button></a>
+					<a href="#"><button type="reset" id="btnCancle">취소</button></a>
 				 </div>
 				</div>
 			</form>

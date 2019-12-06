@@ -6,8 +6,8 @@
 
 	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"/>
 	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"/>
-	<script src="http://localhost:9090/murk/js/jquery-3.4.1.min.js"></script>
-	<script src="http://localhost:9090/murk/js/slick.min.js"></script>
+	<script src="http://localhost:9090/murkit/js/jquery-3.4.1.min.js"></script>
+	<script src="http://localhost:9090/murkit/js/slick.min.js"></script>
 	<script src="https://kit.fontawesome.com/6de59477c1.js" crossorigin="anonymous"></script>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
@@ -275,7 +275,7 @@ $(document).ready(function(){
 		<div class="menu_search_bar">
 			<div>
 				<input type="text" id="menu_search_text" placeholder="메뉴명으로 검색하세요.">
-				<button type="button" id="menu_search" ><img src="http://localhost:9090/murk/images/icon/search_icon.png"></button>
+				<button type="button" id="menu_search" ><img src="http://localhost:9090/murkit/images/icon/search_icon.png"></button>
 				<span class="menu_content">먹킷의 모든 메뉴를 쉽고 빠르게 찾아볼 수 있습니다.</span>
 			</div>
 		</div>
@@ -288,7 +288,7 @@ $(document).ready(function(){
 			<%for(int i=0; i<20; i++){ %>
 				<div class="food_all_search">
 					<article class="all_menu_search_search">
-					<a href="#"><img src="http://localhost:9090/murk/images/food_menu/rec_best4.jpg" class="all_menu_search_search_pic"></a>
+					<a href="#"><img src="http://localhost:9090/murkit/images/food_menu/rec_best4.jpg" class="all_menu_search_search_pic"></a>
 					<div class="menu_all_content_search">
 						<span>3인분 |</span>
 						<span>조리 20분 |</span>
@@ -297,12 +297,12 @@ $(document).ready(function(){
 					<p class="menu_name_scontent">부추가득 오리불고기</p>
 					<p class="menu_price_scontent">24,800원</p>
 					<div class="all_review_s_star">
-						<img src="http://localhost:9090/murk/images/icon/bigstar4_size.png">
+						<img src="http://localhost:9090/murkit/images/icon/bigstar4_size.png">
 						<p class="review_smenu"> |  리뷰 14</p>
 					</div>
 					<div class="img_all_sicon">
-						<img src="http://localhost:9090/murk/images/icon/heart.png">
-						<img src="http://localhost:9090/murk/images/icon/cart2.png">
+						<img src="http://localhost:9090/murkit/images/icon/heart.png">
+						<img src="http://localhost:9090/murkit/images/icon/cart2.png">
 					</div>
 					</article>
 				</div>
